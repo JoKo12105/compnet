@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Physikalische Grundlagen/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:28:31.336+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Nachrichtentechnischer Kanal","Bandbreite","Datenrate","Latenz"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Physikalische Grundlagen/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T21:36:16.431+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Nachrichtentechnischer Kanal","Bandbreite","Datenrate","Latenz"]}}
 ---
 
 
@@ -18,8 +18,9 @@ Die Nachricht liegt im Rechner **digital** vor, das übertragene **Signal** ist 
 | Physik | **Übertragungsgeschwindigkeit** | Ausbreitungsgeschwindigkeit des Signals |
 | Informatik | **Datenrate** | übertragene **Bits pro Sekunde** |
 | Informatik | **Latenz** | Verzögerung / Verzögerungszeit |
-
-Faustregeln: Die **Datenrate** steigt mit höherer Bandbreite, besserer Codierung und weniger Störungen. Die **Latenz** sinkt mit höherer Übertragungsgeschwindigkeit und weniger Verzögerung an Zwischenstationen.
+#### Faustregeln
++ Die **Datenrate** steigt mit höherer Bandbreite, besserer Codierung und weniger Störungen.
++ Die **Latenz** sinkt mit höherer Übertragungsgeschwindigkeit und weniger Verzögerung an Zwischenstationen.
 
 ## Störungen
 Signale unterliegen **Dämpfung**, **Verzerrung (Dispersion)** und **Rauschen**. Diese begrenzen Reichweite und Datenrate eines [[1 Grundlagen/Übertragungsmedien & Frequenzen\|Mediums]].

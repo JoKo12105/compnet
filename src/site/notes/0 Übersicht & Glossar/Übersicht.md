@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T21:35:01.089+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
+{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T21:41:08.090+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
 ---
 
 > [!warning] WIP
@@ -147,7 +147,7 @@ Jeder Artikel beginnt mit einer Kurzdefinition („Auf einen Blick"), gefolgt vo
 	+ **⚠️Content Warning⚠️:** französisch 😡
 
 + [Betriebssysteme-Website](https://betriebssysteme.vercel.app)
-	+ Meine vorige Website zum Thema *Betriebssysteme*, falls sich jemand nochmal darüber informieren möchte
+	+ Meine andere Website zum Thema *Betriebssysteme*, falls sich jemand nochmal darüber informieren möchte
 
 ---
 

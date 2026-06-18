@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Physikalische Grundlagen/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T21:38:06.785+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Nachrichtentechnischer Kanal","Bandbreite","Datenrate","Latenz"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Physikalische Grundlagen/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T21:43:20.768+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Nachrichtentechnischer Kanal","Bandbreite","Datenrate","Latenz"]}}
 ---
 
 
@@ -29,6 +29,7 @@ Signale unterliegen **Dämpfung**, **Verzerrung (Dispersion)** und **Rauschen**.
 [[1 Grundlagen/Übertragungsmedien & Frequenzen\|Übertragungsmedien & Frequenzen]] · [[1 Grundlagen/Schichtenmodell\|Schichtenmodell]] · [[3 Access Networks/DSL\|DSL]]
 
 [[1 Grundlagen/1.0 Grundlagen (Übersicht)\|← Kapitelübersicht]]
+
 
 ---
 <!-- kapitel-nav -->

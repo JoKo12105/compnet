@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T21:41:08.090+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
+{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T21:42:03.358+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
 ---
 
 > [!warning] WIP
@@ -138,7 +138,7 @@ Jeder Artikel beginnt mit einer Kurzdefinition („Auf einen Blick"), gefolgt vo
 
 ## 🔗 Links to visit
 + [YouTube / Computer Networking (Deepdive)](https://youtu.be/6G14NrjekLQ?si=-qRlUVpDmNXeRP35)
-	+ Nicht wirklich ein „Deepdive“ (es sind 15 min) hat aber gute Erklärungen (Besonders zum Schichtenmodell)
+	+ Nicht wirklich ein „Deepdive“ (es sind 15 min) hat aber gute Erklärungen
 + [YouTube / Five Layers Model - part 1](https://www.youtube.com/watch?v=Q3qqd6Y2FbQ)
   [YouTube / Five Layers Model - part 2](https://www.youtube.com/watch?v=LYH4DwydVAM&t=194s)
 	+ Basierend auf Marias Empfehlung

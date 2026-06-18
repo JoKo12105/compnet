@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IPv6/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:32:42.877+02:00","dg-note-properties":{"permalink":"/5 Vermittlungsschicht/IPv6/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:20:29.968+02:00"}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IPv6/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T23:24:42.787+02:00","dg-note-properties":{"permalink":"/5 Vermittlungsschicht/IPv6/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:20:29.968+02:00"}}
 ---
 
 
@@ -82,7 +82,7 @@ svg{display:block;width:100%;height:auto}
 <button class=&quot;btn primary&quot; id=&quot;btn-next&quot; onclick=&quot;changeStep(1)&quot;>Weiter</button>
 </div></div>
 <script>
-const steps = [{&quot;label&quot;: &quot;Die volle 128-Bit-Adresse&quot;, &quot;set&quot;: [[&quot;addr&quot;, &quot;FE80:0000:0000:0000:0000:0800:5A12:3456&quot;], [&quot;note&quot;, &quot;8 Gruppen à 16 Bit, hexadezimal&quot;\|&quot;addr&quot;, &quot;FE80:0000:0000:0000:0000:0800:5A12:3456&quot;], [&quot;note&quot;, &quot;8 Gruppen à 16 Bit, hexadezimal&quot;]], &quot;show&quot;: [], &quot;blink&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Ausgangslage:</b> Eine IPv6-Adresse ist <b>128 Bit</b> lang — 8 Gruppen zu je 16 Bit (4 Hex-Ziffern), durch Doppelpunkte getrennt. Das ist lang und voller Nullen.&quot;}, {&quot;label&quot;: &quot;Regel 1: führende Nullen weglassen&quot;, &quot;set&quot;: [[&quot;addr&quot;, &quot;FE80:0:0:0:0:800:5A12:3456&quot;], [&quot;note&quot;, &quot;führende Nullen je Gruppe entfernt&quot;\|&quot;addr&quot;, &quot;FE80:0:0:0:0:800:5A12:3456&quot;], [&quot;note&quot;, &quot;führende Nullen je Gruppe entfernt&quot;]], &quot;show&quot;: [], &quot;blink&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Regel 1:</b> In jeder Gruppe dürfen <b>führende Nullen</b> entfallen: <code>0000 → 0</code>, <code>0800 → 800</code>.&quot;}, {&quot;label&quot;: &quot;Regel 2: längsten Nuller-Block zu ::&quot;, &quot;set&quot;: [[&quot;addr&quot;, &quot;FE80::800:5A12:3456&quot;], [&quot;note&quot;, &quot;ein zusammenhängender 0-Block → ::&quot;\|&quot;addr&quot;, &quot;FE80::800:5A12:3456&quot;], [&quot;note&quot;, &quot;ein zusammenhängender 0-Block → ::&quot;]], &quot;show&quot;: [], &quot;blink&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Regel 2:</b> Ein zusammenhängender Block aus <b>Null-Gruppen</b> wird durch <b>::</b> ersetzt — aber nur <b>einmal</b> pro Adresse (sonst mehrdeutig).&quot;}, {&quot;label&quot;: &quot;Fertig komprimiert&quot;, &quot;set&quot;: [[&quot;addr&quot;, &quot;FE80::800:5A12:3456&quot;], [&quot;note&quot;, &quot;kompakt &amp; eindeutig&quot;\|&quot;addr&quot;, &quot;FE80::800:5A12:3456&quot;], [&quot;note&quot;, &quot;kompakt &amp; eindeutig&quot;]], &quot;show&quot;: [], &quot;blink&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Ergebnis:</b> Aus 39 Zeichen werden 19. Weitere Notationen: <code>::1/128</code> = Loopback, <code>2000::/3</code> = globale Unicast-Adressen, <code>FF00::/8</code> = Multicast. IPv4 lässt sich einbetten: <code>::FFFF:142.35.67.23</code>.&quot;}];
+const steps = [{&quot;label&quot;: &quot;Die volle 128-Bit-Adresse&quot;, &quot;set&quot;: [{&quot;el&quot;: &quot;addr&quot;, &quot;tx&quot;: &quot;FE80:0000:0000:0000:0000:0800:5A12:3456&quot;}, {&quot;el&quot;: &quot;note&quot;, &quot;tx&quot;: &quot;8 Gruppen à 16 Bit, hexadezimal&quot;}], &quot;show&quot;: [], &quot;blink&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Ausgangslage:</b> Eine IPv6-Adresse ist <b>128 Bit</b> lang — 8 Gruppen zu je 16 Bit (4 Hex-Ziffern), durch Doppelpunkte getrennt. Das ist lang und voller Nullen.&quot;}, {&quot;label&quot;: &quot;Regel 1: führende Nullen weglassen&quot;, &quot;set&quot;: [{&quot;el&quot;: &quot;addr&quot;, &quot;tx&quot;: &quot;FE80:0:0:0:0:800:5A12:3456&quot;}, {&quot;el&quot;: &quot;note&quot;, &quot;tx&quot;: &quot;führende Nullen je Gruppe entfernt&quot;}], &quot;show&quot;: [], &quot;blink&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Regel 1:</b> In jeder Gruppe dürfen <b>führende Nullen</b> entfallen: <code>0000 → 0</code>, <code>0800 → 800</code>.&quot;}, {&quot;label&quot;: &quot;Regel 2: längsten Nuller-Block zu ::&quot;, &quot;set&quot;: [{&quot;el&quot;: &quot;addr&quot;, &quot;tx&quot;: &quot;FE80::800:5A12:3456&quot;}, {&quot;el&quot;: &quot;note&quot;, &quot;tx&quot;: &quot;ein zusammenhängender 0-Block → ::&quot;}], &quot;show&quot;: [], &quot;blink&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Regel 2:</b> Ein zusammenhängender Block aus <b>Null-Gruppen</b> wird durch <b>::</b> ersetzt — aber nur <b>einmal</b> pro Adresse (sonst mehrdeutig).&quot;}, {&quot;label&quot;: &quot;Fertig komprimiert&quot;, &quot;set&quot;: [{&quot;el&quot;: &quot;addr&quot;, &quot;tx&quot;: &quot;FE80::800:5A12:3456&quot;}, {&quot;el&quot;: &quot;note&quot;, &quot;tx&quot;: &quot;kompakt &amp; eindeutig&quot;}], &quot;show&quot;: [], &quot;blink&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Ergebnis:</b> Aus 39 Zeichen werden 19. Weitere Notationen: <code>::1/128</code> = Loopback, <code>2000::/3</code> = globale Unicast-Adressen, <code>FF00::/8</code> = Multicast. IPv4 lässt sich einbetten: <code>::FFFF:142.35.67.23</code>.&quot;}];
 let current = 0;
 let _lh=0;
 function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
@@ -93,7 +93,7 @@ function render(idx){
   (s.hide||[]).forEach(id=>{const e=document.getElementById(id);if(e){e.style.opacity=&quot;0&quot;;e.classList.remove(&quot;blinking&quot;);}});
   (s.show||[]).forEach(id=>{const e=document.getElementById(id);if(e){e.style.opacity=&quot;1&quot;;e.classList.remove(&quot;blinking&quot;);}});
   (s.blink||[]).forEach(id=>{const e=document.getElementById(id);if(e){e.style.opacity=&quot;1&quot;;e.classList.add(&quot;blinking&quot;);}});
-  (s.set||[]).forEach(p=>{const e=document.getElementById(p[0]);if(e){e.textContent=p[1];}});
+  (s.set||[]).forEach(p=>{const e=document.getElementById(p.el);if(e){e.textContent=p.tx;}});
   document.querySelectorAll(&quot;.step-dot&quot;).forEach((d,i)=>{d.className=&quot;step-dot&quot;+(i===idx?&quot; active&quot;:i<idx?&quot; done&quot;:&quot;&quot;);});
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
@@ -110,17 +110,4 @@ setTimeout(fit,60);
 </script></body></html>" width="100%" height="785" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:ipv6-kompression -->
 
-Adressen sind **unicast/multicast/anycast** und gliedern sich in `<Global Routing Prefix><Subnet><Interface>`. Über das Präfix wird (provider-/geografisch) geroutet, was die Routing-Tabellen klein hält.
-
-## Begleit-Protokolle & Migration
-- **Neighbor Discovery (ND)** statt [[5 Vermittlungsschicht/ARP\|ARP]], **ICMPv6**, **DHCPv6**.
-- Migration nur **inkrementell**: **Dual-Stack** (IPv4 + IPv6 parallel), **Tunnel** (z. B. 6to4), **Übersetzung**. Beispiel: IPv4-mapped `::FFFF:120.124.67.23`.
-
-## Verwandte Themen
-[[5 Vermittlungsschicht/IP-Adressen & CIDR\|IP-Adressen & CIDR]] · [[5 Vermittlungsschicht/IPv4-Paket\|IPv4-Paket]] · [[5 Vermittlungsschicht/ARP\|ARP]] · [[5 Vermittlungsschicht/Routing-Protokolle\|Routing-Protokolle]] · [[5 Vermittlungsschicht/ICMP\|ICMP]]
-
-[[5 Vermittlungsschicht/5.0 Vermittlungsschicht (Übersicht)\|← Kapitelübersicht]]
-
----
-<!-- kapitel-nav -->
-[[5 Vermittlungsschicht/ICMP\|⬅️ ICMP]]  ·  [[6 Transportschicht/6.0 Transportschicht (Übersicht)\|Kapitel 6: Transportschicht ➡️]]
+Adressen sind **unicast/multicast/anycast** und gliedern sich in `<Global Routing Prefix><Subnet><Interface>`. Ü

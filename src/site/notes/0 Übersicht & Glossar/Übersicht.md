@@ -1,13 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T21:17:59.320+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
+{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T21:18:37.661+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
 ---
 
 > [!warning] WIP
-> Die Webseite ist aktuell noch Work-In-Progress.
+> Die Webseite ist aktuell noch Work-In-Progress!
 > 
 > Daher kann es sein, dass Dinge fehlen, nicht alle Erklärung etc. optimiert sind, 
 > HTML-Elemente nicht funktionieren oder nicht richtig eingebunden/formatiert sind 
-> und sonstige Makel!
+> und beliebige sonstige Makel!
 > 
 > >[!info] Tipp
 > >Gerne mal ab und zu die Seite neu laden, da ständig Updates hinzu kommen können.

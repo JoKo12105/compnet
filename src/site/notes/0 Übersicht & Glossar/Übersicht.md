@@ -1,7 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T20:47:31.714+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
+{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T21:15:39.847+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
 ---
 
+> [!warning] WIP
+> Die Webseite ist aktuell noch Work-In-Progress.
+> Es kann daher sein, dass Dinge fehlen, nicht alle Erklärung etc. optimiert sind, 
+> HTML-Elemente nicht funktionieren oder nicht richtig eingebunden/formatiert sind 
+> und sonstige Makel!
+> 
+> >[!info] Tipp
+> >Gerne mal ab und zu die Seite neu laden, da ständig Updates hinzu kommen können.
 
 # 🌐 Computer Networks — Kurs & Nachschlagewerk
 
@@ -127,8 +135,16 @@ Transport (L4): [[6 Transportschicht/TCP\|TCP]] · [[6 Transportschicht/TCP-Verb
 Für die **Klausurvorbereitung** empfiehlt sich der Weg von oben nach unten (Kapitel 1 → 6) entlang des **Schichtenmodells** — von unten (Bits & Medien) nach oben (Anwendungen). Als **Nachschlagewerk** kannst du über den Schnellzugriff oder das [[0 Übersicht & Glossar/Glossar\|Glossar]] direkt zu einem Begriff springen.
 Jeder Artikel beginnt mit einer Kurzdefinition („Auf einen Blick"), gefolgt von Details und — wo sinnvoll — einer interaktiven Visualisierung.
 
+## 🔗 Links to visit
++ [YouTube / Computer Networking (Deepdive)](https://youtu.be/6G14NrjekLQ?si=-qRlUVpDmNXeRP35)
+	+ Nicht wirklich ein „Deepdive“ (es sind 15 min) aber gute Erklärungen, besonders zum Schichtenmodell
++ [YouTube / screw it... let's rebuild the ENTIRE Internet](https://youtu.be/HRa31C7zfzk?si=2R2cmH1cTccsnOk8) 
+	+ **⚠️Content Warning⚠️:** französisch 😡
+
++ [Betriebssysteme-Website](https://betriebssysteme.vercel.app)
+	+ Meine vorige Website zum Thema *Betriebssysteme*, falls sich jemand nochmal darüber informieren möchte
+
 ---
-**🔗 Hier geht's zur Website zum Thema** [*Betriebssysteme*](https://betriebssysteme.vercel.app)
 
 <!-- coffee-button -->
 <a href="https://paypal.me/joelkowylin" target="_blank" rel="noopener" style="display:block;max-width:340px;margin:10px auto;padding:12px 18px;border-radius:14px;border:2px solid rgb(198,122,0);background:linear-gradient(180deg,rgb(255,224,138),rgb(255,206,71));color:rgb(90,61,0);text-decoration:none;text-align:center;box-shadow:0 4px 14px rgba(180,130,20,.25)"><span style="display:block;font-size:1.15em;font-weight:800">BUY ME A COFFEE ☕</span><span style="display:block;font-size:0.72em;margin-top:3px;opacity:.85">Diese Websites zu hosten hat mich 10€ gekostet 😭</span></a>

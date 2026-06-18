@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Was sind Netzwerke/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:28:31.312+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Netzwerk","Computernetzwerk","Einsatzfelder"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Was sind Netzwerke/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T21:03:40.520+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Netzwerk","Computernetzwerk","Einsatzfelder"]}}
 ---
 
 
-# Was sind Netzwerke
+# Was sind Netzwerke?
 
 > [!abstract] Auf einen Blick
 > Ein **Netzwerk** ist allgemein ein System aus **Entitäten und ihren Verbindungen**, das dem Austausch von Informationen dient (abstrakt: ein **Graph**). Ein **Computernetzwerk** verbindet **autonome Rechner** (Nodes/Hosts) über **Übertragungsmedien**.

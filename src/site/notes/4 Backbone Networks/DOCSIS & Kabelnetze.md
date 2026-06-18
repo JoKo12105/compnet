@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/4 Backbone Networks/DOCSIS & Kabelnetze/","tags":["computernetworks","backbone"],"updated":"2026-06-18T18:01:54.486+02:00","dg-note-properties":{"tags":["computernetworks","backbone"],"aliases":["DOCSIS","HFC","Kabelfernsehen","Hybrid Fiber Coax"]}}
+{"dg-publish":true,"permalink":"/4 Backbone Networks/DOCSIS & Kabelnetze/","tags":["computernetworks","backbone"],"updated":"2026-06-18T18:28:32.019+02:00","dg-note-properties":{"tags":["computernetworks","backbone"],"aliases":["DOCSIS","HFC","Kabelfernsehen","Hybrid Fiber Coax"]}}
 ---
 
 
@@ -27,16 +27,16 @@ body{margin:0;padding:26px 14px;background:transparent;font-family:&quot;Segoe U
   --c6:rgb(255,217,210); --c6b:rgb(204,90,66); --c6t:rgb(122,46,32);
   --shadow:0 10px 28px rgba(58,40,18,.10);
   max-width:920px;margin:0 auto;padding:24px 18px;border-radius:24px;
-  background:radial-gradient(circle at top left,rgba(255,255,255,.9),transparent 32%),linear-gradient(180deg,rgb(248,244,236) 0%,var(--bg) 100%);
-  box-shadow:var(--shadow)}
-h1.viz-title{text-align:center;font-size:19px;margin:0 0 4px}
-.viz-sub{text-align:center;color:var(--muted);font-size:13.5px;margin:0 0 18px}
+  background:transparent;
+  box-shadow:none}
+h1.viz-title{text-align:center;font-size:19px;margin:0 0 4px;color:rgb(238,242,248)}
+.viz-sub{text-align:center;color:rgb(170,182,200);font-size:13.5px;margin:0 0 18px}
 .steps-nav{display:flex;gap:9px;justify-content:center;margin-bottom:16px;flex-wrap:wrap}
 .step-dot{width:32px;height:32px;border-radius:999px;border:2px solid rgb(201,189,167);background:rgb(255,250,241);color:rgb(106,95,77);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .18s,background .18s,color .18s,border-color .18s;box-shadow:0 2px 8px rgba(90,70,40,.08)}
 .step-dot:hover{transform:translateY(-1px)}
 .step-dot.active{background:var(--accent);border-color:rgb(23,53,140);color:rgb(255,255,255);transform:scale(1.06)}
 .step-dot.done{background:var(--success);border-color:rgb(23,99,56);color:rgb(255,255,255)}
-.step-label{text-align:center;font-size:14px;color:var(--ink);margin-bottom:16px;min-height:20px;font-weight:700}
+.step-label{text-align:center;font-size:14px;color:rgb(227,233,242);margin-bottom:16px;min-height:20px;font-weight:700}
 .diagram-frame{max-width:780px;margin:0 auto;padding:16px;border-radius:22px;background:var(--panel);border:1px solid rgb(232,222,206);box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
 svg{display:block;width:100%;height:auto}
 .th{font-size:15px;font-weight:800}
@@ -81,10 +81,10 @@ svg{display:block;width:100%;height:auto}
 <line x1=&quot;470&quot; y1=&quot;118&quot; x2=&quot;538&quot; y2=&quot;175&quot; class=&quot;arr&quot; stroke=&quot;rgb(204,90,66)&quot; marker-end=&quot;url(#arrow)&quot;/>
 <text class=&quot;tm&quot; x=&quot;505&quot; y=&quot;210&quot; text-anchor=&quot;middle&quot; fill=&quot;rgb(204,90,66)&quot;>Koax (Shared Medium)</text>
 </svg></div>
-<p style=&quot;text-align:center;color:rgb(95,107,122);font-size:13px;max-width:620px;margin:14px auto 0&quot;>
+<p style=&quot;text-align:center;color:rgb(170,182,200);font-size:13px;max-width:620px;margin:14px auto 0&quot;>
 Hybrid Fiber-Coax (HFC): Glasfaser bis zur <b>Optical Node</b> (versorgt einige hundert Haushalte), dann <b>Koax</b> als geteiltes Medium. <b>DOCSIS</b> nutzt Frequenz-Multiplexing; Version 4 theoretisch bis ~22 Gbit/s.</p>
 </div>
-<script></script></body></html>" width="100%" height="440" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+<script></script></body></html>" width="100%" height="520" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:hfc -->
 
 Das **Headend** erhält Signale (TV, Satellit, Internet) und verteilt sie an regionale **Hubs**. Über **Glasfaser** geht es zu **Optical Nodes**, die in elektrische Signale für **Koax** umwandeln. Eine Optical Node versorgt einige hundert Haushalte — das Koax ist damit ein **Shared Medium**.
@@ -92,7 +92,7 @@ Das **Headend** erhält Signale (TV, Satellit, Internet) und verteilt sie an reg
 ## Eigenschaften
 DOCSIS spezifiziert die Ebenen 1 und 2 und erlaubt unterschiedliche Implementierungen: verschiedene Modulationen/Bandbreiten, **Frequenz-Multiplexing** und QoS. Version 4 erreicht theoretisch bis ~22 Gbit/s.
 
-## Verwandte Notes
+## Verwandte Themen
 [[4 Backbone Networks/Backbone Grundlagen\|Backbone Grundlagen]] · [[4 Backbone Networks/SONET, SDH & DWDM\|SONET, SDH & DWDM]] · [[3 Access Networks/DSL\|DSL]] · [[2 Link Layer/MAC – Medienzugang\|MAC – Medienzugang]]
 
 [[4 Backbone Networks/4.0 Backbone Networks (Übersicht)\|← Kapitelübersicht]]

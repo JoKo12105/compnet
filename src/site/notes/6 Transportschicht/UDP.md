@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/6 Transportschicht/UDP/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:01:55.662+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["UDP","User Datagram Protocol"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/UDP/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:28:33.254+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["UDP","User Datagram Protocol"]}}
 ---
 
 
@@ -16,7 +16,7 @@ Bei UDP genügt das **2-Tupel** (Ziel-IP, Ziel-Port) zur Identifikation eines So
 > [!info] Weitere Transportprotokolle
 > Neben TCP und UDP gibt es SCTP, RTP (Echtzeit) und – besonders relevant – [[6 Transportschicht/QUIC\|QUIC]].
 
-## Verwandte Notes
+## Verwandte Themen
 [[6 Transportschicht/TCP\|TCP]] · [[6 Transportschicht/QUIC\|QUIC]] · [[6 Transportschicht/Ports & Sockets\|Ports & Sockets]] · [[5 Vermittlungsschicht/DHCP\|DHCP]]
 
 [[6 Transportschicht/6.0 Transportschicht (Übersicht)\|← Kapitelübersicht]]

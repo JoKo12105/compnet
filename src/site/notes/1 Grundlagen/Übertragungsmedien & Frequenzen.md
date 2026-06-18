@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Übertragungsmedien & Frequenzen/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:01:53.256+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Übertragungsmedien","Kupfer","Glasfaser","Funk","Medien"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Übertragungsmedien & Frequenzen/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:28:31.354+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Übertragungsmedien","Kupfer","Glasfaser","Funk","Medien"]}}
 ---
 
 
@@ -18,7 +18,7 @@
 ## Frequenzbereiche
 Jedes Medium nutzt einen Ausschnitt des **elektromagnetischen Spektrums**. Höhere Frequenzen erlauben prinzipiell mehr Bandbreite, sind aber schwerer zu erzeugen, zu bündeln und reichweitenbegrenzt. Die Aufteilung des Spektrums in Bänder ist die Basis für **Frequenz-Multiplexing** (siehe [[3 Access Networks/DSL\|DSL]], [[4 Backbone Networks/SONET, SDH & DWDM\|DWDM]]).
 
-## Verwandte Notes
+## Verwandte Themen
 [[1 Grundlagen/Physikalische Grundlagen\|Physikalische Grundlagen]] · [[3 Access Networks/DSL\|DSL]] · [[3 Access Networks/Ethernet\|Ethernet]] · [[4 Backbone Networks/SONET, SDH & DWDM\|SONET, SDH & DWDM]]
 
 [[1 Grundlagen/1.0 Grundlagen (Übersicht)\|← Kapitelübersicht]]

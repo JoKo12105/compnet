@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2 Link Layer/MAC – Medienzugang/","tags":["computernetworks","linklayer"],"updated":"2026-06-18T18:01:53.564+02:00","dg-note-properties":{"tags":["computernetworks","linklayer"],"aliases":["MAC","Medienzugang","Multiplexing","Token","Random Access","Carrier Sense"]}}
+{"dg-publish":true,"permalink":"/2 Link Layer/MAC – Medienzugang/","tags":["computernetworks","linklayer"],"updated":"2026-06-18T18:28:31.570+02:00","dg-note-properties":{"tags":["computernetworks","linklayer"],"aliases":["MAC","Medienzugang","Multiplexing","Token","Random Access","Carrier Sense"]}}
 ---
 
 
@@ -26,7 +26,7 @@ Jede Station sendet, **wenn** sie Daten hat — keine zentrale Steuerung nötig.
 > [!warning] Wer erkennt Kollisionen?
 > Der **Empfänger** sieht stets zerstörte Daten. Der **Sender** nicht immer: bei **Kabel** ja (→ [[3 Access Networks/Ethernet\|CSMA/CD]]), bei **Funk** nein (Fading, Hidden Stations) → dort **Collision Avoidance** ([[3 Access Networks/WLAN\|CSMA/CA]]).
 
-## Verwandte Notes
+## Verwandte Themen
 [[2 Link Layer/LLC – Sicherung\|LLC – Sicherung]] · [[3 Access Networks/Ethernet\|Ethernet]] · [[3 Access Networks/WLAN\|WLAN]] · [[3 Access Networks/Mobilfunk\|Mobilfunk]] · [[2 Link Layer/Vermittlungsarten\|Vermittlungsarten]]
 
 [[2 Link Layer/2.0 Link Layer (Übersicht)\|← Kapitelübersicht]]

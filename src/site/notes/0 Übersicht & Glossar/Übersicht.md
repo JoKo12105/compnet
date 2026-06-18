@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T18:01:53.009+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
+{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T18:28:31.119+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
 ---
 
 
 # 🌐 Computer Networks — Kurs & Nachschlagewerk
 
-Dieser Vault ist **Kurs** und **Nachschlagewerk** zugleich. Jedes Konzept hat seine eigene Note, Querverweise sind als `[[Links]]` eingebunden, und zentrale Abläufe werden über **interaktive Visualisierungen** Schritt für Schritt erklärbar gemacht.
+Diese Website ist **Kurs** und **Nachschlagewerk** zugleich. Jedes Konzept hat seinen eigenen Artikel, Querverweise sind direkt verlinkt, und zentrale Abläufe werden über **interaktive Visualisierungen** Schritt für Schritt erklär- und erfahrbar gemacht.
 
 > [!tip] Bedienung
 > Klicke in der Roadmap eine Karte an, um die Unterthemen zu sehen. In den interaktiven Elementen führen **„Weiter / Zurück"** durch die Schritte.
@@ -28,16 +28,16 @@ body{margin:0;padding:26px 14px;background:transparent;font-family:&quot;Segoe U
   --c6:rgb(255,217,210); --c6b:rgb(204,90,66); --c6t:rgb(122,46,32);
   --shadow:0 10px 28px rgba(58,40,18,.10);
   max-width:920px;margin:0 auto;padding:24px 18px;border-radius:24px;
-  background:radial-gradient(circle at top left,rgba(255,255,255,.9),transparent 32%),linear-gradient(180deg,rgb(248,244,236) 0%,var(--bg) 100%);
-  box-shadow:var(--shadow)}
-h1.viz-title{text-align:center;font-size:19px;margin:0 0 4px}
-.viz-sub{text-align:center;color:var(--muted);font-size:13.5px;margin:0 0 18px}
+  background:transparent;
+  box-shadow:none}
+h1.viz-title{text-align:center;font-size:19px;margin:0 0 4px;color:rgb(238,242,248)}
+.viz-sub{text-align:center;color:rgb(170,182,200);font-size:13.5px;margin:0 0 18px}
 .steps-nav{display:flex;gap:9px;justify-content:center;margin-bottom:16px;flex-wrap:wrap}
 .step-dot{width:32px;height:32px;border-radius:999px;border:2px solid rgb(201,189,167);background:rgb(255,250,241);color:rgb(106,95,77);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .18s,background .18s,color .18s,border-color .18s;box-shadow:0 2px 8px rgba(90,70,40,.08)}
 .step-dot:hover{transform:translateY(-1px)}
 .step-dot.active{background:var(--accent);border-color:rgb(23,53,140);color:rgb(255,255,255);transform:scale(1.06)}
 .step-dot.done{background:var(--success);border-color:rgb(23,99,56);color:rgb(255,255,255)}
-.step-label{text-align:center;font-size:14px;color:var(--ink);margin-bottom:16px;min-height:20px;font-weight:700}
+.step-label{text-align:center;font-size:14px;color:rgb(227,233,242);margin-bottom:16px;min-height:20px;font-weight:700}
 .diagram-frame{max-width:780px;margin:0 auto;padding:16px;border-radius:22px;background:var(--panel);border:1px solid rgb(232,222,206);box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
 svg{display:block;width:100%;height:auto}
 .th{font-size:15px;font-weight:800}
@@ -77,7 +77,7 @@ svg{display:block;width:100%;height:auto}
 .k4{background:var(--c4);border-color:var(--c4b)} .k4 .rm-num{background:var(--c4b)}
 .k5{background:var(--c5);border-color:var(--c5b)} .k5 .rm-num{background:var(--c5b)}
 .k6{background:var(--c6);border-color:var(--c6b)} .k6 .rm-num{background:var(--c6b)}
-.rm-hint{text-align:center;color:rgb(95,107,122);font-size:12.5px;margin-top:18px}
+.rm-hint{text-align:center;color:rgb(170,182,200);font-size:12.5px;margin-top:18px}
 </style></head>
 <body><div class=&quot;widget&quot;>
 <h1 class=&quot;viz-title&quot;>🌐 Computer Networks — Roadmap</h1>
@@ -98,7 +98,7 @@ const grid=document.getElementById(&quot;grid&quot;);
 topics.forEach(o=>{const div=document.createElement(&quot;div&quot;);div.className=&quot;rm-card &quot;+o.c;
  div.innerHTML=`<h2><span class=&quot;rm-num&quot;>${o.n}</span>${o.t}</h2><p>${o.d}</p><div class=&quot;rm-tags&quot;>${o.tags.map(t=>`<span class=&quot;rm-tag&quot;>${t}</span>`).join(&quot;&quot;)}</div>`;
  div.onclick=()=>div.classList.toggle(&quot;open&quot;);grid.appendChild(div);});
-</script></body></html>" width="100%" height="560" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+</script></body></html>" width="100%" height="820" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:roadmap -->
 
 ## 🧭 Die drei Teile der Vorlesung
@@ -122,10 +122,10 @@ Zugang: [[3 Access Networks/Ethernet\|Ethernet]] · [[3 Access Networks/WLAN\|WL
 Internet (L3): [[5 Vermittlungsschicht/IP-Adressen & CIDR\|IP-Adressen & CIDR]] · [[5 Vermittlungsschicht/Routing & Forwarding\|Routing & Forwarding]] · [[5 Vermittlungsschicht/Longest Prefix Match\|Longest Prefix Match]] · [[5 Vermittlungsschicht/ARP\|ARP]] · [[5 Vermittlungsschicht/DHCP\|DHCP]] · [[5 Vermittlungsschicht/IPv6\|IPv6]]
 Transport (L4): [[6 Transportschicht/TCP\|TCP]] · [[6 Transportschicht/TCP-Verbindung\|TCP-Verbindung]] · [[6 Transportschicht/Flusskontrolle bei TCP\|Flusskontrolle bei TCP]] · [[6 Transportschicht/UDP\|UDP]]
 
-## 📖 Wie lese ich diesen Vault?
+## 📖 Wie lese ich diese Website?
 
 Für die **Klausurvorbereitung** empfiehlt sich der Weg von oben nach unten (Kapitel 1 → 6) entlang des **Schichtenmodells** — von unten (Bits & Medien) nach oben (Anwendungen). Als **Nachschlagewerk** kannst du über den Schnellzugriff oder das [[0 Übersicht & Glossar/Glossar\|Glossar]] direkt zu einem Begriff springen.
-Jede Note beginnt mit einer Kurzdefinition („Auf einen Blick"), gefolgt von Details und — wo sinnvoll — einer interaktiven Visualisierung.
+Jeder Artikel beginnt mit einer Kurzdefinition („Auf einen Blick"), gefolgt von Details und — wo sinnvoll — einer interaktiven Visualisierung.
 
 ---
 <!-- coffee-button -->

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/6 Transportschicht/TCP-Verbindung/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:01:55.603+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["TCP-Verbindung","3-Wege-Handshake","Handshake","TCP-Zustände","TIME_WAIT"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/TCP-Verbindung/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:28:33.143+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["TCP-Verbindung","3-Wege-Handshake","Handshake","TCP-Zustände","TIME_WAIT"]}}
 ---
 
 
@@ -27,16 +27,16 @@ body{margin:0;padding:26px 14px;background:transparent;font-family:&quot;Segoe U
   --c6:rgb(255,217,210); --c6b:rgb(204,90,66); --c6t:rgb(122,46,32);
   --shadow:0 10px 28px rgba(58,40,18,.10);
   max-width:920px;margin:0 auto;padding:24px 18px;border-radius:24px;
-  background:radial-gradient(circle at top left,rgba(255,255,255,.9),transparent 32%),linear-gradient(180deg,rgb(248,244,236) 0%,var(--bg) 100%);
-  box-shadow:var(--shadow)}
-h1.viz-title{text-align:center;font-size:19px;margin:0 0 4px}
-.viz-sub{text-align:center;color:var(--muted);font-size:13.5px;margin:0 0 18px}
+  background:transparent;
+  box-shadow:none}
+h1.viz-title{text-align:center;font-size:19px;margin:0 0 4px;color:rgb(238,242,248)}
+.viz-sub{text-align:center;color:rgb(170,182,200);font-size:13.5px;margin:0 0 18px}
 .steps-nav{display:flex;gap:9px;justify-content:center;margin-bottom:16px;flex-wrap:wrap}
 .step-dot{width:32px;height:32px;border-radius:999px;border:2px solid rgb(201,189,167);background:rgb(255,250,241);color:rgb(106,95,77);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .18s,background .18s,color .18s,border-color .18s;box-shadow:0 2px 8px rgba(90,70,40,.08)}
 .step-dot:hover{transform:translateY(-1px)}
 .step-dot.active{background:var(--accent);border-color:rgb(23,53,140);color:rgb(255,255,255);transform:scale(1.06)}
 .step-dot.done{background:var(--success);border-color:rgb(23,99,56);color:rgb(255,255,255)}
-.step-label{text-align:center;font-size:14px;color:var(--ink);margin-bottom:16px;min-height:20px;font-weight:700}
+.step-label{text-align:center;font-size:14px;color:rgb(227,233,242);margin-bottom:16px;min-height:20px;font-weight:700}
 .diagram-frame{max-width:780px;margin:0 auto;padding:16px;border-radius:22px;background:var(--panel);border:1px solid rgb(232,222,206);box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
 svg{display:block;width:100%;height:auto}
 .th{font-size:15px;font-weight:800}
@@ -108,7 +108,7 @@ function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));re
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="720" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+</script></body></html>" width="100%" height="989" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:tcp-handshake -->
 
 ## Die wichtigsten Socket-Zustände
@@ -119,7 +119,7 @@ render(0);
 - **CLOSE_WAIT** — die Gegenseite hat zuerst geschlossen.
 - **TIME_WAIT** — nur die **aktiv schließende** Seite; bleibt **2×MSL** (Maximum Segment Lifetime) hier, um ein verloren gegangenes letztes ACK abzufangen und alte „Inkarnationen“ zu trennen.
 
-## Verwandte Notes
+## Verwandte Themen
 [[6 Transportschicht/TCP\|TCP]] · [[6 Transportschicht/Flusskontrolle bei TCP\|Flusskontrolle bei TCP]] · [[6 Transportschicht/Socket-API\|Socket-API]] · [[6 Transportschicht/Ports & Sockets\|Ports & Sockets]]
 
 [[6 Transportschicht/6.0 Transportschicht (Übersicht)\|← Kapitelübersicht]]

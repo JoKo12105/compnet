@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/6 Transportschicht/TCP/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:01:55.580+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["TCP","Transmission Control Protocol","Segment"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/TCP/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:28:32.974+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["TCP","Transmission Control Protocol","Segment"]}}
 ---
 
 
@@ -21,7 +21,7 @@
 - **Window Size** — Empfangsfenster für die [[6 Transportschicht/Flusskontrolle bei TCP\|Flusskontrolle]].
 - **Checksum** und **Daten** (max. Länge = MSS).
 
-## Verwandte Notes
+## Verwandte Themen
 [[6 Transportschicht/TCP-Verbindung\|TCP-Verbindung]] · [[6 Transportschicht/Flusskontrolle bei TCP\|Flusskontrolle bei TCP]] · [[6 Transportschicht/UDP\|UDP]] · [[6 Transportschicht/Ports & Sockets\|Ports & Sockets]] · [[6 Transportschicht/QUIC\|QUIC]]
 
 [[6 Transportschicht/6.0 Transportschicht (Übersicht)\|← Kapitelübersicht]]

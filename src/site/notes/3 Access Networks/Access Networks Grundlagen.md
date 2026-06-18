@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/3 Access Networks/Access Networks Grundlagen/","tags":["computernetworks","access"],"updated":"2026-06-18T18:01:53.840+02:00","dg-note-properties":{"tags":["computernetworks","access"],"aliases":["Access Network","Distribution Network","Feeder Network"]}}
+{"dg-publish":true,"permalink":"/3 Access Networks/Access Networks Grundlagen/","tags":["computernetworks","access"],"updated":"2026-06-18T18:28:31.755+02:00","dg-note-properties":{"tags":["computernetworks","access"],"aliases":["Access Network","Distribution Network","Feeder Network"]}}
 ---
 
 
@@ -19,7 +19,7 @@
 
 Höhere Schichten sehen dadurch einen **zuverlässigen Datenstrom aus einzelnen Frames** zwischen verbundenen Stationen.
 
-## Verwandte Notes
+## Verwandte Themen
 [[2 Link Layer/MAC – Medienzugang\|MAC – Medienzugang]] · [[3 Access Networks/DSL\|DSL]] · [[3 Access Networks/Ethernet\|Ethernet]] · [[1 Grundlagen/Aufbau des Internets\|Aufbau des Internets]]
 
 [[3 Access Networks/3.0 Access Networks (Übersicht)\|← Kapitelübersicht]]

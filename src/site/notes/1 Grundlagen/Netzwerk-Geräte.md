@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Netzwerk-Geräte/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:01:53.322+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Geräte","Hub","Switch","Router","Gateway","Middlebox"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Netzwerk-Geräte/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:28:31.400+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Geräte","Hub","Switch","Router","Gateway","Middlebox"]}}
 ---
 
 
@@ -18,7 +18,7 @@
 
 Ein **Switch** vermeidet Kollisionen, indem er Frames nur an den Zielport schickt (dediziertes Medium statt Shared Medium). Ein **Router** arbeitet mit Paketen und entscheidet per [[5 Vermittlungsschicht/Longest Prefix Match\|Longest Prefix Match]], wohin ein Paket geht.
 
-## Verwandte Notes
+## Verwandte Themen
 [[1 Grundlagen/Schichtenmodell\|Schichtenmodell]] · [[3 Access Networks/Ethernet\|Ethernet]] · [[5 Vermittlungsschicht/Routing & Forwarding\|Routing & Forwarding]] · [[1 Grundlagen/Aufbau des Internets\|Aufbau des Internets]]
 
 [[1 Grundlagen/1.0 Grundlagen (Übersicht)\|← Kapitelübersicht]]

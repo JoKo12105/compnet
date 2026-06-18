@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Glossar/","tags":["computernetworks","glossar"],"updated":"2026-06-18T18:01:53.026+02:00","dg-note-properties":{"tags":["computernetworks","glossar"]}}
+{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Glossar/","tags":["computernetworks","glossar"],"updated":"2026-06-18T18:28:31.131+02:00","dg-note-properties":{"tags":["computernetworks","glossar"]}}
 ---
 
 
 # 📖 Glossar
 
-Alphabetisches Nachschlagewerk der zentralen Begriffe. Jeder Eintrag verweist auf die ausführliche Note.
+Alphabetisches Nachschlagewerk der zentralen Begriffe. Jeder Eintrag verweist auf den ausführlichen Artikel.
 
 ## A
 - **AS (Autonomes System)** — administrative Einheit mit eigener Verwaltung und Routing-Politik, durch eine ASN identifiziert. → [[1 Grundlagen/Aufbau des Internets\|Aufbau des Internets]]

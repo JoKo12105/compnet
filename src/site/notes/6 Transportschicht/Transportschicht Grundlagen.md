@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/6 Transportschicht/Transportschicht Grundlagen/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:01:55.546+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["Transportschicht","QoS","Ende-zu-Ende"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/Transportschicht Grundlagen/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:28:32.870+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["Transportschicht","QoS","Ende-zu-Ende"]}}
 ---
 
 
@@ -17,7 +17,7 @@
 ## Aufgaben (wie die Sicherungsschicht — nur Ende-zu-Ende)
 Fehlererkennung (Checksummen, Bestätigungen), Verbindungskontrolle, Daten-Pufferung, Schutz der Daten, **Flusskontrolle**. Weil die Protokolle hier den Fehlern der Netzschicht begegnen, ähneln sie denen der [[2 Link Layer/LLC – Sicherung\|Sicherungsschicht]] — nur eben **Ende-zu-Ende** statt Hop-zu-Hop.
 
-## Verwandte Notes
+## Verwandte Themen
 [[6 Transportschicht/Ports & Sockets\|Ports & Sockets]] · [[6 Transportschicht/TCP\|TCP]] · [[6 Transportschicht/UDP\|UDP]] · [[2 Link Layer/LLC – Sicherung\|LLC – Sicherung]] · [[1 Grundlagen/Schichtenmodell\|Schichtenmodell]]
 
 [[6 Transportschicht/6.0 Transportschicht (Übersicht)\|← Kapitelübersicht]]

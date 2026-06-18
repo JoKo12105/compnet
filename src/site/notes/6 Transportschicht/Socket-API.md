@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/6 Transportschicht/Socket-API/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:01:55.714+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["Socket-API","Sockets","Netzwerkprogrammierung"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/Socket-API/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:28:33.404+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["Socket-API","Sockets","Netzwerkprogrammierung"]}}
 ---
 
 
@@ -24,7 +24,7 @@ Typischer **Server**: `socket → bind → listen → accept → recv/send → c
 > [!note] Vertiefung
 > Die konkrete C-Programmierung (Adress-Strukturen wie `sockaddr_in`, `getaddrinfo`, `inet_pton/ntop`, protokoll-unabhängige Entwicklung) ist Stoff von **Teil IV** der Vorlesung und hier bewusst nur als Brücke skizziert.
 
-## Verwandte Notes
+## Verwandte Themen
 [[6 Transportschicht/Ports & Sockets\|Ports & Sockets]] · [[6 Transportschicht/TCP-Verbindung\|TCP-Verbindung]] · [[6 Transportschicht/TCP\|TCP]] · [[6 Transportschicht/UDP\|UDP]]
 
 [[6 Transportschicht/6.0 Transportschicht (Übersicht)\|← Kapitelübersicht]]

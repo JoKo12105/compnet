@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/ICMP/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T18:01:55.209+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["ICMP","Internet Control Message Protocol","ping","traceroute"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/ICMP/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T18:28:32.296+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["ICMP","Internet Control Message Protocol","ping","traceroute"]}}
 ---
 
 
@@ -16,7 +16,7 @@
 > [!note] Grenzen
 > ICMP **reagiert nicht** auf ICMP-Fehler (sonst drohten Schleifen). [[5 Vermittlungsschicht/IPv4-Paket\|IP]] selbst dient nur der Paketübertragung; ICMP ergänzt die Diagnose.
 
-## Verwandte Notes
+## Verwandte Themen
 [[5 Vermittlungsschicht/IPv4-Paket\|IPv4-Paket]] · [[5 Vermittlungsschicht/Routing & Forwarding\|Routing & Forwarding]] · [[5 Vermittlungsschicht/IPv6\|IPv6]]
 
 [[5 Vermittlungsschicht/5.0 Vermittlungsschicht (Übersicht)\|← Kapitelübersicht]]

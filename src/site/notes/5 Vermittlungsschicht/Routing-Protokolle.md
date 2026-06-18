@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/Routing-Protokolle/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T18:01:55.013+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["Routing-Protokolle","IGP","EGP","OSPF","BGP","Distance Vector","Link State"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/Routing-Protokolle/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T18:28:32.184+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["Routing-Protokolle","IGP","EGP","OSPF","BGP","Distance Vector","Link State"]}}
 ---
 
 
@@ -22,7 +22,7 @@
 > [!note] BGP – das Protokoll zwischen den AS
 > **BGP** entscheidet nicht nur nach „kürzestem Weg“, sondern nach **Richtlinien** (Geschäftsbeziehungen, Tier-Struktur). Es hält das globale Internet zusammen.
 
-## Verwandte Notes
+## Verwandte Themen
 [[5 Vermittlungsschicht/Routing & Forwarding\|Routing & Forwarding]] · [[5 Vermittlungsschicht/Longest Prefix Match\|Longest Prefix Match]] · [[1 Grundlagen/Aufbau des Internets\|Aufbau des Internets]] · [[5 Vermittlungsschicht/IPv6\|IPv6]]
 
 [[5 Vermittlungsschicht/5.0 Vermittlungsschicht (Übersicht)\|← Kapitelübersicht]]

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Physikalische Grundlagen/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:01:53.242+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Nachrichtentechnischer Kanal","Bandbreite","Datenrate","Latenz"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Physikalische Grundlagen/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:28:31.336+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Nachrichtentechnischer Kanal","Bandbreite","Datenrate","Latenz"]}}
 ---
 
 
@@ -24,7 +24,7 @@ Faustregeln: Die **Datenrate** steigt mit höherer Bandbreite, besserer Codierun
 ## Störungen
 Signale unterliegen **Dämpfung**, **Verzerrung (Dispersion)** und **Rauschen**. Diese begrenzen Reichweite und Datenrate eines [[1 Grundlagen/Übertragungsmedien & Frequenzen\|Mediums]].
 
-## Verwandte Notes
+## Verwandte Themen
 [[1 Grundlagen/Übertragungsmedien & Frequenzen\|Übertragungsmedien & Frequenzen]] · [[1 Grundlagen/Schichtenmodell\|Schichtenmodell]] · [[3 Access Networks/DSL\|DSL]]
 
 [[1 Grundlagen/1.0 Grundlagen (Übersicht)\|← Kapitelübersicht]]

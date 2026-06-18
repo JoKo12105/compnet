@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/3 Access Networks/IoT & Bluetooth/","tags":["computernetworks","access"],"updated":"2026-06-18T18:01:54.016+02:00","dg-note-properties":{"tags":["computernetworks","access"],"aliases":["IoT","Internet of Things","Bluetooth","BLE","Zigbee","LoRaWAN"]}}
+{"dg-publish":true,"permalink":"/3 Access Networks/IoT & Bluetooth/","tags":["computernetworks","access"],"updated":"2026-06-18T18:28:31.839+02:00","dg-note-properties":{"tags":["computernetworks","access"],"aliases":["IoT","Internet of Things","Bluetooth","BLE","Zigbee","LoRaWAN"]}}
 ---
 
 
@@ -23,7 +23,7 @@ Funk-Protokoll für kurze Reichweiten (< 40 m) im lizenzfreien 2,4-GHz-Band:
 - verbindungslos (**BLE**) oder verbindungsorientiert,
 - Störungsbehandlung durch schnellen **Frequenzwechsel**.
 
-## Verwandte Notes
+## Verwandte Themen
 [[3 Access Networks/Mobilfunk\|Mobilfunk]] · [[3 Access Networks/WLAN\|WLAN]] · [[2 Link Layer/MAC – Medienzugang\|MAC – Medienzugang]]
 
 [[3 Access Networks/3.0 Access Networks (Übersicht)\|← Kapitelübersicht]]

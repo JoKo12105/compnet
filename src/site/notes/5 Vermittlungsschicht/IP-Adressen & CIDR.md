@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IP-Adressen & CIDR/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T18:01:55.077+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["IP-Adresse","CIDR","Netzmaske","Subnetz","Subnetting","private IP-Adressen"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IP-Adressen & CIDR/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T18:28:32.198+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["IP-Adresse","CIDR","Netzmaske","Subnetz","Subnetting","private IP-Adressen"]}}
 ---
 
 
@@ -36,16 +36,16 @@ body{margin:0;padding:26px 14px;background:transparent;font-family:&quot;Segoe U
   --c6:rgb(255,217,210); --c6b:rgb(204,90,66); --c6t:rgb(122,46,32);
   --shadow:0 10px 28px rgba(58,40,18,.10);
   max-width:920px;margin:0 auto;padding:24px 18px;border-radius:24px;
-  background:radial-gradient(circle at top left,rgba(255,255,255,.9),transparent 32%),linear-gradient(180deg,rgb(248,244,236) 0%,var(--bg) 100%);
-  box-shadow:var(--shadow)}
-h1.viz-title{text-align:center;font-size:19px;margin:0 0 4px}
-.viz-sub{text-align:center;color:var(--muted);font-size:13.5px;margin:0 0 18px}
+  background:transparent;
+  box-shadow:none}
+h1.viz-title{text-align:center;font-size:19px;margin:0 0 4px;color:rgb(238,242,248)}
+.viz-sub{text-align:center;color:rgb(170,182,200);font-size:13.5px;margin:0 0 18px}
 .steps-nav{display:flex;gap:9px;justify-content:center;margin-bottom:16px;flex-wrap:wrap}
 .step-dot{width:32px;height:32px;border-radius:999px;border:2px solid rgb(201,189,167);background:rgb(255,250,241);color:rgb(106,95,77);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .18s,background .18s,color .18s,border-color .18s;box-shadow:0 2px 8px rgba(90,70,40,.08)}
 .step-dot:hover{transform:translateY(-1px)}
 .step-dot.active{background:var(--accent);border-color:rgb(23,53,140);color:rgb(255,255,255);transform:scale(1.06)}
 .step-dot.done{background:var(--success);border-color:rgb(23,99,56);color:rgb(255,255,255)}
-.step-label{text-align:center;font-size:14px;color:var(--ink);margin-bottom:16px;min-height:20px;font-weight:700}
+.step-label{text-align:center;font-size:14px;color:rgb(227,233,242);margin-bottom:16px;min-height:20px;font-weight:700}
 .diagram-frame{max-width:780px;margin:0 auto;padding:16px;border-radius:22px;background:var(--panel);border:1px solid rgb(232,222,206);box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
 svg{display:block;width:100%;height:auto}
 .th{font-size:15px;font-weight:800}
@@ -72,7 +72,7 @@ svg{display:block;width:100%;height:auto}
 .blinking{animation:pulse 1.15s ease-in-out infinite;transform-origin:center}
 .sub-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;margin-bottom:14px}
 .sub-ip{font-size:17px;font-weight:700;padding:8px 12px;border-radius:10px;border:1.5px solid rgb(207,197,180);background:rgb(255,253,248);width:200px;text-align:center;font-family:monospace}
-.sub-pl{font-weight:800;color:rgb(37,73,184);font-size:17px;min-width:46px;text-align:center}
+.sub-pl{font-weight:800;color:rgb(157,180,255);font-size:17px;min-width:46px;text-align:center}
 .sub-slider{width:260px}
 .sub-out{max-width:560px;margin:0 auto;background:rgb(255,253,248);border:1px solid rgb(232,222,206);border-radius:16px;padding:8px 6px}
 .sub-out table{width:100%;border-collapse:collapse;font-size:14px}
@@ -88,7 +88,7 @@ svg{display:block;width:100%;height:auto}
 <p class=&quot;viz-sub&quot;>IP eingeben, Präfix schieben — Netz, Broadcast &amp; Host-Bereich live</p>
 <div class=&quot;sub-row&quot;>
   <input id=&quot;ip&quot; class=&quot;sub-ip&quot; value=&quot;192.168.10.130&quot; />
-  <span style=&quot;font-size:17px;font-weight:800&quot;>/</span>
+  <span style=&quot;font-size:17px;font-weight:800;color:rgb(227,233,242)&quot;>/</span>
   <input id=&quot;pl&quot; type=&quot;range&quot; min=&quot;0&quot; max=&quot;32&quot; value=&quot;26&quot; class=&quot;sub-slider&quot; oninput=&quot;calc()&quot;/>
   <span id=&quot;pllbl&quot; class=&quot;sub-pl&quot;>/26</span>
 </div>
@@ -124,13 +124,13 @@ function calc(){
 }
 document.getElementById('ip').addEventListener('input',calc);
 calc();
-</script></body></html>" width="100%" height="520" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+</script></body></html>" width="100%" height="600" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:subnetz -->
 
 > [!info] Spezielle Adressen
 > Host-Teil **alle 0** = Netz-ID, **alle 1** = Broadcast (z. B. `255.255.255.255`). Privat (nicht im Internet routbar): `10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`. `127.0.0.0/8` = Loopback.
 
-## Verwandte Notes
+## Verwandte Themen
 [[5 Vermittlungsschicht/Longest Prefix Match\|Longest Prefix Match]] · [[5 Vermittlungsschicht/IPv4-Paket\|IPv4-Paket]] · [[5 Vermittlungsschicht/Routing & Forwarding\|Routing & Forwarding]] · [[5 Vermittlungsschicht/IPv6\|IPv6]] · [[5 Vermittlungsschicht/DHCP\|DHCP]]
 
 [[5 Vermittlungsschicht/5.0 Vermittlungsschicht (Übersicht)\|← Kapitelübersicht]]

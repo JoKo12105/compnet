@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Aufbau des Internets/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:01:53.337+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Internet","Autonome Systeme","AS","Tiers","Peering","Access","Backbone"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Aufbau des Internets/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:28:31.415+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Internet","Autonome Systeme","AS","Tiers","Peering","Access","Backbone"]}}
 ---
 
 
@@ -25,7 +25,7 @@ Bei den kleineren Einheiten (Netzen) unterscheidet man zwei Formen, die sich vor
 | Technologien | viele, heterogen | wenige, einheitlich |
 | Last | sehr unterschiedlich | gleichmäßiger |
 
-## Verwandte Notes
+## Verwandte Themen
 [[1 Grundlagen/Netzwerk-Geräte\|Netzwerk-Geräte]] · [[5 Vermittlungsschicht/Routing-Protokolle\|Routing-Protokolle]] · [[3 Access Networks/3.0 Access Networks (Übersicht)\|3.0 Access Networks (Übersicht)]] · [[4 Backbone Networks/4.0 Backbone Networks (Übersicht)\|4.0 Backbone Networks (Übersicht)]]
 
 [[1 Grundlagen/1.0 Grundlagen (Übersicht)\|← Kapitelübersicht]]

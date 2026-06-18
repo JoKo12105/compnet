@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/4 Backbone Networks/Backbone Grundlagen/","tags":["computernetworks","backbone"],"updated":"2026-06-18T18:01:54.421+02:00","dg-note-properties":{"tags":["computernetworks","backbone"],"aliases":["Backbone","Überseekabel","Glasfaser-Backbone"]}}
+{"dg-publish":true,"permalink":"/4 Backbone Networks/Backbone Grundlagen/","tags":["computernetworks","backbone"],"updated":"2026-06-18T18:28:31.986+02:00","dg-note-properties":{"tags":["computernetworks","backbone"],"aliases":["Backbone","Überseekabel","Glasfaser-Backbone"]}}
 ---
 
 
@@ -17,7 +17,7 @@ Im Backbone dominiert **Glasfaser**: hohe Datenrate pro Träger, Kombination vie
 - Alle ~80 km **optische Verstärker**.
 - Gehören oft den **Tier-1**-Providern (siehe [[1 Grundlagen/Aufbau des Internets\|Aufbau des Internets]]).
 
-## Verwandte Notes
+## Verwandte Themen
 [[4 Backbone Networks/SONET, SDH & DWDM\|SONET, SDH & DWDM]] · [[1 Grundlagen/Übertragungsmedien & Frequenzen\|Übertragungsmedien & Frequenzen]] · [[1 Grundlagen/Aufbau des Internets\|Aufbau des Internets]] · [[4 Backbone Networks/DOCSIS & Kabelnetze\|DOCSIS & Kabelnetze]]
 
 [[4 Backbone Networks/4.0 Backbone Networks (Übersicht)\|← Kapitelübersicht]]

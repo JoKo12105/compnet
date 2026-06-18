@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Was sind Netzwerke/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:01:53.228+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Netzwerk","Computernetzwerk","Einsatzfelder"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Was sind Netzwerke/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:28:31.312+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Netzwerk","Computernetzwerk","Einsatzfelder"]}}
 ---
 
 
@@ -23,7 +23,7 @@ Darauf bauen **verteilte Systeme** und die Architektur moderner Plattformen (Goo
 > [!tip] Warum überhaupt Netzwerke?
 > Hardware, Software und Daten der „Akteure“ müssen verknüpft werden. Neben Betriebssystemen sind Netzwerke die **Plattform für Anwendungen** und damit ein wesentlicher Teil der IT-Infrastruktur.
 
-## Verwandte Notes
+## Verwandte Themen
 [[1 Grundlagen/Aufbau des Internets\|Aufbau des Internets]] · [[1 Grundlagen/Schichtenmodell\|Schichtenmodell]] · [[1 Grundlagen/Physikalische Grundlagen\|Physikalische Grundlagen]]
 
 [[1 Grundlagen/1.0 Grundlagen (Übersicht)\|← Kapitelübersicht]]

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/6 Transportschicht/QUIC/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:01:55.693+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["QUIC","Quick UDP Internet Connections"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/QUIC/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:28:33.323+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["QUIC","Quick UDP Internet Connections"]}}
 ---
 
 
@@ -18,7 +18,7 @@ TCP genügt vielen Performance-Anforderungen nicht mehr (Verbindungsaufbau, Late
 
 Weil QUIC auf Layer 5 sitzt, kann es **unabhängig vom Betriebssystem** weiterentwickelt werden.
 
-## Verwandte Notes
+## Verwandte Themen
 [[6 Transportschicht/UDP\|UDP]] · [[6 Transportschicht/TCP\|TCP]] · [[6 Transportschicht/Flusskontrolle bei TCP\|Flusskontrolle bei TCP]] · [[1 Grundlagen/Schichtenmodell\|Schichtenmodell]]
 
 [[6 Transportschicht/6.0 Transportschicht (Übersicht)\|← Kapitelübersicht]]

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Protokolle/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:01:53.311+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Protokoll","verbindungsorientiert","verbindungslos","Multiplexing","Flusskontrolle"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Protokolle/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:28:31.387+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Protokoll","verbindungsorientiert","verbindungslos","Multiplexing","Flusskontrolle"]}}
 ---
 
 
@@ -28,7 +28,7 @@ Beschrieben werden Protokolle über **zeitlichen Ablauf** (Sequenzdiagramme) und
 | oft gebündelt mit | Zuverlässigkeit, Überlastkontrolle | minimaler Overhead |
 | Beispiel | [[6 Transportschicht/TCP\|TCP]] | [[6 Transportschicht/UDP\|UDP]], [[5 Vermittlungsschicht/IPv4-Paket\|IP]] |
 
-## Verwandte Notes
+## Verwandte Themen
 [[1 Grundlagen/Schichtenmodell\|Schichtenmodell]] · [[6 Transportschicht/TCP\|TCP]] · [[6 Transportschicht/UDP\|UDP]] · [[2 Link Layer/LLC – Sicherung\|LLC – Sicherung]] · [[2 Link Layer/Vermittlungsarten\|Vermittlungsarten]]
 
 [[1 Grundlagen/1.0 Grundlagen (Übersicht)\|← Kapitelübersicht]]

@@ -82,6 +82,7 @@ Alphabetisches Nachschlagewerk der zentralen Begriffe. Jeder Eintrag verweist au
 - **WLAN** — drahtloses LAN nach IEEE 802.11. → [[3 Access Networks/WLAN\|WLAN]]
 
 [[0 Übersicht & Glossar/Übersicht\|← Zur Übersicht]]
+
 ---
 <!-- coffee-button -->
 <a href="https://paypal.me/joelkowylin" target="_blank" rel="noopener" style="display:block;max-width:340px;margin:10px auto;padding:12px 18px;border-radius:14px;border:2px solid #c67a00;background:linear-gradient(180deg,#ffe08a,#ffce47);color:#5a3d00;text-decoration:none;text-align:center;box-shadow:0 4px 14px rgba(180,130,20,.25)"><span style="display:block;font-size:1.15em;font-weight:800">BUY ME A COFFEE ☕</span><span style="display:block;font-size:0.72em;margin-top:3px;opacity:.85">Diese Websites zu hosten hat mich 10€ gekostet 😭</span></a>

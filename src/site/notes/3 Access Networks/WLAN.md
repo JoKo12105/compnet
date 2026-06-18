@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/3 Access Networks/WLAN/","tags":["computernetworks","access"],"updated":"2026-06-18T18:28:31.817+02:00","dg-note-properties":{"tags":["computernetworks","access"],"aliases":["WLAN","WiFi",802.11,"CSMA/CA","RTS/CTS","SSID","BSS"]}}
+{"dg-publish":true,"permalink":"/3 Access Networks/WLAN/","tags":["computernetworks","access"],"updated":"2026-06-18T22:32:42.838+02:00","dg-note-properties":{"permalink":"/3 Access Networks/WLAN/","tags":["computernetworks","access"],"updated":"2026-06-18T22:20:28.618+02:00"}}
 ---
+
 
 
 # WLAN
@@ -95,6 +96,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Kanal belegt → die Station wartet&quot;, &quot;show&quot;: [&quot;busy&quot;], &quot;blink&quot;: [&quot;busy&quot;], &quot;hide&quot;: [&quot;backoff&quot;, &quot;rts&quot;, &quot;cts&quot;, &quot;nav&quot;, &quot;data&quot;, &quot;ack&quot;], &quot;html&quot;: &quot;<b>Schritt 1:</b> Im WLAN kann der Sender Kollisionen <b>nicht</b> erkennen (Funk). Also gilt: ist der Kanal belegt, wird <b>nicht</b> gesendet.&quot;}, {&quot;label&quot;: &quot;Kanal frei → Backoff-Timer&quot;, &quot;show&quot;: [&quot;busy&quot;, &quot;backoff&quot;], &quot;blink&quot;: [&quot;backoff&quot;], &quot;hide&quot;: [&quot;rts&quot;, &quot;cts&quot;, &quot;nav&quot;, &quot;data&quot;, &quot;ack&quot;], &quot;html&quot;: &quot;<b>Schritt 2:</b> Wird der Kanal frei, startet ein <b>Timer</b>, der nur bei freiem Kanal weiterläuft. Erst nach dessen Ablauf wird gesendet → <b>Kollisionen werden vermieden</b> (Collision Avoidance).&quot;}, {&quot;label&quot;: &quot;RTS – Sendewunsch anmelden&quot;, &quot;show&quot;: [&quot;busy&quot;, &quot;backoff&quot;, &quot;rts&quot;], &quot;blink&quot;: [&quot;rts&quot;], &quot;hide&quot;: [&quot;cts&quot;, &quot;nav&quot;, &quot;data&quot;, &quot;ack&quot;], &quot;html&quot;: &quot;<b>Schritt 3 (optional):</b> Bei <b>Hidden Stations</b> hilft Carrier Sensing nicht. Die Station sendet ein <b>RTS</b> mit gewünschter Dauer und Adressen voraus.&quot;}, {&quot;label&quot;: &quot;CTS – AP gibt frei&quot;, &quot;show&quot;: [&quot;busy&quot;, &quot;backoff&quot;, &quot;rts&quot;, &quot;cts&quot;], &quot;blink&quot;: [&quot;cts&quot;], &quot;hide&quot;: [&quot;nav&quot;, &quot;data&quot;, &quot;ack&quot;], &quot;html&quot;: &quot;<b>Schritt 4:</b> Der AP antwortet mit <b>CTS</b>. Dieses hören <b>alle benachbarten Stationen</b> des Empfängers.&quot;}, {&quot;label&quot;: &quot;Nachbarn reservieren (NAV)&quot;, &quot;show&quot;: [&quot;busy&quot;, &quot;backoff&quot;, &quot;rts&quot;, &quot;cts&quot;, &quot;nav&quot;], &quot;blink&quot;: [&quot;nav&quot;], &quot;hide&quot;: [&quot;data&quot;, &quot;ack&quot;], &quot;html&quot;: &quot;<b>Schritt 5:</b> Die Nachbarn merken sich die Dauer und <b>schweigen</b> so lange (Network Allocation Vector). Damit ist der Kanal <b>reserviert</b> — keine Kollision mehr möglich.&quot;}, {&quot;label&quot;: &quot;DATA-Frame senden&quot;, &quot;show&quot;: [&quot;busy&quot;, &quot;backoff&quot;, &quot;rts&quot;, &quot;cts&quot;, &quot;nav&quot;, &quot;data&quot;], &quot;blink&quot;: [&quot;data&quot;], &quot;hide&quot;: [&quot;ack&quot;], &quot;html&quot;: &quot;<b>Schritt 6:</b> Jetzt überträgt die Station ihr <b>DATA</b>-Frame ungestört.&quot;}, {&quot;label&quot;: &quot;ACK bestätigt den Empfang&quot;, &quot;show&quot;: [&quot;busy&quot;, &quot;backoff&quot;, &quot;rts&quot;, &quot;cts&quot;, &quot;nav&quot;, &quot;data&quot;, &quot;ack&quot;], &quot;blink&quot;: [&quot;ack&quot;], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Schritt 7:</b> Der AP bestätigt nach kurzer Pause (SIFS) mit einem <b>ACK</b> auf Ebene 2. Das ist <b>CSMA/CA</b> mit optionalem <b>RTS/CTS</b>. Wegen des Overheads lohnt RTS/CTS vor allem bei großen Frames.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -107,12 +110,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="960" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="960" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:csma-ca -->
 
 > [!warning] Hidden Stations

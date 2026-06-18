@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/2 Link Layer/MAC – Medienzugang/","tags":["computernetworks","linklayer"],"updated":"2026-06-18T18:28:31.570+02:00","dg-note-properties":{"tags":["computernetworks","linklayer"],"aliases":["MAC","Medienzugang","Multiplexing","Token","Random Access","Carrier Sense"]}}
+{"dg-publish":true,"permalink":"/2 Link Layer/MAC – Medienzugang/","tags":["computernetworks","linklayer"],"updated":"2026-06-18T22:32:42.808+02:00","dg-note-properties":{"permalink":"/2 Link Layer/MAC – Medienzugang/","tags":["computernetworks","linklayer"],"updated":"2026-06-18T22:20:27.715+02:00"}}
 ---
+
 
 
 # MAC – Medienzugang

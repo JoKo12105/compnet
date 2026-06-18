@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IP-Adressen & CIDR/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T18:28:32.198+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["IP-Adresse","CIDR","Netzmaske","Subnetz","Subnetting","private IP-Adressen"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IP-Adressen & CIDR/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:32:42.866+02:00","dg-note-properties":{"permalink":"/5 Vermittlungsschicht/IP-Adressen & CIDR/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:20:29.746+02:00"}}
 ---
+
 
 
 # IP-Adressen & CIDR
@@ -124,7 +125,7 @@ function calc(){
 }
 document.getElementById('ip').addEventListener('input',calc);
 calc();
-</script></body></html>" width="100%" height="600" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+;(function(){var _lh=0;function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}window.addEventListener(&quot;load&quot;,fit);if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}setTimeout(fit,60);fit();})();</script></body></html>" width="100%" height="600" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:subnetz -->
 
 > [!info] Spezielle Adressen

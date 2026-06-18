@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/6 Transportschicht/TCP-Verbindung/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:28:33.143+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["TCP-Verbindung","3-Wege-Handshake","Handshake","TCP-Zustände","TIME_WAIT"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/TCP-Verbindung/","tags":["computernetworks","transport"],"updated":"2026-06-18T22:32:42.910+02:00","dg-note-properties":{"permalink":"/6 Transportschicht/TCP-Verbindung/","tags":["computernetworks","transport"],"updated":"2026-06-18T22:20:30.766+02:00"}}
 ---
+
 
 
 # TCP-Verbindung
@@ -91,6 +92,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Verbindungsaufbau: SYN&quot;, &quot;show&quot;: [&quot;syn&quot;], &quot;blink&quot;: [&quot;syn&quot;], &quot;hide&quot;: [&quot;synack&quot;, &quot;ack&quot;, &quot;est&quot;, &quot;fin1&quot;, &quot;ack1&quot;, &quot;fin2&quot;, &quot;ack2&quot;], &quot;html&quot;: &quot;<b>3-Wege-Handshake (1):</b> Der Client sendet <b>SYN</b> mit seiner initialen Folgenummer (SEQ=x). SYN=1, ACK=0.&quot;}, {&quot;label&quot;: &quot;SYN + ACK&quot;, &quot;show&quot;: [&quot;syn&quot;, &quot;synack&quot;], &quot;blink&quot;: [&quot;synack&quot;], &quot;hide&quot;: [&quot;ack&quot;, &quot;est&quot;, &quot;fin1&quot;, &quot;ack1&quot;, &quot;fin2&quot;, &quot;ack2&quot;], &quot;html&quot;: &quot;<b>(2):</b> Der Server bestätigt mit <b>SYN=1, ACK=1</b> und seiner eigenen Folgenummer (SEQ=y).&quot;}, {&quot;label&quot;: &quot;ACK – Verbindung steht&quot;, &quot;show&quot;: [&quot;syn&quot;, &quot;synack&quot;, &quot;ack&quot;], &quot;blink&quot;: [&quot;ack&quot;], &quot;hide&quot;: [&quot;est&quot;, &quot;fin1&quot;, &quot;ack1&quot;, &quot;fin2&quot;, &quot;ack2&quot;], &quot;html&quot;: &quot;<b>(3):</b> Der Client bestätigt mit <b>ACK</b>. Damit ist die Verbindung in beide Richtungen synchronisiert.&quot;}, {&quot;label&quot;: &quot;ESTABLISHED&quot;, &quot;show&quot;: [&quot;syn&quot;, &quot;synack&quot;, &quot;ack&quot;, &quot;est&quot;], &quot;blink&quot;: [&quot;est&quot;], &quot;hide&quot;: [&quot;fin1&quot;, &quot;ack1&quot;, &quot;fin2&quot;, &quot;ack2&quot;], &quot;html&quot;: &quot;<b>ESTABLISHED:</b> Jetzt fließen Daten als zuverlässiger, vollduplexer <b>Byte-Strom</b> (SEQ/ACK, Fenstertechnik).&quot;}, {&quot;label&quot;: &quot;Abbau: FIN&quot;, &quot;show&quot;: [&quot;syn&quot;, &quot;synack&quot;, &quot;ack&quot;, &quot;est&quot;, &quot;fin1&quot;], &quot;blink&quot;: [&quot;fin1&quot;], &quot;hide&quot;: [&quot;ack1&quot;, &quot;fin2&quot;, &quot;ack2&quot;], &quot;html&quot;: &quot;<b>Abbau (1):</b> Da TCP <b>vollduplex</b> ist, müssen <b>beide Seiten</b> schließen. Hier schließt der Client aktiv mit <b>FIN</b> (Zustand FIN_WAIT).&quot;}, {&quot;label&quot;: &quot;ACK des Servers&quot;, &quot;show&quot;: [&quot;syn&quot;, &quot;synack&quot;, &quot;ack&quot;, &quot;est&quot;, &quot;fin1&quot;, &quot;ack1&quot;], &quot;blink&quot;: [&quot;ack1&quot;], &quot;hide&quot;: [&quot;fin2&quot;, &quot;ack2&quot;], &quot;html&quot;: &quot;<b>(2):</b> Der Server bestätigt das FIN mit <b>ACK</b> (Zustand CLOSE_WAIT).&quot;}, {&quot;label&quot;: &quot;FIN des Servers&quot;, &quot;show&quot;: [&quot;syn&quot;, &quot;synack&quot;, &quot;ack&quot;, &quot;est&quot;, &quot;fin1&quot;, &quot;ack1&quot;, &quot;fin2&quot;], &quot;blink&quot;: [&quot;fin2&quot;], &quot;hide&quot;: [&quot;ack2&quot;], &quot;html&quot;: &quot;<b>(3):</b> Auch der Server sendet sein <b>FIN</b>, wenn er fertig ist.&quot;}, {&quot;label&quot;: &quot;ACK → TIME_WAIT&quot;, &quot;show&quot;: [&quot;syn&quot;, &quot;synack&quot;, &quot;ack&quot;, &quot;est&quot;, &quot;fin1&quot;, &quot;ack1&quot;, &quot;fin2&quot;, &quot;ack2&quot;], &quot;blink&quot;: [&quot;ack2&quot;], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>(4):</b> Der Client bestätigt final und geht in <b>TIME_WAIT</b> (Dauer 2×MSL) — um ein evtl. erneutes FIN noch zu beantworten und alte Pakete „aussterben“ zu lassen. Insgesamt: <b>4 Pakete</b> beim Abbau.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -103,12 +106,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="989" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="989" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:tcp-handshake -->
 
 ## Die wichtigsten Socket-Zustände

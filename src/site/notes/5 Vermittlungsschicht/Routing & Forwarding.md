@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/Routing & Forwarding/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T18:28:32.169+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["Forwarding","Routing","Router","Store and Forward","data plane","control plane"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/Routing & Forwarding/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:32:42.882+02:00","dg-note-properties":{"permalink":"/5 Vermittlungsschicht/Routing & Forwarding/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:20:29.682+02:00"}}
 ---
+
 
 
 # Routing & Forwarding
@@ -96,6 +97,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Paket trifft am Eingang ein&quot;, &quot;show&quot;: [&quot;pkt&quot;, &quot;ain&quot;], &quot;blink&quot;: [&quot;pkt&quot;], &quot;hide&quot;: [&quot;aout&quot;, &quot;lookup&quot;], &quot;html&quot;: &quot;<b>Schritt 1:</b> Ein Paket kommt an einem Eingangs-Interface an. Im Header steht die <b>Ziel-IP</b> (hier 10.2.x.x).&quot;}, {&quot;label&quot;: &quot;Store &amp; Forward&quot;, &quot;show&quot;: [&quot;pkt&quot;, &quot;ain&quot;], &quot;blink&quot;: [&quot;ain&quot;], &quot;hide&quot;: [&quot;aout&quot;, &quot;lookup&quot;], &quot;html&quot;: &quot;<b>Schritt 2 — Store &amp; Forward:</b> Der Router speichert das Paket zunächst vollständig zwischen, bis es ganz vorliegt.&quot;}, {&quot;label&quot;: &quot;Lookup in der Forwarding-Tabelle&quot;, &quot;show&quot;: [&quot;pkt&quot;, &quot;ain&quot;, &quot;lookup&quot;], &quot;blink&quot;: [&quot;lookup&quot;], &quot;hide&quot;: [&quot;aout&quot;], &quot;html&quot;: &quot;<b>Schritt 3:</b> Anhand der Ziel-IP wird die <b>am besten passende Zeile</b> der Forwarding-Tabelle gesucht (siehe Longest Prefix Match). Treffer: 10.2.0.0/16 → Ausgang B.&quot;}, {&quot;label&quot;: &quot;Weiterleiten an den Ausgang&quot;, &quot;show&quot;: [&quot;pkt&quot;, &quot;ain&quot;, &quot;lookup&quot;, &quot;aout&quot;], &quot;blink&quot;: [&quot;aout&quot;], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Schritt 4:</b> Das Paket wird an das passende <b>Ausgangs-Interface</b> übergeben. Router arbeiten nach <b>best effort</b> — keine Garantie für Vollständigkeit, Reihenfolge oder Zeit.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -108,12 +111,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="836" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="836" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:forwarding -->
 
 ## Routing (control plane)

@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/4 Backbone Networks/DOCSIS & Kabelnetze/","tags":["computernetworks","backbone"],"updated":"2026-06-18T18:28:32.019+02:00","dg-note-properties":{"tags":["computernetworks","backbone"],"aliases":["DOCSIS","HFC","Kabelfernsehen","Hybrid Fiber Coax"]}}
+{"dg-publish":true,"permalink":"/4 Backbone Networks/DOCSIS & Kabelnetze/","tags":["computernetworks","backbone"],"updated":"2026-06-18T22:32:42.846+02:00","dg-note-properties":{"permalink":"/4 Backbone Networks/DOCSIS & Kabelnetze/","tags":["computernetworks","backbone"],"updated":"2026-06-18T22:20:29.072+02:00"}}
 ---
+
 
 
 # DOCSIS & Kabelnetze
@@ -84,7 +85,8 @@ svg{display:block;width:100%;height:auto}
 <p style=&quot;text-align:center;color:rgb(170,182,200);font-size:13px;max-width:620px;margin:14px auto 0&quot;>
 Hybrid Fiber-Coax (HFC): Glasfaser bis zur <b>Optical Node</b> (versorgt einige hundert Haushalte), dann <b>Koax</b> als geteiltes Medium. <b>DOCSIS</b> nutzt Frequenz-Multiplexing; Version 4 theoretisch bis ~22 Gbit/s.</p>
 </div>
-<script></script></body></html>" width="100%" height="520" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+<script>
+;(function(){var _lh=0;function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}window.addEventListener(&quot;load&quot;,fit);if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}setTimeout(fit,60);fit();})();</script></body></html>" width="100%" height="520" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:hfc -->
 
 Das **Headend** erhält Signale (TV, Satellit, Internet) und verteilt sie an regionale **Hubs**. Über **Glasfaser** geht es zu **Optical Nodes**, die in elektrische Signale für **Koax** umwandeln. Eine Optical Node versorgt einige hundert Haushalte — das Koax ist damit ein **Shared Medium**.

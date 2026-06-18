@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/6 Transportschicht/Ports & Sockets/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:28:32.922+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["Port","Socket","Multiplexing","Demultiplexing","well-known ports"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/Ports & Sockets/","tags":["computernetworks","transport"],"updated":"2026-06-18T22:32:42.897+02:00","dg-note-properties":{"permalink":"/6 Transportschicht/Ports & Sockets/","tags":["computernetworks","transport"],"updated":"2026-06-18T22:20:30.666+02:00"}}
 ---
+
 
 
 # Ports & Sockets
@@ -89,6 +90,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Mehrere Segmente an dieselbe IP&quot;, &quot;show&quot;: [&quot;seg80&quot;, &quot;seg443&quot;], &quot;blink&quot;: [&quot;seg80&quot;, &quot;seg443&quot;], &quot;hide&quot;: [&quot;a80&quot;, &quot;a443&quot;, &quot;tuple&quot;], &quot;html&quot;: &quot;<b>Schritt 1:</b> Beim Host kommen zwei TCP-Segmente an — beide an dieselbe IP-Adresse.&quot;}, {&quot;label&quot;: &quot;L3 adressiert nur den Host&quot;, &quot;show&quot;: [&quot;seg80&quot;, &quot;seg443&quot;], &quot;blink&quot;: [], &quot;hide&quot;: [&quot;a80&quot;, &quot;a443&quot;, &quot;tuple&quot;], &quot;html&quot;: &quot;<b>Schritt 2:</b> Die Vermittlungsschicht kann nur den <b>Host als Ganzes</b> ansprechen. Aber welche der laufenden Anwendungen soll die Daten bekommen?&quot;}, {&quot;label&quot;: &quot;Demultiplexing nach Ziel-Port&quot;, &quot;show&quot;: [&quot;seg80&quot;, &quot;seg443&quot;, &quot;a80&quot;, &quot;a443&quot;], &quot;blink&quot;: [&quot;a80&quot;, &quot;a443&quot;], &quot;hide&quot;: [&quot;tuple&quot;], &quot;html&quot;: &quot;<b>Schritt 3:</b> Die Transportschicht liest den <b>Ziel-Port</b> und leitet jedes Segment an den richtigen <b>Socket</b> / die richtige App (:80 → Web, :443 → HTTPS). Das ist <b>Multiplexing/Demultiplexing</b>.&quot;}, {&quot;label&quot;: &quot;Das 4-Tupel identifiziert die Verbindung&quot;, &quot;show&quot;: [&quot;seg80&quot;, &quot;seg443&quot;, &quot;a80&quot;, &quot;a443&quot;, &quot;tuple&quot;], &quot;blink&quot;: [&quot;tuple&quot;], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Schritt 4:</b> Bei TCP identifiziert das <b>4-Tupel</b> (Quell-IP, Quell-Port, Ziel-IP, Ziel-Port) eindeutig einen <b>Socket</b> und eine Verbindung. Ports: well-known 0–1023, registriert 1024–49151, dynamisch 49152–65535.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -101,12 +104,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="857" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="857" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:ports-multiplexing -->
 
 ## Port-Bereiche

@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Übertragungsmedien & Frequenzen/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:28:31.354+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Übertragungsmedien","Kupfer","Glasfaser","Funk","Medien"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Übertragungsmedien & Frequenzen/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T22:32:42.795+02:00","dg-note-properties":{"permalink":"/1 Grundlagen/Übertragungsmedien & Frequenzen/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T22:20:27.114+02:00"}}
 ---
+
 
 
 # Übertragungsmedien & Frequenzen

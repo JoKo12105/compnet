@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/2 Link Layer/LLC – Sicherung/","tags":["computernetworks","linklayer"],"updated":"2026-06-18T18:28:31.562+02:00","dg-note-properties":{"tags":["computernetworks","linklayer"],"aliases":["LLC","ARQ","FEC","Fehlerbehandlung","Frame","Logical Link Control"]}}
+{"dg-publish":true,"permalink":"/2 Link Layer/LLC – Sicherung/","tags":["computernetworks","linklayer"],"updated":"2026-06-18T22:32:42.806+02:00","dg-note-properties":{"permalink":"/2 Link Layer/LLC – Sicherung/","tags":["computernetworks","linklayer"],"updated":"2026-06-18T22:20:27.669+02:00"}}
 ---
+
 
 
 # LLC – Sicherung
@@ -114,6 +115,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Sender schickt Frame 0&quot;, &quot;show&quot;: [&quot;f0&quot;], &quot;blink&quot;: [&quot;f0&quot;], &quot;hide&quot;: [&quot;a0&quot;, &quot;f1&quot;, &quot;f1x&quot;, &quot;tout&quot;, &quot;f1r&quot;, &quot;a1&quot;], &quot;html&quot;: &quot;<b>Schritt 1:</b> Der Sender überträgt <b>Frame 0</b> und startet einen <b>Timer</b>. Bei Stop-and-Wait wartet er nun auf die Bestätigung.&quot;}, {&quot;label&quot;: &quot;Empfänger bestätigt mit ACK 0&quot;, &quot;show&quot;: [&quot;f0&quot;, &quot;a0&quot;], &quot;blink&quot;: [&quot;a0&quot;], &quot;hide&quot;: [&quot;f1&quot;, &quot;f1x&quot;, &quot;tout&quot;, &quot;f1r&quot;, &quot;a1&quot;], &quot;html&quot;: &quot;<b>Schritt 2:</b> Frame 0 kommt korrekt an (CRC ok) → der Empfänger sendet <b>ACK 0</b> zurück. Der Sender darf weitermachen.&quot;}, {&quot;label&quot;: &quot;Frame 1 geht verloren&quot;, &quot;show&quot;: [&quot;f0&quot;, &quot;a0&quot;, &quot;f1&quot;, &quot;f1x&quot;], &quot;blink&quot;: [&quot;f1x&quot;], &quot;hide&quot;: [&quot;tout&quot;, &quot;f1r&quot;, &quot;a1&quot;], &quot;html&quot;: &quot;<b>Schritt 3:</b> Der Sender schickt <b>Frame 1</b> — doch es geht unterwegs <b>verloren</b> (Störung). Der Empfänger erfährt davon nichts.&quot;}, {&quot;label&quot;: &quot;Timeout beim Sender&quot;, &quot;show&quot;: [&quot;f0&quot;, &quot;a0&quot;, &quot;f1&quot;, &quot;f1x&quot;, &quot;tout&quot;], &quot;blink&quot;: [&quot;tout&quot;], &quot;hide&quot;: [&quot;f1r&quot;, &quot;a1&quot;], &quot;html&quot;: &quot;<b>Schritt 4:</b> Es kommt <b>kein ACK</b>. Der Timer läuft ab → der Sender erkennt indirekt, dass etwas schiefging.&quot;}, {&quot;label&quot;: &quot;Retransmit von Frame 1&quot;, &quot;show&quot;: [&quot;f0&quot;, &quot;a0&quot;, &quot;f1&quot;, &quot;f1x&quot;, &quot;tout&quot;, &quot;f1r&quot;], &quot;blink&quot;: [&quot;f1r&quot;], &quot;hide&quot;: [&quot;a1&quot;], &quot;html&quot;: &quot;<b>Schritt 5:</b> Der Sender überträgt <b>Frame 1 erneut</b>. Das ist das Kernprinzip von <b>ARQ (Automatic Repeat Request)</b>.&quot;}, {&quot;label&quot;: &quot;ACK 1 — erfolgreich&quot;, &quot;show&quot;: [&quot;f0&quot;, &quot;a0&quot;, &quot;f1&quot;, &quot;f1x&quot;, &quot;tout&quot;, &quot;f1r&quot;, &quot;a1&quot;], &quot;blink&quot;: [&quot;a1&quot;], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Schritt 6:</b> Jetzt kommt Frame 1 an und wird mit <b>ACK 1</b> bestätigt. <b>ARQ braucht einen Rückkanal</b> (bidirektional). Alternativ korrigiert <b>FEC</b> Fehler ganz ohne Rückfrage.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -126,12 +129,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="960" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="960" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:arq -->
 
 ## Verwandte Themen

@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/DHCP/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T18:28:32.281+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["DHCP","DORA","Dynamic Host Configuration Protocol","Lease"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/DHCP/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:32:42.861+02:00","dg-note-properties":{"permalink":"/5 Vermittlungsschicht/DHCP/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:20:29.908+02:00"}}
 ---
+
 
 
 # DHCP
@@ -91,6 +92,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;DISCOVER&quot;, &quot;show&quot;: [&quot;d&quot;], &quot;blink&quot;: [&quot;d&quot;], &quot;hide&quot;: [&quot;o&quot;, &quot;r&quot;, &quot;a&quot;, &quot;cfg&quot;], &quot;html&quot;: &quot;<b>① Discover:</b> Beim Booten hat der Client noch keine IP. Er sendet eine <b>Broadcast</b>-Nachricht ins Netz: „Gibt es einen DHCP-Server?“&quot;}, {&quot;label&quot;: &quot;OFFER&quot;, &quot;show&quot;: [&quot;d&quot;, &quot;o&quot;], &quot;blink&quot;: [&quot;o&quot;], &quot;hide&quot;: [&quot;r&quot;, &quot;a&quot;, &quot;cfg&quot;], &quot;html&quot;: &quot;<b>② Offer:</b> Ein (oder mehrere) DHCP-Server antworten mit einem <b>IP-Angebot</b>.&quot;}, {&quot;label&quot;: &quot;REQUEST&quot;, &quot;show&quot;: [&quot;d&quot;, &quot;o&quot;, &quot;r&quot;], &quot;blink&quot;: [&quot;r&quot;], &quot;hide&quot;: [&quot;a&quot;, &quot;cfg&quot;], &quot;html&quot;: &quot;<b>③ Request:</b> Der Client <b>wählt ein Angebot</b> und fordert es offiziell an (per Broadcast, damit die anderen Server ihr Angebot zurückziehen).&quot;}, {&quot;label&quot;: &quot;ACK&quot;, &quot;show&quot;: [&quot;d&quot;, &quot;o&quot;, &quot;r&quot;, &quot;a&quot;], &quot;blink&quot;: [&quot;a&quot;], &quot;hide&quot;: [&quot;cfg&quot;], &quot;html&quot;: &quot;<b>④ Ack:</b> Der Server <b>bestätigt</b> und liefert die Konfiguration. Die Zuteilung gilt befristet (<b>Lease Time</b>).&quot;}, {&quot;label&quot;: &quot;Konfiguration steht&quot;, &quot;show&quot;: [&quot;d&quot;, &quot;o&quot;, &quot;r&quot;, &quot;a&quot;, &quot;cfg&quot;], &quot;blink&quot;: [&quot;cfg&quot;], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Ergebnis:</b> Der Client kennt nun IP-Adresse, Netzmaske, Default-Router und DNS-Server. DHCP kommuniziert über eine vereinfachte Form von UDP (Merkhilfe: <b>D-O-R-A</b>).&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -103,12 +106,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="918" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="918" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:dhcp -->
 
 Die Zuteilung gilt **befristet** (Lease Time) und kann verlängert werden. Mehrere Server können antworten — der Client wählt eines der Angebote.

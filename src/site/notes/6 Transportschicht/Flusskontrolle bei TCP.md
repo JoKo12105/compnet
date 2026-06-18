@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/6 Transportschicht/Flusskontrolle bei TCP/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:28:33.220+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["Flusskontrolle","Sliding Window","Window Size","RTT","Timeout","Retransmit"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/Flusskontrolle bei TCP/","tags":["computernetworks","transport"],"updated":"2026-06-18T22:32:42.894+02:00","dg-note-properties":{"permalink":"/6 Transportschicht/Flusskontrolle bei TCP/","tags":["computernetworks","transport"],"updated":"2026-06-18T22:20:30.815+02:00"}}
 ---
+
 
 
 # Flusskontrolle bei TCP
@@ -79,6 +80,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Das Sendefenster&quot;, &quot;show&quot;: [&quot;wina&quot;], &quot;blink&quot;: [&quot;wina&quot;], &quot;hide&quot;: [&quot;winb&quot;, &quot;winc&quot;, &quot;ack1&quot;, &quot;ack3&quot;], &quot;html&quot;: &quot;<b>Schritt 1:</b> Das <b>Window Size</b>-Feld im TCP-Header sagt, wie viele Bytes <b>unbestätigt</b> unterwegs sein dürfen. Hier umfasst das Fenster die Segmente <b>1–4</b>.&quot;}, {&quot;label&quot;: &quot;Senden ohne auf jedes ACK zu warten&quot;, &quot;show&quot;: [&quot;wina&quot;], &quot;blink&quot;: [&quot;wina&quot;], &quot;hide&quot;: [&quot;winb&quot;, &quot;winc&quot;, &quot;ack1&quot;, &quot;ack3&quot;], &quot;html&quot;: &quot;<b>Schritt 2:</b> Der Sender darf <b>1–4 sofort</b> senden, ohne auf das ACK von 1 zu warten — das hält die Leitung gefüllt (anders als reines Stop-and-Wait, vgl. LLC – Sicherung).&quot;}, {&quot;label&quot;: &quot;ACK 1 → Fenster rutscht&quot;, &quot;show&quot;: [&quot;winb&quot;, &quot;ack1&quot;], &quot;blink&quot;: [&quot;winb&quot;], &quot;hide&quot;: [&quot;wina&quot;, &quot;winc&quot;, &quot;ack3&quot;], &quot;html&quot;: &quot;<b>Schritt 3:</b> Kommt das <b>ACK für 1</b>, „rutscht“ das Fenster nach rechts (jetzt 2–5) — Segment <b>5</b> wird zum Senden frei. Daher <b>Sliding Window</b>.&quot;}, {&quot;label&quot;: &quot;Weitere ACKs schieben weiter&quot;, &quot;show&quot;: [&quot;winc&quot;, &quot;ack3&quot;], &quot;blink&quot;: [&quot;winc&quot;], &quot;hide&quot;: [&quot;wina&quot;, &quot;winb&quot;, &quot;ack1&quot;], &quot;html&quot;: &quot;<b>Schritt 4:</b> Mit jedem ACK wandert das Fenster weiter (hier 4–7). Der <b>Empfänger</b> steuert über die Window Size die <b>Flusskontrolle</b> — er bremst einen zu schnellen Sender.&quot;}, {&quot;label&quot;: &quot;Timeout &amp; RTT&quot;, &quot;show&quot;: [&quot;winc&quot;, &quot;ack3&quot;], &quot;blink&quot;: [], &quot;hide&quot;: [&quot;wina&quot;, &quot;winb&quot;, &quot;ack1&quot;], &quot;html&quot;: &quot;<b>Schritt 5:</b> Bleibt ein ACK aus, läuft ein <b>Timeout</b> ab und das Segment wird erneut gesendet. Der Timeout-Wert orientiert sich an der <b>RTT</b> (Round Trip Time) — sie bestimmt maßgeblich die erreichbare Datenrate.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -91,12 +94,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="768" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="768" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:tcp-sliding-window -->
 
 ## Timeout & RTT

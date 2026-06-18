@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/3 Access Networks/Ethernet/","tags":["computernetworks","access"],"updated":"2026-06-18T18:28:31.801+02:00","dg-note-properties":{"tags":["computernetworks","access"],"aliases":["Ethernet","CSMA/CD","MAC-Adresse","IEEE 802.3","Frame"]}}
+{"dg-publish":true,"permalink":"/3 Access Networks/Ethernet/","tags":["computernetworks","access"],"updated":"2026-06-18T22:32:42.826+02:00","dg-note-properties":{"permalink":"/3 Access Networks/Ethernet/","tags":["computernetworks","access"],"updated":"2026-06-18T22:20:28.582+02:00"}}
 ---
+
 
 
 # Ethernet
@@ -81,6 +82,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Das Ethernet-Frame (IEEE 802.3)&quot;, &quot;blink&quot;: [], &quot;show&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Überblick:</b> Alle Ethernet-Standards nutzen dasselbe MAC-Frame-Format. Klicke dich durch die Felder.&quot;}, {&quot;label&quot;: &quot;Präambel + SFD&quot;, &quot;blink&quot;: [&quot;ef-pre&quot;], &quot;show&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Präambel:</b> sieben Bytes <code>10101010</code> + ein <b>SFD</b> (<code>10101011</code>) erlauben die <b>Takt-Synchronisation</b> des Empfängers.&quot;}, {&quot;label&quot;: &quot;Ziel-MAC-Adresse&quot;, &quot;blink&quot;: [&quot;ef-dst&quot;], &quot;show&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Ziel-Adresse (6 B):</b> An wen geht das Frame? Das erste Bit unterscheidet <b>Unicast (0)</b> und <b>Multicast (1)</b>; alles 1 = <b>Broadcast</b>.&quot;}, {&quot;label&quot;: &quot;Quell-MAC-Adresse&quot;, &quot;blink&quot;: [&quot;ef-src&quot;], &quot;show&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Quell-Adresse (6 B):</b> die fest und global eindeutig der Netzwerkkarte (NIC) zugeordnete <b>MAC-Adresse</b>, z. B. <code>00:D0:59:5C:03:8A</code>. Flacher Adressraum (keine Hierarchie, anders als IP).&quot;}, {&quot;label&quot;: &quot;Type / Length&quot;, &quot;blink&quot;: [&quot;ef-typ&quot;], &quot;show&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Type/Length (2 B):</b> Wert ≥ 0x600 → <b>Typ</b> des transportierten Protokolls (z. B. IPv4). Wert < 0x600 → <b>Länge</b> des Datenfelds.&quot;}, {&quot;label&quot;: &quot;Daten (Payload)&quot;, &quot;blink&quot;: [&quot;ef-dat&quot;], &quot;show&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Daten:</b> die Nutzlast. Die maximale Größe ist die <b>MTU</b> (Ethernet: <b>1500 Byte</b>). Zu kurze Frames werden per <b>Pad</b> auf eine Mindestgröße aufgefüllt.&quot;}, {&quot;label&quot;: &quot;FCS – die CRC-Prüfsumme&quot;, &quot;blink&quot;: [&quot;ef-crc&quot;], &quot;show&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>FCS (4 B):</b> eine <b>CRC-Prüfsumme</b>. Sie erkennt nahezu alle 1-, 2- und 3-Bit-Fehler (Fehlerquote im LAN < 10⁻¹²). Ethernet <b>korrigiert</b> aber nicht — es ist <b>keine zuverlässige</b> Übertragung.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -93,12 +96,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="785" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="785" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:ethernet-frame -->
 
 ## MAC-Adresse
@@ -192,6 +199,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Medium frei, A und B wollen senden&quot;, &quot;hide&quot;: [&quot;sigA&quot;, &quot;sigB&quot;, &quot;coll&quot;, &quot;jam&quot;, &quot;boA&quot;, &quot;boB&quot;, &quot;sigA2&quot;, &quot;okmsg&quot;], &quot;show&quot;: [], &quot;html&quot;: &quot;<b>Ausgangslage:</b> Das Medium ist frei. Sowohl A als auch B haben Daten zum Senden.&quot;}, {&quot;label&quot;: &quot;A sendet (Carrier Sense: frei)&quot;, &quot;show&quot;: [&quot;sigA&quot;], &quot;hide&quot;: [&quot;sigB&quot;, &quot;coll&quot;, &quot;jam&quot;, &quot;boA&quot;, &quot;boB&quot;, &quot;sigA2&quot;, &quot;okmsg&quot;], &quot;html&quot;: &quot;<b>Carrier Sense:</b> A hört das Medium ab, findet es frei und beginnt zu senden. Das Signal breitet sich aus — aber mit <b>endlicher Geschwindigkeit</b>.&quot;, &quot;blink&quot;: [&quot;sigA&quot;]}, {&quot;label&quot;: &quot;B hört (noch) nichts und sendet auch&quot;, &quot;show&quot;: [&quot;sigA&quot;, &quot;sigB&quot;], &quot;blink&quot;: [&quot;sigB&quot;], &quot;hide&quot;: [&quot;coll&quot;, &quot;jam&quot;, &quot;boA&quot;, &quot;boB&quot;, &quot;sigA2&quot;, &quot;okmsg&quot;], &quot;html&quot;: &quot;<b>Das Problem:</b> A's Signal hat B noch nicht erreicht. B hält das Medium für frei und sendet <b>ebenfalls</b>.&quot;}, {&quot;label&quot;: &quot;Kollision in der Mitte&quot;, &quot;show&quot;: [&quot;sigA&quot;, &quot;sigB&quot;, &quot;coll&quot;], &quot;blink&quot;: [&quot;coll&quot;], &quot;hide&quot;: [&quot;jam&quot;, &quot;boA&quot;, &quot;boB&quot;, &quot;sigA2&quot;, &quot;okmsg&quot;], &quot;html&quot;: &quot;<b>Kollision:</b> Die beiden Signale treffen sich und überlagern sich — die Daten werden zerstört.&quot;}, {&quot;label&quot;: &quot;Collision Detection + JAM&quot;, &quot;show&quot;: [&quot;sigA&quot;, &quot;sigB&quot;, &quot;coll&quot;, &quot;jam&quot;], &quot;blink&quot;: [&quot;jam&quot;], &quot;hide&quot;: [&quot;boA&quot;, &quot;boB&quot;, &quot;sigA2&quot;, &quot;okmsg&quot;], &quot;html&quot;: &quot;<b>Collision Detection:</b> Beide Sender <b>erkennen</b> die Kollision (am Kabel möglich!), senden ein kurzes <b>JAM</b>-Signal und brechen ab.&quot;}, {&quot;label&quot;: &quot;Zufälliger Backoff&quot;, &quot;show&quot;: [&quot;jam&quot;, &quot;boA&quot;, &quot;boB&quot;], &quot;blink&quot;: [&quot;boA&quot;, &quot;boB&quot;], &quot;hide&quot;: [&quot;sigA&quot;, &quot;sigB&quot;, &quot;coll&quot;, &quot;sigA2&quot;, &quot;okmsg&quot;], &quot;html&quot;: &quot;<b>Backoff:</b> Beide warten ein <b>zufälliges</b>, mit jedem Versuch wachsendes Intervall. Hier zieht A die kürzere Zeit.&quot;}, {&quot;label&quot;: &quot;A sendet erfolgreich&quot;, &quot;show&quot;: [&quot;okmsg&quot;], &quot;blink&quot;: [&quot;okmsg&quot;], &quot;hide&quot;: [&quot;sigA&quot;, &quot;sigB&quot;, &quot;coll&quot;, &quot;jam&quot;, &quot;boA&quot;, &quot;boB&quot;], &quot;set&quot;: [], &quot;html&quot;: &quot;<b>Erfolg:</b> A's Timer läuft zuerst ab, das Medium ist frei, A sendet ungestört. Das ist <b>CSMA/CD</b> — verwendet im klassischen Ethernet (10/100Base). Moderne, voll-geswitchte Netze brauchen es nicht mehr.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -204,12 +213,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="852" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="852" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:csma-cd -->
 
 > [!info] Modernes Ethernet

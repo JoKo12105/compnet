@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IPv6/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T18:28:32.318+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["IPv6","IPv6-Adresse","Dual-Stack","Neighbor Discovery"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IPv6/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:32:42.877+02:00","dg-note-properties":{"permalink":"/5 Vermittlungsschicht/IPv6/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:20:29.968+02:00"}}
 ---
+
 
 
 # IPv6
@@ -83,6 +84,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Die volle 128-Bit-Adresse&quot;, &quot;set&quot;: [[&quot;addr&quot;, &quot;FE80:0000:0000:0000:0000:0800:5A12:3456&quot;], [&quot;note&quot;, &quot;8 Gruppen à 16 Bit, hexadezimal&quot;\|&quot;addr&quot;, &quot;FE80:0000:0000:0000:0000:0800:5A12:3456&quot;], [&quot;note&quot;, &quot;8 Gruppen à 16 Bit, hexadezimal&quot;]], &quot;show&quot;: [], &quot;blink&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Ausgangslage:</b> Eine IPv6-Adresse ist <b>128 Bit</b> lang — 8 Gruppen zu je 16 Bit (4 Hex-Ziffern), durch Doppelpunkte getrennt. Das ist lang und voller Nullen.&quot;}, {&quot;label&quot;: &quot;Regel 1: führende Nullen weglassen&quot;, &quot;set&quot;: [[&quot;addr&quot;, &quot;FE80:0:0:0:0:800:5A12:3456&quot;], [&quot;note&quot;, &quot;führende Nullen je Gruppe entfernt&quot;\|&quot;addr&quot;, &quot;FE80:0:0:0:0:800:5A12:3456&quot;], [&quot;note&quot;, &quot;führende Nullen je Gruppe entfernt&quot;]], &quot;show&quot;: [], &quot;blink&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Regel 1:</b> In jeder Gruppe dürfen <b>führende Nullen</b> entfallen: <code>0000 → 0</code>, <code>0800 → 800</code>.&quot;}, {&quot;label&quot;: &quot;Regel 2: längsten Nuller-Block zu ::&quot;, &quot;set&quot;: [[&quot;addr&quot;, &quot;FE80::800:5A12:3456&quot;], [&quot;note&quot;, &quot;ein zusammenhängender 0-Block → ::&quot;\|&quot;addr&quot;, &quot;FE80::800:5A12:3456&quot;], [&quot;note&quot;, &quot;ein zusammenhängender 0-Block → ::&quot;]], &quot;show&quot;: [], &quot;blink&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Regel 2:</b> Ein zusammenhängender Block aus <b>Null-Gruppen</b> wird durch <b>::</b> ersetzt — aber nur <b>einmal</b> pro Adresse (sonst mehrdeutig).&quot;}, {&quot;label&quot;: &quot;Fertig komprimiert&quot;, &quot;set&quot;: [[&quot;addr&quot;, &quot;FE80::800:5A12:3456&quot;], [&quot;note&quot;, &quot;kompakt &amp; eindeutig&quot;\|&quot;addr&quot;, &quot;FE80::800:5A12:3456&quot;], [&quot;note&quot;, &quot;kompakt &amp; eindeutig&quot;]], &quot;show&quot;: [], &quot;blink&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Ergebnis:</b> Aus 39 Zeichen werden 19. Weitere Notationen: <code>::1/128</code> = Loopback, <code>2000::/3</code> = globale Unicast-Adressen, <code>FF00::/8</code> = Multicast. IPv4 lässt sich einbetten: <code>::FFFF:142.35.67.23</code>.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -95,12 +98,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="785" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="785" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:ipv6-kompression -->
 
 Adressen sind **unicast/multicast/anycast** und gliedern sich in `<Global Routing Prefix><Subnet><Interface>`. Über das Präfix wird (provider-/geografisch) geroutet, was die Routing-Tabellen klein hält.

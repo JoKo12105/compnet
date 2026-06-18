@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IPv4-Paket/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T18:28:32.218+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["IP-Paket","IPv4-Header","Datagram","TTL","Fragmentierung"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IPv4-Paket/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:32:42.871+02:00","dg-note-properties":{"permalink":"/5 Vermittlungsschicht/IPv4-Paket/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:20:29.784+02:00"}}
 ---
+
 
 
 # IPv4-Paket
@@ -83,6 +84,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Der IPv4-Header (20 Byte ohne Optionen)&quot;, &quot;show&quot;: [], &quot;blink&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Überblick:</b> 32 Bit breit. Klicke dich durch die wichtigsten Felder.&quot;}, {&quot;label&quot;: &quot;Version &amp; IHL&quot;, &quot;blink&quot;: [&quot;ip-ver&quot;, &quot;ip-ihl&quot;], &quot;show&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Version</b> = 4 (oder 6). <b>IHL</b> = Header-Länge in 32-Bit-Worten (variabel wegen Optionen).&quot;}, {&quot;label&quot;: &quot;Total Length&quot;, &quot;blink&quot;: [&quot;ip-len&quot;], &quot;show&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Total Length:</b> Gesamtlänge des Pakets (Header + Daten), max. 64 KB.&quot;}, {&quot;label&quot;: &quot;Identification / Flags / Fragment Offset&quot;, &quot;blink&quot;: [&quot;ip-id&quot;, &quot;ip-flg&quot;, &quot;ip-fo&quot;], &quot;show&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>ID, Flags, Fragment Offset:</b> ermöglichen die <b>Fragmentierung</b> eines Pakets durch einen Router und das spätere Zusammensetzen.&quot;}, {&quot;label&quot;: &quot;Time To Live (TTL)&quot;, &quot;blink&quot;: [&quot;ip-ttl&quot;], &quot;show&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>TTL:</b> zählt die durchlaufenen Router herunter. Bei <b>0</b> wird das Paket verworfen (verhindert ewig kreisende Pakete). Bezug: ICMP TIME EXCEEDED, traceroute.&quot;}, {&quot;label&quot;: &quot;Protocol&quot;, &quot;blink&quot;: [&quot;ip-pro&quot;], &quot;show&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Protocol:</b> zu welchem Transport-Protokoll die Nutzdaten gehören — z. B. 6 = TCP, 17 = UDP, 1 = ICMP.&quot;}, {&quot;label&quot;: &quot;Header Checksum&quot;, &quot;blink&quot;: [&quot;ip-chk&quot;], &quot;show&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Header Checksum:</b> nur über den <b>Header</b>. Jeder Router prüft sie und muss sie wegen der sinkenden TTL <b>neu berechnen</b>. Fehlerhafte Pakete werden verworfen.&quot;}, {&quot;label&quot;: &quot;Quell- &amp; Ziel-Adresse&quot;, &quot;blink&quot;: [&quot;ip-src&quot;, &quot;ip-dst&quot;], &quot;show&quot;: [], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Source/Destination Address:</b> die 32-Bit-IP-Adressen von Sender und Empfänger — die Basis für Forwarding und Longest Prefix Match.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -95,12 +98,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="881" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="881" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:ipv4-header -->
 
 ## Wichtige Felder kurz

@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Protokolle/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T21:57:01.397+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Protokoll","verbindungsorientiert","verbindungslos","Multiplexing","Flusskontrolle"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Protokolle/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T22:32:42.790+02:00","dg-note-properties":{"permalink":"/1 Grundlagen/Protokolle/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T22:20:27.217+02:00"}}
 ---
+
 
 
 # Protokolle
@@ -9,15 +10,16 @@
 > Ein **Protokoll** legt **Form, Ordnung und Konventionen** der Kommunikation zwischen Partnern fest: Adressierung, Form der PDUs (z. B. Frames), Fehlerbehandlung, Richtung des Datenflusses und ggf. Flusskontrolle.
 
 ## Was ein Protokoll regeln muss
-- **Identifikation und Adressierung** der Partner
-- **Form** der Protokoll-Atome (Frames, Pakete, Segmente)
-- **Fehlerbehandlung**
-- optional **Verbindungsorientierung**
-- **Richtung** des Datenflusses (simplex, halbduplex, vollduplex)
-- oft eine Form von **Multiplexing**
-- optional **Flusskontrolle** (Überlastvermeidung)
+- **Identifikation und Adressierung** der Partner,
+- **Form** der Protokoll-Atome (Frames, Pakete, Segmente),
+- **Fehlerbehandlung**,
+- optional **Verbindungsorientierung**,
+- **Richtung** des Datenflusses (simplex, halbduplex, vollduplex),
+- oft eine Form von **Multiplexing**,
+- optional **Flusskontrolle** (Überlastvermeidung).
 
 Beschrieben werden Protokolle über **zeitlichen Ablauf** (Sequenzdiagramme) und **logische Folge** (Zustände).
+
 ## Verbindungsorientiert vs. verbindungslos
 | | verbindungsorientiert | verbindungslos |
 |---|---|---|

@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/4 Backbone Networks/SONET, SDH & DWDM/","tags":["computernetworks","backbone"],"updated":"2026-06-18T18:28:32.004+02:00","dg-note-properties":{"tags":["computernetworks","backbone"],"aliases":["SONET","SDH","DWDM","Wellenlängen-Multiplexing"]}}
+{"dg-publish":true,"permalink":"/4 Backbone Networks/SONET, SDH & DWDM/","tags":["computernetworks","backbone"],"updated":"2026-06-18T22:32:42.850+02:00","dg-note-properties":{"permalink":"/4 Backbone Networks/SONET, SDH & DWDM/","tags":["computernetworks","backbone"],"updated":"2026-06-18T22:20:29.039+02:00"}}
 ---
+
 
 
 # SONET, SDH & DWDM
@@ -93,6 +94,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Ein Sender, eine Wellenlänge&quot;, &quot;show&quot;: [&quot;src1&quot;, &quot;lin1&quot;], &quot;blink&quot;: [&quot;src1&quot;], &quot;hide&quot;: [&quot;src2&quot;, &quot;lin2&quot;, &quot;src3&quot;, &quot;lin3&quot;, &quot;src4&quot;, &quot;lin4&quot;, &quot;mux&quot;, &quot;fiber&quot;, &quot;amp&quot;, &quot;demux&quot;, &quot;dst1&quot;, &quot;dst2&quot;, &quot;dst3&quot;, &quot;dst4&quot;, &quot;lout1&quot;, &quot;lout2&quot;, &quot;lout3&quot;, &quot;lout4&quot;], &quot;html&quot;: &quot;<b>Schritt 1:</b> Ein Sender moduliert seine Daten auf eine bestimmte <b>Wellenlänge λ1</b> (eine „Lichtfarbe“).&quot;}, {&quot;label&quot;: &quot;Mehrere Wellenlängen (Farben)&quot;, &quot;show&quot;: [&quot;src1&quot;, &quot;lin1&quot;, &quot;src2&quot;, &quot;lin2&quot;, &quot;src3&quot;, &quot;lin3&quot;, &quot;src4&quot;, &quot;lin4&quot;], &quot;blink&quot;: [&quot;src2&quot;, &quot;src3&quot;, &quot;src4&quot;], &quot;hide&quot;: [&quot;mux&quot;, &quot;fiber&quot;, &quot;amp&quot;, &quot;demux&quot;, &quot;dst1&quot;, &quot;dst2&quot;, &quot;dst3&quot;, &quot;dst4&quot;, &quot;lout1&quot;, &quot;lout2&quot;, &quot;lout3&quot;, &quot;lout4&quot;], &quot;html&quot;: &quot;<b>Schritt 2:</b> Mehrere Sender nutzen <b>unterschiedliche, dicht beieinander liegende Wellenlängen</b> (1530–1625 nm) — jede trägt einen eigenen Datenstrom.&quot;}, {&quot;label&quot;: &quot;MUX bündelt alles in eine Faser&quot;, &quot;show&quot;: [&quot;src1&quot;, &quot;lin1&quot;, &quot;src2&quot;, &quot;lin2&quot;, &quot;src3&quot;, &quot;lin3&quot;, &quot;src4&quot;, &quot;lin4&quot;, &quot;mux&quot;, &quot;fiber&quot;], &quot;blink&quot;: [&quot;mux&quot;], &quot;hide&quot;: [&quot;amp&quot;, &quot;demux&quot;, &quot;dst1&quot;, &quot;dst2&quot;, &quot;dst3&quot;, &quot;dst4&quot;, &quot;lout1&quot;, &quot;lout2&quot;, &quot;lout3&quot;, &quot;lout4&quot;], &quot;html&quot;: &quot;<b>Schritt 3 — DWDM:</b> Ein <b>Multiplexer</b> bündelt alle Wellenlängen in <b>eine einzige Glasfaser</b>. Das ist Frequenz-Multiplexing im optischen Bereich (Dense Wavelength Division Multiplexing).&quot;}, {&quot;label&quot;: &quot;Über die Faser (+ Verstärker)&quot;, &quot;show&quot;: [&quot;src1&quot;, &quot;lin1&quot;, &quot;src2&quot;, &quot;lin2&quot;, &quot;src3&quot;, &quot;lin3&quot;, &quot;src4&quot;, &quot;lin4&quot;, &quot;mux&quot;, &quot;fiber&quot;, &quot;amp&quot;], &quot;blink&quot;: [&quot;amp&quot;], &quot;hide&quot;: [&quot;demux&quot;, &quot;dst1&quot;, &quot;dst2&quot;, &quot;dst3&quot;, &quot;dst4&quot;, &quot;lout1&quot;, &quot;lout2&quot;, &quot;lout3&quot;, &quot;lout4&quot;], &quot;html&quot;: &quot;<b>Schritt 4:</b> Das gebündelte Licht läuft über die Faser; <b>optische Verstärker</b> (alle ~80 km) frischen das Signal auf. Pro Kanal bis zu <b>800 Gbit/s</b>, insgesamt bis ~<b>35 Tbit/s</b> pro Faser.&quot;}, {&quot;label&quot;: &quot;DEMUX trennt die Wellenlängen&quot;, &quot;show&quot;: [&quot;src1&quot;, &quot;lin1&quot;, &quot;src2&quot;, &quot;lin2&quot;, &quot;src3&quot;, &quot;lin3&quot;, &quot;src4&quot;, &quot;lin4&quot;, &quot;mux&quot;, &quot;fiber&quot;, &quot;amp&quot;, &quot;demux&quot;, &quot;dst1&quot;, &quot;dst2&quot;, &quot;dst3&quot;, &quot;dst4&quot;, &quot;lout1&quot;, &quot;lout2&quot;, &quot;lout3&quot;, &quot;lout4&quot;], &quot;blink&quot;: [&quot;demux&quot;], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>Schritt 5:</b> Am Ziel trennt ein <b>Demultiplexer</b> die Wellenlängen wieder auf, und jeder Datenstrom erreicht sein eigenes Ziel. Einsatz: klassische <b>Backbones</b> und <b>Überseekabel</b>.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -105,12 +108,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="805" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="805" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:dwdm -->
 
 ## Verwandte Themen

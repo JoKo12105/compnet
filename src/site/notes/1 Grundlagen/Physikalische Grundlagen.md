@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Physikalische Grundlagen/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T21:43:20.768+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Nachrichtentechnischer Kanal","Bandbreite","Datenrate","Latenz"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Physikalische Grundlagen/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T22:32:42.787+02:00","dg-note-properties":{"permalink":"/1 Grundlagen/Physikalische Grundlagen/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T22:20:27.066+02:00"}}
 ---
+
 
 
 # Physikalische Grundlagen
@@ -18,9 +19,8 @@ Die Nachricht liegt im Rechner **digital** vor, das übertragene **Signal** ist 
 | Physik | **Übertragungsgeschwindigkeit** | Ausbreitungsgeschwindigkeit des Signals |
 | Informatik | **Datenrate** | übertragene **Bits pro Sekunde** |
 | Informatik | **Latenz** | Verzögerung / Verzögerungszeit |
-#### Faustregeln
-+ Die **Datenrate** steigt mit höherer Bandbreite, besserer Codierung und weniger Störungen.
-+ Die **Latenz** sinkt mit höherer Übertragungsgeschwindigkeit und weniger Verzögerung an Zwischenstationen.
+
+Faustregeln: Die **Datenrate** steigt mit höherer Bandbreite, besserer Codierung und weniger Störungen. Die **Latenz** sinkt mit höherer Übertragungsgeschwindigkeit und weniger Verzögerung an Zwischenstationen.
 
 ## Störungen
 Signale unterliegen **Dämpfung**, **Verzerrung (Dispersion)** und **Rauschen**. Diese begrenzen Reichweite und Datenrate eines [[1 Grundlagen/Übertragungsmedien & Frequenzen\|Mediums]].
@@ -29,7 +29,6 @@ Signale unterliegen **Dämpfung**, **Verzerrung (Dispersion)** und **Rauschen**.
 [[1 Grundlagen/Übertragungsmedien & Frequenzen\|Übertragungsmedien & Frequenzen]] · [[1 Grundlagen/Schichtenmodell\|Schichtenmodell]] · [[3 Access Networks/DSL\|DSL]]
 
 [[1 Grundlagen/1.0 Grundlagen (Übersicht)\|← Kapitelübersicht]]
-
 
 ---
 <!-- kapitel-nav -->

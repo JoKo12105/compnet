@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/3 Access Networks/Mobilfunk/","tags":["computernetworks","access"],"updated":"2026-06-18T18:28:31.833+02:00","dg-note-properties":{"tags":["computernetworks","access"],"aliases":["Mobilfunk","GSM","UMTS","LTE","5G","Zelle","Handover"]}}
+{"dg-publish":true,"permalink":"/3 Access Networks/Mobilfunk/","tags":["computernetworks","access"],"updated":"2026-06-18T22:32:42.832+02:00","dg-note-properties":{"permalink":"/3 Access Networks/Mobilfunk/","tags":["computernetworks","access"],"updated":"2026-06-18T22:20:28.649+02:00"}}
 ---
+
 
 
 # Mobilfunk
@@ -79,6 +80,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Eine Zelle mit Basisstation&quot;, &quot;show&quot;: [&quot;hex-C&quot;, &quot;bts&quot;], &quot;hide&quot;: [&quot;reuse&quot;, &quot;ph1&quot;, &quot;ph2&quot;, &quot;ho&quot;], &quot;html&quot;: &quot;<b>Zelle:</b> Eine <b>Basisstation</b> (bei LTE: eNodeB) versorgt einen räumlichen Bereich — die <b>Zelle</b>. Mobilfunknetze sind in solche Zellen strukturiert.&quot;}, {&quot;label&quot;: &quot;Warum überhaupt Zellen?&quot;, &quot;show&quot;: [&quot;hex-C&quot;, &quot;hex-A&quot;, &quot;hex-B&quot;, &quot;hex-D&quot;, &quot;hex-E&quot;, &quot;hex-F&quot;, &quot;hex-T&quot;, &quot;bts&quot;], &quot;hide&quot;: [&quot;reuse&quot;, &quot;ph1&quot;, &quot;ph2&quot;, &quot;ho&quot;], &quot;blink&quot;: [&quot;hex-C&quot;], &quot;html&quot;: &quot;<b>Begründung:</b> Wegen der starken Abstrahl-Dämpfung (≈ 1/r⁴) dürfen Sender und Empfänger nicht zu weit auseinanderliegen. Viele kleine Zellen bedeuten: <b>geringe Sendeleistung</b>, lange Akkulaufzeit und <b>viele Teilnehmer</b> — aber hohe Aufbaukosten.&quot;}, {&quot;label&quot;: &quot;Frequenz-Wiederverwendung (Reuse)&quot;, &quot;show&quot;: [&quot;hex-C&quot;, &quot;hex-A&quot;, &quot;hex-B&quot;, &quot;hex-D&quot;, &quot;hex-E&quot;, &quot;hex-F&quot;, &quot;hex-T&quot;, &quot;bts&quot;, &quot;reuse&quot;], &quot;blink&quot;: [&quot;reuse&quot;], &quot;hide&quot;: [&quot;ph1&quot;, &quot;ph2&quot;, &quot;ho&quot;], &quot;html&quot;: &quot;<b>Reuse:</b> Die begrenzten Frequenzen werden in <b>Gruppen</b> aufgeteilt. Dieselbe Frequenzgruppe (z. B. <b>f2</b>) wird in <b>nicht benachbarten</b> Zellen wiederverwendet — so steigt die Gesamtkapazität ohne Interferenz.&quot;}, {&quot;label&quot;: &quot;Handover beim Zellwechsel&quot;, &quot;show&quot;: [&quot;hex-C&quot;, &quot;hex-A&quot;, &quot;hex-B&quot;, &quot;hex-D&quot;, &quot;hex-E&quot;, &quot;hex-F&quot;, &quot;hex-T&quot;, &quot;bts&quot;, &quot;ph1&quot;, &quot;ho&quot;, &quot;ph2&quot;], &quot;blink&quot;: [&quot;ho&quot;], &quot;hide&quot;: [&quot;reuse&quot;], &quot;html&quot;: &quot;<b>Handover:</b> Bewegt sich ein Gerät aus einer Zelle in die nächste, wird die Verbindung im <b>Vermittlungs-Subsystem</b> nahtlos übergeben. Mobilfunk durchlief die Generationen <b>1G → 5G</b> (GSM, UMTS, LTE, 5G) mit stetig steigender Datenrate und sinkender Latenz.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -91,12 +94,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="965" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="965" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:mobilfunk-zellen -->
 
 ## Die Generationen

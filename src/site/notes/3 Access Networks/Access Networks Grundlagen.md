@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/3 Access Networks/Access Networks Grundlagen/","tags":["computernetworks","access"],"updated":"2026-06-18T18:28:31.755+02:00","dg-note-properties":{"tags":["computernetworks","access"],"aliases":["Access Network","Distribution Network","Feeder Network"]}}
+{"dg-publish":true,"permalink":"/3 Access Networks/Access Networks Grundlagen/","tags":["computernetworks","access"],"updated":"2026-06-18T22:32:42.817+02:00","dg-note-properties":{"permalink":"/3 Access Networks/Access Networks Grundlagen/","tags":["computernetworks","access"],"updated":"2026-06-18T22:20:28.483+02:00"}}
 ---
+
 
 
 # Access Networks Grundlagen

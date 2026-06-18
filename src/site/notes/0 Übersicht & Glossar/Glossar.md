@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Glossar/","tags":["computernetworks","glossar"],"updated":"2026-06-18T18:28:31.131+02:00","dg-note-properties":{"tags":["computernetworks","glossar"]}}
+{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Glossar/","tags":["computernetworks","glossar"],"updated":"2026-06-18T22:32:42.727+02:00","dg-note-properties":{"permalink":"/0 Übersicht & Glossar/Glossar/","tags":["computernetworks","glossar"],"updated":"2026-06-18T22:20:26.826+02:00"}}
 ---
+
 
 
 # 📖 Glossar

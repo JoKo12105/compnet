@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/Longest Prefix Match/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T18:28:32.234+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["Longest Prefix Match","LPM","Forwarding-Regel"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/Longest Prefix Match/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:32:42.880+02:00","dg-note-properties":{"permalink":"/5 Vermittlungsschicht/Longest Prefix Match/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:20:29.829+02:00"}}
 ---
+
 
 
 # Longest Prefix Match
@@ -88,6 +89,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Aufgabe: beste Route für 142.143.144.4&quot;, &quot;hide&quot;: [&quot;mark1&quot;, &quot;mark2&quot;, &quot;mark3&quot;, &quot;mark4&quot;], &quot;show&quot;: [], &quot;set&quot;: [[&quot;verdict&quot;, &quot;&quot;\|&quot;verdict&quot;, &quot;&quot;]], &quot;html&quot;: &quot;<b>Aufgabe:</b> Welche Zeile der Routing-Tabelle nimmt der Router für das Ziel <b>142.143.144.4</b>? Es gilt: <b>Longest Prefix Match</b> — die Zeile mit den <b>meisten übereinstimmenden Präfix-Bits</b> gewinnt.&quot;}, {&quot;label&quot;: &quot;default /0 passt immer (schlechtester)&quot;, &quot;show&quot;: [&quot;mark4&quot;], &quot;blink&quot;: [&quot;mark4&quot;], &quot;hide&quot;: [&quot;mark1&quot;, &quot;mark2&quot;, &quot;mark3&quot;], &quot;set&quot;: [[&quot;verdict&quot;, &quot;&quot;\|&quot;verdict&quot;, &quot;&quot;]], &quot;html&quot;: &quot;<b>default /0:</b> passt auf <b>alles</b> (0 Bits Präfix) — also auch hier. Aber es ist der <b>kürzeste</b> Match, somit nur Notnagel.&quot;}, {&quot;label&quot;: &quot;/16 passt&quot;, &quot;show&quot;: [&quot;mark4&quot;, &quot;mark1&quot;], &quot;blink&quot;: [&quot;mark1&quot;], &quot;hide&quot;: [&quot;mark2&quot;, &quot;mark3&quot;], &quot;set&quot;: [[&quot;verdict&quot;, &quot;&quot;\|&quot;verdict&quot;, &quot;&quot;]], &quot;html&quot;: &quot;<b>/16:</b> Die ersten 16 Bit (142.143) stimmen → <b>passt</b>, mit 16 Bit Präfix.&quot;}, {&quot;label&quot;: &quot;/24 passt — und ist länger&quot;, &quot;show&quot;: [&quot;mark4&quot;, &quot;mark1&quot;, &quot;mark2&quot;], &quot;blink&quot;: [&quot;mark2&quot;], &quot;hide&quot;: [&quot;mark3&quot;], &quot;set&quot;: [[&quot;verdict&quot;, &quot;&quot;\|&quot;verdict&quot;, &quot;&quot;]], &quot;html&quot;: &quot;<b>/24:</b> Auch 142.143.144 stimmt → <b>passt</b> mit 24 Bit. Das ist <b>länger</b> als /16, also bisher der beste Treffer.&quot;}, {&quot;label&quot;: &quot;/25 passt NICHT&quot;, &quot;show&quot;: [&quot;mark4&quot;, &quot;mark1&quot;, &quot;mark2&quot;, &quot;mark3&quot;], &quot;blink&quot;: [&quot;mark3&quot;], &quot;hide&quot;: [], &quot;set&quot;: [[&quot;verdict&quot;, &quot;&quot;\|&quot;verdict&quot;, &quot;&quot;]], &quot;html&quot;: &quot;<b>/25 (142.143.144.128):</b> Das 25. Bit verlangt Host-Teil ≥ 128 — unsere .4 liegt darunter. <b>Kein Treffer.</b>&quot;}, {&quot;label&quot;: &quot;Gewinner: /24 → Router R&quot;, &quot;show&quot;: [&quot;mark2&quot;], &quot;blink&quot;: [&quot;mark2&quot;], &quot;hide&quot;: [&quot;mark1&quot;, &quot;mark3&quot;, &quot;mark4&quot;], &quot;set&quot;: [[&quot;verdict&quot;, &quot;Längstes passendes Präfix = /24  →  Router R&quot;\|&quot;verdict&quot;, &quot;Längstes passendes Präfix = /24  →  Router R&quot;]], &quot;html&quot;: &quot;<b>Ergebnis:</b> Unter allen Treffern (/0, /16, /24) hat <b>/24</b> das längste Präfix → das Paket geht an <b>Router R</b>. Die Tabelle wird genau deshalb nach <b>abnehmender Präfixlänge</b> sortiert.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -100,12 +103,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="816" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="816" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:lpm -->
 
 > [!example] Sender-Seite

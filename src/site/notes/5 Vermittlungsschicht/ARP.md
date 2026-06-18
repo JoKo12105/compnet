@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/ARP/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T18:28:32.254+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["ARP","Address Resolution Protocol","ARP-Cache"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/ARP/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:32:42.858+02:00","dg-note-properties":{"permalink":"/5 Vermittlungsschicht/ARP/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:20:29.866+02:00"}}
 ---
+
 
 
 # ARP
@@ -92,6 +93,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;A kennt die IP, aber nicht die MAC&quot;, &quot;hide&quot;: [&quot;bcB&quot;, &quot;bcC&quot;, &quot;bcD&quot;, &quot;bclbl&quot;, &quot;reply&quot;, &quot;cache&quot;], &quot;show&quot;: [], &quot;html&quot;: &quot;<b>Schritt 1:</b> Host A will an <b>10.0.0.5</b> senden. Für die Übertragung im LAN braucht es aber die <b>MAC-Adresse</b> (Ethernet) — die kennt A noch nicht.&quot;}, {&quot;label&quot;: &quot;ARP-Request per Broadcast&quot;, &quot;show&quot;: [&quot;bcB&quot;, &quot;bcC&quot;, &quot;bcD&quot;, &quot;bclbl&quot;], &quot;blink&quot;: [&quot;bclbl&quot;], &quot;hide&quot;: [&quot;reply&quot;, &quot;cache&quot;], &quot;html&quot;: &quot;<b>Schritt 2:</b> A fragt per <b>Broadcast</b> das ganze LAN: „Wer hat 10.0.0.5?“ — alle Hosts empfangen die Frage.&quot;}, {&quot;label&quot;: &quot;Nur der Besitzer antwortet&quot;, &quot;show&quot;: [&quot;bcB&quot;, &quot;bcC&quot;, &quot;bcD&quot;, &quot;bclbl&quot;, &quot;reply&quot;], &quot;blink&quot;: [&quot;reply&quot;], &quot;hide&quot;: [&quot;cache&quot;], &quot;html&quot;: &quot;<b>Schritt 3:</b> Nur <b>Host C</b> (Besitzer von 10.0.0.5) antwortet — per <b>Unicast</b> mit seiner MAC-Adresse.&quot;}, {&quot;label&quot;: &quot;Ergebnis im ARP-Cache&quot;, &quot;show&quot;: [&quot;bclbl&quot;, &quot;reply&quot;, &quot;cache&quot;], &quot;blink&quot;: [&quot;cache&quot;], &quot;hide&quot;: [&quot;bcB&quot;, &quot;bcC&quot;, &quot;bcD&quot;], &quot;html&quot;: &quot;<b>Schritt 4:</b> A speichert die Zuordnung im <b>ARP-Cache</b> und kann nun direkt an die MAC senden. <b>ARP</b> bildet also IP → MAC ab.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -104,12 +107,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="805" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="805" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:arp -->
 
 Für jeden Sendevorgang muss zur Ziel-IP die MAC gefunden werden: per **Broadcast** „Wer hat IP x?“ fragen; der Besitzer antwortet mit seiner MAC. Ergebnisse landen im **ARP-Cache** (damit nicht jedes Mal neu gefragt werden muss).

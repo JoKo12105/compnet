@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/3 Access Networks/DSL/","tags":["computernetworks","access"],"updated":"2026-06-18T18:28:31.774+02:00","dg-note-properties":{"tags":["computernetworks","access"],"aliases":["DSL","ADSL","DMT","Digital Subscriber Line"]}}
+{"dg-publish":true,"permalink":"/3 Access Networks/DSL/","tags":["computernetworks","access"],"updated":"2026-06-18T22:32:42.824+02:00","dg-note-properties":{"permalink":"/3 Access Networks/DSL/","tags":["computernetworks","access"],"updated":"2026-06-18T22:20:28.523+02:00"}}
 ---
+
 
 
 # DSL
@@ -96,6 +97,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Die Telefonleitung trägt nur Sprache&quot;, &quot;show&quot;: [&quot;b-voice&quot;], &quot;blink&quot;: [&quot;b-voice&quot;], &quot;hide&quot;: [&quot;b-up&quot;, &quot;b-down&quot;, &quot;carriers&quot;, &quot;carriers-up&quot;], &quot;html&quot;: &quot;<b>Ausgangslage:</b> Klassische Telefonie nutzt nur das schmale Band <b>0–4 kHz</b> der Kupfer-Doppelader. Der Rest des Spektrums liegt brach.&quot;}, {&quot;label&quot;: &quot;DSL nutzt die hohen Frequenzen&quot;, &quot;show&quot;: [&quot;b-voice&quot;, &quot;b-up&quot;, &quot;b-down&quot;], &quot;blink&quot;: [&quot;b-up&quot;, &quot;b-down&quot;], &quot;hide&quot;: [&quot;carriers&quot;, &quot;carriers-up&quot;], &quot;html&quot;: &quot;<b>DSL-Idee:</b> Oberhalb der Sprache (ab ~25 kHz bis ~2,2 MHz) werden die <b>ungenutzten Frequenzen</b> für Daten verwendet — Telefonie und Internet laufen gleichzeitig über dieselbe Leitung.&quot;}, {&quot;label&quot;: &quot;Asymmetrie: Up- vs. Downstream&quot;, &quot;show&quot;: [&quot;b-voice&quot;, &quot;b-up&quot;, &quot;b-down&quot;], &quot;blink&quot;: [&quot;b-down&quot;], &quot;hide&quot;: [&quot;carriers&quot;, &quot;carriers-up&quot;], &quot;html&quot;: &quot;<b>Asymmetrie (ADSL):</b> Dem <b>Downstream</b> wird ein viel größerer Frequenzbereich zugewiesen als dem <b>Upstream</b> — weil Nutzer typischerweise mehr empfangen als senden.&quot;}, {&quot;label&quot;: &quot;DMT: viele kleine Unterträger&quot;, &quot;show&quot;: [&quot;b-voice&quot;, &quot;b-up&quot;, &quot;b-down&quot;, &quot;carriers&quot;, &quot;carriers-up&quot;], &quot;blink&quot;: [&quot;carriers&quot;], &quot;hide&quot;: [], &quot;html&quot;: &quot;<b>DMT (Discrete MultiTone):</b> Jedes Band wird in viele schmale <b>Unterträger</b> zerlegt, die <b>einzeln und dynamisch</b> moduliert werden. Gestörte Träger tragen weniger Bits, gute mehr. DSL ist <b>Punkt-zu-Punkt</b> über die Telefonleitung und nutzt intensiv Frequenz-Multiplexing.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -108,12 +111,16 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="898" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="898" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:dsl -->
 
 > [!note] Glasfaser als Ablösung

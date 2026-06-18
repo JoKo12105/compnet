@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/3 Access Networks/IoT & Bluetooth/","tags":["computernetworks","access"],"updated":"2026-06-18T18:28:31.839+02:00","dg-note-properties":{"tags":["computernetworks","access"],"aliases":["IoT","Internet of Things","Bluetooth","BLE","Zigbee","LoRaWAN"]}}
+{"dg-publish":true,"permalink":"/3 Access Networks/IoT & Bluetooth/","tags":["computernetworks","access"],"updated":"2026-06-18T22:32:42.830+02:00","dg-note-properties":{"permalink":"/3 Access Networks/IoT & Bluetooth/","tags":["computernetworks","access"],"updated":"2026-06-18T22:20:28.669+02:00"}}
 ---
+
 
 
 # IoT & Bluetooth

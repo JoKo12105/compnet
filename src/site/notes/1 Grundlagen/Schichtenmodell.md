@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Schichtenmodell/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T19:43:13.040+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Schichten","OSI","Referenzmodell","Encapsulation","Tunneling","Dienst","Interface"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Schichtenmodell/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T22:32:42.793+02:00","dg-note-properties":{"permalink":"/1 Grundlagen/Schichtenmodell/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T22:20:27.172+02:00"}}
 ---
+
 
 
 # Schichtenmodell
@@ -21,14 +22,13 @@ Logisch kommuniziert jede Schicht **nur mit der gleichen Schicht** der Gegenseit
 ## Encapsulation
 Beim Senden wird eine Dateneinheit der Ebene *n* in eine der Ebene *n−1* **verpackt** (Encapsulation), beim Empfangen wieder **entpackt**. Werden Dateneinheiten stattdessen in eine **gleich hohe oder höhere** Schicht verpackt, spricht man von **Tunneling** (häufig im Security-Umfeld). Genau dieser Vorgang Schritt für Schritt:
 
-
 <!-- viz:schichtenmodell -->
 <iframe srcdoc="<!DOCTYPE html>
 <html lang=&quot;de&quot;><head><meta charset=&quot;UTF-8&quot;>
 <meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>
 <title>Encapsulation im Schichtenmodell</title><style>
 *{box-sizing:border-box}
-body{margin:0;padding:8px 0;background:transparent;font-family:&quot;Segoe UI&quot;,&quot;Trebuchet MS&quot;,sans-serif;color:rgb(30,36,48)}
+body{margin:0;padding:26px 14px;background:transparent;font-family:&quot;Segoe UI&quot;,&quot;Trebuchet MS&quot;,sans-serif;color:rgb(30,36,48)}
 .stepper,.widget{
   --bg:rgb(244,239,230); --panel:rgb(255,253,248); --ink:rgb(30,36,48); --muted:rgb(95,107,122); --line:rgb(207,197,180);
   --accent:rgb(37,73,184); --success:rgb(34,129,75);
@@ -39,7 +39,7 @@ body{margin:0;padding:8px 0;background:transparent;font-family:&quot;Segoe UI&qu
   --c5:rgb(217,250,244); --c5b:rgb(22,147,127); --c5t:rgb(13,90,77);
   --c6:rgb(255,217,210); --c6b:rgb(204,90,66); --c6t:rgb(122,46,32);
   --shadow:0 10px 28px rgba(58,40,18,.10);
-  max-width:none;margin:0 auto;padding:12px 0;border-radius:24px;
+  max-width:920px;margin:0 auto;padding:24px 18px;border-radius:24px;
   background:transparent;
   box-shadow:none}
 h1.viz-title{text-align:center;font-size:19px;margin:0 0 4px;color:rgb(238,242,248)}
@@ -50,7 +50,7 @@ h1.viz-title{text-align:center;font-size:19px;margin:0 0 4px;color:rgb(238,242,2
 .step-dot.active{background:var(--accent);border-color:rgb(23,53,140);color:rgb(255,255,255);transform:scale(1.06)}
 .step-dot.done{background:var(--success);border-color:rgb(23,99,56);color:rgb(255,255,255)}
 .step-label{text-align:center;font-size:14px;color:rgb(227,233,242);margin-bottom:16px;min-height:20px;font-weight:700}
-.diagram-frame{max-width:none;margin:0 auto;padding:10px;border-radius:22px;background:var(--panel);border:1px solid rgb(232,222,206);box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
+.diagram-frame{max-width:780px;margin:0 auto;padding:16px;border-radius:22px;background:var(--panel);border:1px solid rgb(232,222,206);box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
 svg{display:block;width:100%;height:auto}
 .th{font-size:15px;font-weight:800}
 .ts{font-size:12px;font-weight:600}
@@ -63,7 +63,7 @@ svg{display:block;width:100%;height:auto}
 .c4 rect,rect.c4{fill:var(--c4);stroke:var(--c4b)} .c4 text,text.c4{fill:var(--c4t)}
 .c5 rect,rect.c5{fill:var(--c5);stroke:var(--c5b)} .c5 text,text.c5{fill:var(--c5t)}
 .c6 rect,rect.c6{fill:var(--c6);stroke:var(--c6b)} .c6 text,text.c6{fill:var(--c6t)}
-.step-description{max-width:none;margin:16px auto 0;padding:16px 20px;border-radius:18px;background:linear-gradient(180deg,rgb(255,249,239) 0%,rgb(255,245,227) 100%);border:1px solid rgb(239,214,168);color:var(--ink);font-size:14.5px;line-height:1.6;box-shadow:0 8px 24px rgba(115,82,20,.08);animation:slide-in .28s ease}
+.step-description{max-width:780px;margin:16px auto 0;padding:16px 20px;border-radius:18px;background:linear-gradient(180deg,rgb(255,249,239) 0%,rgb(255,245,227) 100%);border:1px solid rgb(239,214,168);color:var(--ink);font-size:14.5px;line-height:1.6;box-shadow:0 8px 24px rgba(115,82,20,.08);animation:slide-in .28s ease}
 .step-description b{color:rgb(124,74,0)}
 .btn-row{display:flex;justify-content:center;gap:12px;margin-top:16px}
 .btn{padding:10px 22px;border-radius:999px;border:1.5px solid rgb(210,195,170);background:rgb(255,249,239);color:var(--ink);font-size:13px;font-weight:700;cursor:pointer;transition:transform .15s,background .15s,border-color .15s}
@@ -74,6 +74,10 @@ svg{display:block;width:100%;height:auto}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.02)}}
 @keyframes slide-in{from{transform:translateY(8px);opacity:0}to{transform:translateY(0);opacity:1}}
 .blinking{animation:pulse 1.15s ease-in-out infinite;transform-origin:center}
+body{padding:8px 0}
+.stepper{max-width:none;padding:12px 0}
+.diagram-frame{max-width:none;padding:10px}
+.step-description{max-width:none}
 </style></head>
 <body><div class=&quot;stepper&quot;>
 <h1 class=&quot;viz-title&quot;>Encapsulation im Schichtenmodell</h1>
@@ -127,6 +131,8 @@ svg{display:block;width:100%;height:auto}
 <script>
 const steps = [{&quot;label&quot;: &quot;Anwendung übergibt Nutzdaten&quot;, &quot;blink&quot;: [&quot;lyr5&quot;], &quot;show&quot;: [&quot;pdu-data&quot;], &quot;hide&quot;: [&quot;pdu-tcp&quot;, &quot;pdu-ip&quot;, &quot;pdu-ethh&quot;, &quot;pdu-etht&quot;, &quot;pdu-bits&quot;, &quot;line-down&quot;, &quot;arrow-tx&quot;], &quot;set&quot;: [[&quot;pdu-name&quot;, &quot;Daten (Nachricht)&quot;\|&quot;pdu-name&quot;, &quot;Daten (Nachricht)&quot;]], &quot;html&quot;: &quot;<b>Schritt 1 — Anwendung (L5):</b> Eine Anwendung (z. B. ein Browser) erzeugt Nutzdaten und übergibt sie an die Transportschicht.&quot;}, {&quot;label&quot;: &quot;Transport packt ein → Segment&quot;, &quot;blink&quot;: [&quot;lyr4&quot;], &quot;show&quot;: [&quot;pdu-data&quot;, &quot;pdu-tcp&quot;], &quot;hide&quot;: [&quot;pdu-ip&quot;, &quot;pdu-ethh&quot;, &quot;pdu-etht&quot;, &quot;pdu-bits&quot;, &quot;line-down&quot;, &quot;arrow-tx&quot;], &quot;set&quot;: [[&quot;pdu-name&quot;, &quot;Segment&quot;\|&quot;pdu-name&quot;, &quot;Segment&quot;]], &quot;html&quot;: &quot;<b>Schritt 2 — Transport (L4):</b> Es kommt ein <b>TCP-Header</b> davor (Quell-/Ziel-Port, SEQ/ACK). Aus den Daten wird ein <b>Segment</b>.&quot;}, {&quot;label&quot;: &quot;Vermittlung packt ein → Paket&quot;, &quot;blink&quot;: [&quot;lyr3&quot;], &quot;show&quot;: [&quot;pdu-data&quot;, &quot;pdu-tcp&quot;, &quot;pdu-ip&quot;], &quot;hide&quot;: [&quot;pdu-ethh&quot;, &quot;pdu-etht&quot;, &quot;pdu-bits&quot;, &quot;line-down&quot;, &quot;arrow-tx&quot;], &quot;set&quot;: [[&quot;pdu-name&quot;, &quot;Paket (Datagram)&quot;\|&quot;pdu-name&quot;, &quot;Paket (Datagram)&quot;]], &quot;html&quot;: &quot;<b>Schritt 3 — Vermittlung (L3):</b> Der <b>IP-Header</b> (Quell-/Ziel-IP, TTL) wird ergänzt. Das Ergebnis ist ein <b>Paket</b>, das über Netzgrenzen geroutet werden kann.&quot;}, {&quot;label&quot;: &quot;Sicherung packt ein → Frame&quot;, &quot;blink&quot;: [&quot;lyr2&quot;], &quot;show&quot;: [&quot;pdu-data&quot;, &quot;pdu-tcp&quot;, &quot;pdu-ip&quot;, &quot;pdu-ethh&quot;, &quot;pdu-etht&quot;], &quot;hide&quot;: [&quot;pdu-bits&quot;, &quot;line-down&quot;, &quot;arrow-tx&quot;], &quot;set&quot;: [[&quot;pdu-name&quot;, &quot;Frame&quot;\|&quot;pdu-name&quot;, &quot;Frame&quot;]], &quot;html&quot;: &quot;<b>Schritt 4 — Sicherung (L2):</b> Ein <b>MAC-Header</b> (Quell-/Ziel-MAC) und am Ende eine <b>CRC-Prüfsumme</b> umschließen das Paket. Das ist ein <b>Frame</b>.&quot;}, {&quot;label&quot;: &quot;Bitübertragung → Signal&quot;, &quot;blink&quot;: [&quot;lyr1&quot;], &quot;show&quot;: [&quot;pdu-data&quot;, &quot;pdu-tcp&quot;, &quot;pdu-ip&quot;, &quot;pdu-ethh&quot;, &quot;pdu-etht&quot;, &quot;line-down&quot;, &quot;pdu-bits&quot;], &quot;hide&quot;: [&quot;arrow-tx&quot;], &quot;set&quot;: [[&quot;pdu-name&quot;, &quot;Bitstrom / Signal&quot;\|&quot;pdu-name&quot;, &quot;Bitstrom / Signal&quot;]], &quot;html&quot;: &quot;<b>Schritt 5 — Bitübertragung (L1):</b> Das Frame wird in einen <b>Bitstrom</b> und schließlich in ein physikalisches <b>Signal</b> umgewandelt und auf das Medium gelegt.&quot;}, {&quot;label&quot;: &quot;Übertragung zum Empfänger&quot;, &quot;show&quot;: [&quot;pdu-bits&quot;, &quot;line-down&quot;, &quot;arrow-tx&quot;], &quot;blink&quot;: [&quot;arrow-tx&quot;], &quot;hide&quot;: [], &quot;set&quot;: [[&quot;pdu-name&quot;, &quot;Bitstrom / Signal&quot;\|&quot;pdu-name&quot;, &quot;Bitstrom / Signal&quot;]], &quot;html&quot;: &quot;<b>Schritt 6 — Übertragung:</b> Das Signal läuft über das Medium zum Empfänger (ggf. über mehrere Geräte und Teilnetze hinweg).&quot;}, {&quot;label&quot;: &quot;Decapsulation beim Empfänger&quot;, &quot;show&quot;: [&quot;pdu-data&quot;, &quot;pdu-tcp&quot;, &quot;pdu-ip&quot;, &quot;pdu-ethh&quot;, &quot;pdu-etht&quot;], &quot;hide&quot;: [&quot;pdu-bits&quot;, &quot;arrow-tx&quot;, &quot;line-down&quot;], &quot;blink&quot;: [&quot;lyr1&quot;, &quot;lyr5&quot;], &quot;set&quot;: [[&quot;pdu-name&quot;, &quot;Decapsulation (umgekehrt)&quot;\|&quot;pdu-name&quot;, &quot;Decapsulation (umgekehrt)&quot;]], &quot;html&quot;: &quot;<b>Schritt 7 — Decapsulation:</b> Beim Empfänger läuft alles <b>rückwärts</b>: Jede Schicht entfernt „ihren“ Header (L1→L2→L3→L4) und reicht den Rest nach oben — bis die Anwendung wieder die reinen Nutzdaten sieht. Logisch kommuniziert jede Schicht <b>nur mit der gleichen Schicht der Gegenseite</b>.&quot;}];
 let current = 0;
+let _lh=0;
+function fit(){try{var h=document.body.scrollHeight;if(window.frameElement&amp;&amp;Math.abs(h-_lh)>1){_lh=h;window.frameElement.style.height=h+&quot;px&quot;;}}catch(e){}}
 function render(idx){
   const s = steps[idx];
   document.getElementById(&quot;step-label&quot;).textContent = (idx+1)+&quot; / &quot;+steps.length+&quot; — &quot;+s.label;
@@ -139,14 +145,17 @@ function render(idx){
   document.getElementById(&quot;btn-prev&quot;).disabled = idx===0;
   document.getElementById(&quot;btn-next&quot;).disabled = idx===steps.length-1;
   document.getElementById(&quot;btn-next&quot;).textContent = idx===steps.length-1 ? &quot;Fertig&quot; : &quot;Weiter&quot;;
+  fit();
 }
 function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));render(current);}
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="1009" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+window.addEventListener(&quot;load&quot;,fit);
+if(window.ResizeObserver){new ResizeObserver(fit).observe(document.body);}
+setTimeout(fit,60);
+</script></body></html>" width="100%" height="1009" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:schichtenmodell -->
-
 
 > [!example] PDU-Namen je Schicht
 > Transport → **Segment**, Vermittlung → **Paket/Datagram**, Sicherung → **Frame**, Bitübertragung → **Bitstrom/Signal**.

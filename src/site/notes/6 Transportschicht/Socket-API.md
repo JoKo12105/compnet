@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/6 Transportschicht/Socket-API/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:28:33.404+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["Socket-API","Sockets","Netzwerkprogrammierung"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/Socket-API/","tags":["computernetworks","transport"],"updated":"2026-06-18T22:32:42.907+02:00","dg-note-properties":{"permalink":"/6 Transportschicht/Socket-API/","tags":["computernetworks","transport"],"updated":"2026-06-18T22:20:30.917+02:00"}}
 ---
+
 
 
 # Socket-API

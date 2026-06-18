@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5-vermittlungsschicht/i-pv6/","tags":["computernetworks","vermittlung"],"dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["IPv6","IPv6-Adresse","Dual-Stack","Neighbor Discovery"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IPv6/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T15:26:10.977+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["IPv6","IPv6-Adresse","Dual-Stack","Neighbor Discovery"]}}
 ---
 
 

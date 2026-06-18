@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-grundlagen/protokolle/","tags":["computernetworks","grundlagen"],"dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Protokoll","verbindungsorientiert","verbindungslos","Multiplexing","Flusskontrolle"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Protokolle/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T15:04:04.192+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Protokoll","verbindungsorientiert","verbindungslos","Multiplexing","Flusskontrolle"]}}
 ---
 
 

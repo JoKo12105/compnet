@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/6-transportschicht/ports-and-sockets/","tags":["computernetworks","transport"],"dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["Port","Socket","Multiplexing","Demultiplexing","well-known ports"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/Ports & Sockets/","tags":["computernetworks","transport"],"updated":"2026-06-18T15:26:52.139+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["Port","Socket","Multiplexing","Demultiplexing","well-known ports"]}}
 ---
 
 

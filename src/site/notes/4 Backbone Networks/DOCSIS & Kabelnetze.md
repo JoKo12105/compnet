@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/4-backbone-networks/docsis-and-kabelnetze/","tags":["computernetworks","backbone"],"dg-note-properties":{"tags":["computernetworks","backbone"],"aliases":["DOCSIS","HFC","Kabelfernsehen","Hybrid Fiber Coax"]}}
+{"dg-publish":true,"permalink":"/4 Backbone Networks/DOCSIS & Kabelnetze/","tags":["computernetworks","backbone"],"updated":"2026-06-18T15:04:04.898+02:00","dg-note-properties":{"tags":["computernetworks","backbone"],"aliases":["DOCSIS","HFC","Kabelfernsehen","Hybrid Fiber Coax"]}}
 ---
 
 

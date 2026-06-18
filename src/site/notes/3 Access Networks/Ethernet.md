@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/3-access-networks/ethernet/","tags":["computernetworks","access"],"dg-note-properties":{"tags":["computernetworks","access"],"aliases":["Ethernet","CSMA/CD","MAC-Adresse","IEEE 802.3","Frame"]}}
+{"dg-publish":true,"permalink":"/3 Access Networks/Ethernet/","tags":["computernetworks","access"],"updated":"2026-06-18T15:24:08.865+02:00","dg-note-properties":{"tags":["computernetworks","access"],"aliases":["Ethernet","CSMA/CD","MAC-Adresse","IEEE 802.3","Frame"]}}
 ---
 
 

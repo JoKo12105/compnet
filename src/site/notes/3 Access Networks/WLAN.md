@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/3-access-networks/wlan/","tags":["computernetworks","access"],"dg-note-properties":{"tags":["computernetworks","access"],"aliases":["WLAN","WiFi",802.11,"CSMA/CA","RTS/CTS","SSID","BSS"]}}
+{"dg-publish":true,"permalink":"/3 Access Networks/WLAN/","tags":["computernetworks","access"],"updated":"2026-06-18T15:24:46.448+02:00","dg-note-properties":{"tags":["computernetworks","access"],"aliases":["WLAN","WiFi",802.11,"CSMA/CA","RTS/CTS","SSID","BSS"]}}
 ---
 
 

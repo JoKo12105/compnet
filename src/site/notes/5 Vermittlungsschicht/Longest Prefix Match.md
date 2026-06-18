@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5-vermittlungsschicht/longest-prefix-match/","tags":["computernetworks","vermittlung"],"dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["Longest Prefix Match","LPM","Forwarding-Regel"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/Longest Prefix Match/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T15:26:19.674+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["Longest Prefix Match","LPM","Forwarding-Regel"]}}
 ---
 
 

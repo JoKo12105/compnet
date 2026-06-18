@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/0-uebersicht-and-glossar/glossar/","tags":["computernetworks","glossar"],"dg-note-properties":{"tags":["computernetworks","glossar"]}}
+{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Glossar/","tags":["computernetworks","glossar"],"updated":"2026-06-18T15:04:04.025+02:00","dg-note-properties":{"tags":["computernetworks","glossar"]}}
 ---
 
 

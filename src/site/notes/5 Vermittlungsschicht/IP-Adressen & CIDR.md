@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5-vermittlungsschicht/ip-adressen-and-cidr/","tags":["computernetworks","vermittlung"],"dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["IP-Adresse","CIDR","Netzmaske","Subnetz","Subnetting","private IP-Adressen"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IP-Adressen & CIDR/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T15:25:52.107+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["IP-Adresse","CIDR","Netzmaske","Subnetz","Subnetting","private IP-Adressen"]}}
 ---
 
 

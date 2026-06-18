@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5-vermittlungsschicht/i-pv4-paket/","tags":["computernetworks","vermittlung"],"dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["IP-Paket","IPv4-Header","Datagram","TTL","Fragmentierung"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IPv4-Paket/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T15:04:05.227+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["IP-Paket","IPv4-Header","Datagram","TTL","Fragmentierung"]}}
 ---
 
 

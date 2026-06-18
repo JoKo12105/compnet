@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/6-transportschicht/tcp/","tags":["computernetworks","transport"],"dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["TCP","Transmission Control Protocol","Segment"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/TCP/","tags":["computernetworks","transport"],"updated":"2026-06-18T15:04:05.710+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["TCP","Transmission Control Protocol","Segment"]}}
 ---
 
 

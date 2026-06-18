@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5-vermittlungsschicht/dhcp/","tags":["computernetworks","vermittlung"],"dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["DHCP","DORA","Dynamic Host Configuration Protocol","Lease"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/DHCP/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T15:25:37.508+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["DHCP","DORA","Dynamic Host Configuration Protocol","Lease"]}}
 ---
 
 

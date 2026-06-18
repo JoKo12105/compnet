@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/4-backbone-networks/sonet-sdh-and-dwdm/","tags":["computernetworks","backbone"],"dg-note-properties":{"tags":["computernetworks","backbone"],"aliases":["SONET","SDH","DWDM","Wellenlängen-Multiplexing"]}}
+{"dg-publish":true,"permalink":"/4 Backbone Networks/SONET, SDH & DWDM/","tags":["computernetworks","backbone"],"updated":"2026-06-18T15:25:14.811+02:00","dg-note-properties":{"tags":["computernetworks","backbone"],"aliases":["SONET","SDH","DWDM","Wellenlängen-Multiplexing"]}}
 ---
 
 

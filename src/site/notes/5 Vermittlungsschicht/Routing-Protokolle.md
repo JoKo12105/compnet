@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5-vermittlungsschicht/routing-protokolle/","tags":["computernetworks","vermittlung"],"dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["Routing-Protokolle","IGP","EGP","OSPF","BGP","Distance Vector","Link State"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/Routing-Protokolle/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T15:04:05.168+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["Routing-Protokolle","IGP","EGP","OSPF","BGP","Distance Vector","Link State"]}}
 ---
 
 

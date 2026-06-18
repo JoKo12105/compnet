@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/3-access-networks/mobilfunk/","tags":["computernetworks","access"],"dg-note-properties":{"tags":["computernetworks","access"],"aliases":["Mobilfunk","GSM","UMTS","LTE","5G","Zelle","Handover"]}}
+{"dg-publish":true,"permalink":"/3 Access Networks/Mobilfunk/","tags":["computernetworks","access"],"updated":"2026-06-18T15:04:04.701+02:00","dg-note-properties":{"tags":["computernetworks","access"],"aliases":["Mobilfunk","GSM","UMTS","LTE","5G","Zelle","Handover"]}}
 ---
 
 

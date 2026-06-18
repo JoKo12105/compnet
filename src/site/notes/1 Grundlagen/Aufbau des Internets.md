@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-grundlagen/aufbau-des-internets/","tags":["computernetworks","grundlagen"],"dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Internet","Autonome Systeme","AS","Tiers","Peering","Access","Backbone"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Aufbau des Internets/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T15:21:04.525+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Internet","Autonome Systeme","AS","Tiers","Peering","Access","Backbone"]}}
 ---
 
 

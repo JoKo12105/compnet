@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-link-layer/llc-sicherung/","tags":["computernetworks","linklayer"],"dg-note-properties":{"tags":["computernetworks","linklayer"],"aliases":["LLC","ARQ","FEC","Fehlerbehandlung","Frame","Logical Link Control"]}}
+{"dg-publish":true,"permalink":"/2 Link Layer/LLC – Sicherung/","tags":["computernetworks","linklayer"],"updated":"2026-06-18T15:22:20.477+02:00","dg-note-properties":{"tags":["computernetworks","linklayer"],"aliases":["LLC","ARQ","FEC","Fehlerbehandlung","Frame","Logical Link Control"]}}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2-link-layer/vermittlungsarten/","tags":["computernetworks","linklayer"],"dg-note-properties":{"tags":["computernetworks","linklayer"],"aliases":["Circuit Switching","Packet Switching","Leitungsvermittlung","Paketvermittlung","Vermittlung"]}}
+{"dg-publish":true,"permalink":"/2 Link Layer/Vermittlungsarten/","tags":["computernetworks","linklayer"],"updated":"2026-06-18T15:22:43.675+02:00","dg-note-properties":{"tags":["computernetworks","linklayer"],"aliases":["Circuit Switching","Packet Switching","Leitungsvermittlung","Paketvermittlung","Vermittlung"]}}
 ---
 
 

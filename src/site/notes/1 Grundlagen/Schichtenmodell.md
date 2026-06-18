@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1-grundlagen/schichtenmodell/","tags":["computernetworks","grundlagen"],"dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Schichten","OSI","Referenzmodell","Encapsulation","Tunneling","Dienst","Interface"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Schichtenmodell/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T15:21:42.348+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Schichten","OSI","Referenzmodell","Encapsulation","Tunneling","Dienst","Interface"]}}
 ---
 
 

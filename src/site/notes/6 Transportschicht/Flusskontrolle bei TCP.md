@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/6-transportschicht/flusskontrolle-bei-tcp/","tags":["computernetworks","transport"],"dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["Flusskontrolle","Sliding Window","Window Size","RTT","Timeout","Retransmit"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/Flusskontrolle bei TCP/","tags":["computernetworks","transport"],"updated":"2026-06-18T15:04:05.759+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["Flusskontrolle","Sliding Window","Window Size","RTT","Timeout","Retransmit"]}}
 ---
 
 

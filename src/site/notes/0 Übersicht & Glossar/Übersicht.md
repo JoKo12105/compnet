@@ -1,10 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/0-uebersicht-and-glossar/uebersicht/","tags":["computernetworks","moc","start","gardenEntry"],"dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
+{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T15:40:11.420+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
 ---
 
 
 # 🌐 Computer Networks — Kurs & Nachschlagewerk
 
+Test
 Dieser Vault ist **Kurs** und **Nachschlagewerk** zugleich. Jedes Konzept hat seine eigene Note, Querverweise sind als `[[Links]]` eingebunden, und zentrale Abläufe werden über **interaktive Visualisierungen** Schritt für Schritt erklärbar gemacht.
 
 > [!tip] Bedienung

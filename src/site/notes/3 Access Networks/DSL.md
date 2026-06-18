@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/3-access-networks/dsl/","tags":["computernetworks","access"],"dg-note-properties":{"tags":["computernetworks","access"],"aliases":["DSL","ADSL","DMT","Digital Subscriber Line"]}}
+{"dg-publish":true,"permalink":"/3 Access Networks/DSL/","tags":["computernetworks","access"],"updated":"2026-06-18T15:23:12.437+02:00","dg-note-properties":{"tags":["computernetworks","access"],"aliases":["DSL","ADSL","DMT","Digital Subscriber Line"]}}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/4-backbone-networks/backbone-grundlagen/","tags":["computernetworks","backbone"],"dg-note-properties":{"tags":["computernetworks","backbone"],"aliases":["Backbone","Überseekabel","Glasfaser-Backbone"]}}
+{"dg-publish":true,"permalink":"/4 Backbone Networks/Backbone Grundlagen/","tags":["computernetworks","backbone"],"updated":"2026-06-18T15:04:04.869+02:00","dg-note-properties":{"tags":["computernetworks","backbone"],"aliases":["Backbone","Überseekabel","Glasfaser-Backbone"]}}
 ---
 
 

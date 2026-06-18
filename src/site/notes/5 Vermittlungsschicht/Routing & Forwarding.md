@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5-vermittlungsschicht/routing-and-forwarding/","tags":["computernetworks","vermittlung"],"dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["Forwarding","Routing","Router","Store and Forward","data plane","control plane"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/Routing & Forwarding/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T15:26:27.381+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["Forwarding","Routing","Router","Store and Forward","data plane","control plane"]}}
 ---
 
 

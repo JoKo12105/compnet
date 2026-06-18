@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5-vermittlungsschicht/arp/","tags":["computernetworks","vermittlung"],"dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["ARP","Address Resolution Protocol","ARP-Cache"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/ARP/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T15:25:28.667+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["ARP","Address Resolution Protocol","ARP-Cache"]}}
 ---
 
 

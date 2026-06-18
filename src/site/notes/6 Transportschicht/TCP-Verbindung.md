@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/6-transportschicht/tcp-verbindung/","tags":["computernetworks","transport"],"dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["TCP-Verbindung","3-Wege-Handshake","Handshake","TCP-Zustände","TIME_WAIT"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/TCP-Verbindung/","tags":["computernetworks","transport"],"updated":"2026-06-18T15:27:12.439+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["TCP-Verbindung","3-Wege-Handshake","Handshake","TCP-Zustände","TIME_WAIT"]}}
 ---
 
 

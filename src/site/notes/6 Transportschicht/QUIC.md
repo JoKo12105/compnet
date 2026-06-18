@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/6-transportschicht/quic/","tags":["computernetworks","transport"],"dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["QUIC","Quick UDP Internet Connections"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/QUIC/","tags":["computernetworks","transport"],"updated":"2026-06-18T15:04:05.793+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["QUIC","Quick UDP Internet Connections"]}}
 ---
 
 

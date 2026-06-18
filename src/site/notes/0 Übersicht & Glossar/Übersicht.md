@@ -62,7 +62,6 @@ svg{display:block;width:100%;height:auto}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.02)}}
 @keyframes slide-in{from{transform:translateY(8px);opacity:0}to{transform:translateY(0);opacity:1}}
 .blinking{animation:pulse 1.15s ease-in-out infinite;transform-origin:center}
-
 .rm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
 .rm-card{border-radius:18px;padding:16px 18px;border:2px solid;cursor:pointer;transition:transform .18s,box-shadow .18s;box-shadow:0 6px 18px rgba(60,45,20,.08)}
 .rm-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(60,45,20,.16)}
@@ -117,11 +116,10 @@ topics.forEach(o=>{const div=document.createElement(&quot;div&quot;);div.classNa
 6. [[6 Transportschicht/6.0 Transportschicht (Übersicht)\|Transportschicht (Layer 4)]] — Ports & Sockets, TCP, UDP, QUIC
 
 ## 🔑 Schnellzugriff: zentrale Konzepte
-
-Grundlagen: [[1 Grundlagen/Schichtenmodell\|Schichtenmodell]] · [[1 Grundlagen/Protokolle\|Protokolle]] · [[1 Grundlagen/Netzwerk-Geräte\|Netzwerk-Geräte]] · [[1 Grundlagen/Aufbau des Internets\|Aufbau des Internets]]
-Zugang: [[3 Access Networks/Ethernet\|Ethernet]] · [[3 Access Networks/WLAN\|WLAN]] · [[3 Access Networks/Mobilfunk\|Mobilfunk]]
-Internet (L3): [[5 Vermittlungsschicht/IP-Adressen & CIDR\|IP-Adressen & CIDR]] · [[5 Vermittlungsschicht/Routing & Forwarding\|Routing & Forwarding]] · [[5 Vermittlungsschicht/Longest Prefix Match\|Longest Prefix Match]] · [[5 Vermittlungsschicht/ARP\|ARP]] · [[5 Vermittlungsschicht/DHCP\|DHCP]] · [[5 Vermittlungsschicht/IPv6\|IPv6]]
-Transport (L4): [[6 Transportschicht/TCP\|TCP]] · [[6 Transportschicht/TCP-Verbindung\|TCP-Verbindung]] · [[6 Transportschicht/Flusskontrolle bei TCP\|Flusskontrolle bei TCP]] · [[6 Transportschicht/UDP\|UDP]]
++ **Grundlagen**: [[1 Grundlagen/Schichtenmodell\|Schichtenmodell]] · [[1 Grundlagen/Protokolle\|Protokolle]] · [[1 Grundlagen/Netzwerk-Geräte\|Netzwerk-Geräte]] · [[1 Grundlagen/Aufbau des Internets\|Aufbau des Internets]]
++ **Zugang**: [[3 Access Networks/Ethernet\|Ethernet]] · [[3 Access Networks/WLAN\|WLAN]] · [[3 Access Networks/Mobilfunk\|Mobilfunk]]
++ **Internet** (L3): [[5 Vermittlungsschicht/IP-Adressen & CIDR\|IP-Adressen & CIDR]] · [[5 Vermittlungsschicht/Routing & Forwarding\|Routing & Forwarding]] · [[5 Vermittlungsschicht/Longest Prefix Match\|Longest Prefix Match]] · [[5 Vermittlungsschicht/ARP\|ARP]] · [[5 Vermittlungsschicht/DHCP\|DHCP]] · [[5 Vermittlungsschicht/IPv6\|IPv6]]
++ **Transport** (L4): [[6 Transportschicht/TCP\|TCP]] · [[6 Transportschicht/TCP-Verbindung\|TCP-Verbindung]] · [[6 Transportschicht/Flusskontrolle bei TCP\|Flusskontrolle bei TCP]] · [[6 Transportschicht/UDP\|UDP]]
 
 ## 📖 Wie lese ich diese Website?
 

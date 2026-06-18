@@ -136,8 +136,3 @@ Optimierungen: **Adress-Aggregierung** (z. B. /24-Netze außen zu /22 zusammenfa
 ---
 <!-- kapitel-nav -->
 [[5 Vermittlungsschicht/5.0 Vermittlungsschicht (Übersicht)\|⬅️ Übersicht]]  ·  [[5 Vermittlungsschicht/Routing-Protokolle\|Routing-Protokolle ➡️]]
-
----
-<!-- coffee-button -->
-<a href="https://paypal.me/joelkowylin" target="_blank" rel="noopener" style="display:block;max-width:340px;margin:10px auto;padding:12px 18px;border-radius:14px;border:2px solid #c67a00;background:linear-gradient(180deg,#ffe08a,#ffce47);color:#5a3d00;text-decoration:none;text-align:center;box-shadow:0 4px 14px rgba(180,130,20,.25)"><span style="display:block;font-size:1.15em;font-weight:800">Buy me a coffee ☕</span><span style="display:block;font-size:0.72em;margin-top:3px;opacity:.85">Diese Website zu hosten hat mich 10€ gekostet 😭</span></a>
-<!-- /coffee-button -->

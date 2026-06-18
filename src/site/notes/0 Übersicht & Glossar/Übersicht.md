@@ -127,8 +127,7 @@ Transport (L4): [[6 Transportschicht/TCP\|TCP]] · [[6 Transportschicht/TCP-Verb
 
 Für die **Klausurvorbereitung** empfiehlt sich der Weg von oben nach unten (Kapitel 1 → 6) entlang des **Schichtenmodells** — von unten (Bits & Medien) nach oben (Anwendungen). Als **Nachschlagewerk** kannst du über den Schnellzugriff oder das [[0 Übersicht & Glossar/Glossar\|Glossar]] direkt zu einem Begriff springen.
 Jede Note beginnt mit einer Kurzdefinition („Auf einen Blick"), gefolgt von Details und — wo sinnvoll — einer interaktiven Visualisierung.
-
 ---
 <!-- coffee-button -->
-<a href="https://paypal.me/joelkowylin" target="_blank" rel="noopener" style="display:block;max-width:340px;margin:10px auto;padding:12px 18px;border-radius:14px;border:2px solid #c67a00;background:linear-gradient(180deg,#ffe08a,#ffce47);color:#5a3d00;text-decoration:none;text-align:center;box-shadow:0 4px 14px rgba(180,130,20,.25)"><span style="display:block;font-size:1.15em;font-weight:800">Buy me a coffee ☕</span><span style="display:block;font-size:0.72em;margin-top:3px;opacity:.85">Diese Website zu hosten hat mich 10€ gekostet 😭</span></a>
+<a href="https://paypal.me/joelkowylin" target="_blank" rel="noopener" style="display:block;max-width:340px;margin:10px auto;padding:12px 18px;border-radius:14px;border:2px solid #c67a00;background:linear-gradient(180deg,#ffe08a,#ffce47);color:#5a3d00;text-decoration:none;text-align:center;box-shadow:0 4px 14px rgba(180,130,20,.25)"><span style="display:block;font-size:1.15em;font-weight:800">BUY ME A COFFEE ☕</span><span style="display:block;font-size:0.72em;margin-top:3px;opacity:.85">Diese Websites zu hosten hat mich 10€ gekostet 😭</span></a>
 <!-- /coffee-button -->

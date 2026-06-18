@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T21:42:03.358+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
+{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T21:57:07.399+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
 ---
 
 > [!warning] WIP
@@ -11,7 +11,6 @@
 > 
 > >[!info] Tipp
 > >Gerne mal ab und zu die Seite neu laden, da ständig Updates hinzu kommen können.
-
 # 🌐 Computer Networks — Kurs & Nachschlagewerk
 
 Diese Website ist **Kurs** und **Nachschlagewerk** zugleich. Jedes Konzept hat seinen eigenen Artikel, Querverweise sind direkt verlinkt, und zentrale Abläufe werden über **interaktive Visualisierungen** Schritt für Schritt erklär- und erfahrbar gemacht.

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Protokolle/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T21:56:34.187+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Protokoll","verbindungsorientiert","verbindungslos","Multiplexing","Flusskontrolle"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Protokolle/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T21:57:01.397+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Protokoll","verbindungsorientiert","verbindungslos","Multiplexing","Flusskontrolle"]}}
 ---
 
 
@@ -18,7 +18,6 @@
 - optional **Flusskontrolle** (Überlastvermeidung)
 
 Beschrieben werden Protokolle über **zeitlichen Ablauf** (Sequenzdiagramme) und **logische Folge** (Zustände).
-
 ## Verbindungsorientiert vs. verbindungslos
 | | verbindungsorientiert | verbindungslos |
 |---|---|---|

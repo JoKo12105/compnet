@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Schichtenmodell/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T15:21:42.348+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Schichten","OSI","Referenzmodell","Encapsulation","Tunneling","Dienst","Interface"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Schichtenmodell/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:01:53.295+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Schichten","OSI","Referenzmodell","Encapsulation","Tunneling","Dienst","Interface"]}}
 ---
 
 
@@ -27,29 +27,29 @@ Beim Senden wird eine Dateneinheit der Ebene *n* in eine der Ebene *n−1* **ver
 <meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>
 <title>Encapsulation im Schichtenmodell</title><style>
 *{box-sizing:border-box}
-body{margin:0;padding:26px 14px;background:transparent;font-family:&quot;Segoe UI&quot;,&quot;Trebuchet MS&quot;,sans-serif;color:#1e2430}
+body{margin:0;padding:26px 14px;background:transparent;font-family:&quot;Segoe UI&quot;,&quot;Trebuchet MS&quot;,sans-serif;color:rgb(30,36,48)}
 .stepper,.widget{
-  --bg:#f4efe6; --panel:#fffdf8; --ink:#1e2430; --muted:#5f6b7a; --line:#cfc5b4;
-  --accent:#2549b8; --success:#22814b;
-  --c1:#d9ecff; --c1b:#1d5fa7; --c1t:#123a63;
-  --c2:#d8f5df; --c2b:#2f8f4e; --c2t:#1d5d32;
-  --c3:#ffe4b8; --c3b:#c67a00; --c3t:#6e4300;
-  --c4:#e8ddff; --c4b:#7452c7; --c4t:#442b7f;
-  --c5:#d9faf4; --c5b:#16937f; --c5t:#0d5a4d;
-  --c6:#ffd9d2; --c6b:#cc5a42; --c6t:#7a2e20;
+  --bg:rgb(244,239,230); --panel:rgb(255,253,248); --ink:rgb(30,36,48); --muted:rgb(95,107,122); --line:rgb(207,197,180);
+  --accent:rgb(37,73,184); --success:rgb(34,129,75);
+  --c1:rgb(217,236,255); --c1b:rgb(29,95,167); --c1t:rgb(18,58,99);
+  --c2:rgb(216,245,223); --c2b:rgb(47,143,78); --c2t:rgb(29,93,50);
+  --c3:rgb(255,228,184); --c3b:rgb(198,122,0); --c3t:rgb(110,67,0);
+  --c4:rgb(232,221,255); --c4b:rgb(116,82,199); --c4t:rgb(68,43,127);
+  --c5:rgb(217,250,244); --c5b:rgb(22,147,127); --c5t:rgb(13,90,77);
+  --c6:rgb(255,217,210); --c6b:rgb(204,90,66); --c6t:rgb(122,46,32);
   --shadow:0 10px 28px rgba(58,40,18,.10);
   max-width:920px;margin:0 auto;padding:24px 18px;border-radius:24px;
-  background:radial-gradient(circle at top left,rgba(255,255,255,.9),transparent 32%),linear-gradient(180deg,#f8f4ec 0%,var(--bg) 100%);
+  background:radial-gradient(circle at top left,rgba(255,255,255,.9),transparent 32%),linear-gradient(180deg,rgb(248,244,236) 0%,var(--bg) 100%);
   box-shadow:var(--shadow)}
 h1.viz-title{text-align:center;font-size:19px;margin:0 0 4px}
 .viz-sub{text-align:center;color:var(--muted);font-size:13.5px;margin:0 0 18px}
 .steps-nav{display:flex;gap:9px;justify-content:center;margin-bottom:16px;flex-wrap:wrap}
-.step-dot{width:32px;height:32px;border-radius:999px;border:2px solid #c9bda7;background:#fffaf1;color:#6a5f4d;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .18s,background .18s,color .18s,border-color .18s;box-shadow:0 2px 8px rgba(90,70,40,.08)}
+.step-dot{width:32px;height:32px;border-radius:999px;border:2px solid rgb(201,189,167);background:rgb(255,250,241);color:rgb(106,95,77);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .18s,background .18s,color .18s,border-color .18s;box-shadow:0 2px 8px rgba(90,70,40,.08)}
 .step-dot:hover{transform:translateY(-1px)}
-.step-dot.active{background:var(--accent);border-color:#17358c;color:#fff;transform:scale(1.06)}
-.step-dot.done{background:var(--success);border-color:#176338;color:#fff}
+.step-dot.active{background:var(--accent);border-color:rgb(23,53,140);color:rgb(255,255,255);transform:scale(1.06)}
+.step-dot.done{background:var(--success);border-color:rgb(23,99,56);color:rgb(255,255,255)}
 .step-label{text-align:center;font-size:14px;color:var(--ink);margin-bottom:16px;min-height:20px;font-weight:700}
-.diagram-frame{max-width:780px;margin:0 auto;padding:16px;border-radius:22px;background:var(--panel);border:1px solid #e8dece;box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
+.diagram-frame{max-width:780px;margin:0 auto;padding:16px;border-radius:22px;background:var(--panel);border:1px solid rgb(232,222,206);box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
 svg{display:block;width:100%;height:auto}
 .th{font-size:15px;font-weight:800}
 .ts{font-size:12px;font-weight:600}
@@ -62,13 +62,13 @@ svg{display:block;width:100%;height:auto}
 .c4 rect,rect.c4{fill:var(--c4);stroke:var(--c4b)} .c4 text,text.c4{fill:var(--c4t)}
 .c5 rect,rect.c5{fill:var(--c5);stroke:var(--c5b)} .c5 text,text.c5{fill:var(--c5t)}
 .c6 rect,rect.c6{fill:var(--c6);stroke:var(--c6b)} .c6 text,text.c6{fill:var(--c6t)}
-.step-description{max-width:780px;margin:16px auto 0;padding:16px 20px;border-radius:18px;background:linear-gradient(180deg,#fff9ef 0%,#fff5e3 100%);border:1px solid #efd6a8;color:var(--ink);font-size:14.5px;line-height:1.6;box-shadow:0 8px 24px rgba(115,82,20,.08);animation:slide-in .28s ease}
-.step-description b{color:#7c4a00}
+.step-description{max-width:780px;margin:16px auto 0;padding:16px 20px;border-radius:18px;background:linear-gradient(180deg,rgb(255,249,239) 0%,rgb(255,245,227) 100%);border:1px solid rgb(239,214,168);color:var(--ink);font-size:14.5px;line-height:1.6;box-shadow:0 8px 24px rgba(115,82,20,.08);animation:slide-in .28s ease}
+.step-description b{color:rgb(124,74,0)}
 .btn-row{display:flex;justify-content:center;gap:12px;margin-top:16px}
-.btn{padding:10px 22px;border-radius:999px;border:1.5px solid #d2c3aa;background:#fff9ef;color:var(--ink);font-size:13px;font-weight:700;cursor:pointer;transition:transform .15s,background .15s,border-color .15s}
-.btn:hover:not(:disabled){background:#fff1d3;transform:translateY(-1px)}
-.btn.primary{background:var(--accent);color:#fff;border-color:#17358c}
-.btn.primary:hover:not(:disabled){background:#1f3e9d}
+.btn{padding:10px 22px;border-radius:999px;border:1.5px solid rgb(210,195,170);background:rgb(255,249,239);color:var(--ink);font-size:13px;font-weight:700;cursor:pointer;transition:transform .15s,background .15s,border-color .15s}
+.btn:hover:not(:disabled){background:rgb(255,241,211);transform:translateY(-1px)}
+.btn.primary{background:var(--accent);color:rgb(255,255,255);border-color:rgb(23,53,140)}
+.btn.primary:hover:not(:disabled){background:rgb(31,62,157)}
 .btn:disabled{opacity:.45;cursor:not-allowed}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.02)}}
 @keyframes slide-in{from{transform:translateY(8px);opacity:0}to{transform:translateY(0);opacity:1}}
@@ -96,11 +96,11 @@ svg{display:block;width:100%;height:auto}
   <text class=&quot;th&quot; x=&quot;117&quot; y=&quot;204&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>2 · Sicherung</text></g>
 <g id=&quot;lyr1&quot; class=&quot;c5 card&quot;><rect x=&quot;24&quot; y=&quot;236&quot; width=&quot;186&quot; height=&quot;44&quot; rx=&quot;11&quot;/>
   <text class=&quot;th&quot; x=&quot;117&quot; y=&quot;258&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>1 · Bitübertragung</text></g>
-<line x1=&quot;117&quot; y1=&quot;64&quot; x2=&quot;117&quot; y2=&quot;74&quot; stroke=&quot;#8a7a5e&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#arrow)&quot;/>
-<line x1=&quot;117&quot; y1=&quot;118&quot; x2=&quot;117&quot; y2=&quot;128&quot; stroke=&quot;#8a7a5e&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#arrow)&quot;/>
-<line x1=&quot;117&quot; y1=&quot;172&quot; x2=&quot;117&quot; y2=&quot;182&quot; stroke=&quot;#8a7a5e&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#arrow)&quot;/>
-<line x1=&quot;117&quot; y1=&quot;226&quot; x2=&quot;117&quot; y2=&quot;236&quot; stroke=&quot;#8a7a5e&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#arrow)&quot;/>
-<text id=&quot;pdu-name&quot; class=&quot;th&quot; x=&quot;455&quot; y=&quot;232&quot; text-anchor=&quot;middle&quot; fill=&quot;#1e2430&quot;>Daten</text>
+<line x1=&quot;117&quot; y1=&quot;64&quot; x2=&quot;117&quot; y2=&quot;74&quot; stroke=&quot;rgb(138,122,94)&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#arrow)&quot;/>
+<line x1=&quot;117&quot; y1=&quot;118&quot; x2=&quot;117&quot; y2=&quot;128&quot; stroke=&quot;rgb(138,122,94)&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#arrow)&quot;/>
+<line x1=&quot;117&quot; y1=&quot;172&quot; x2=&quot;117&quot; y2=&quot;182&quot; stroke=&quot;rgb(138,122,94)&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#arrow)&quot;/>
+<line x1=&quot;117&quot; y1=&quot;226&quot; x2=&quot;117&quot; y2=&quot;236&quot; stroke=&quot;rgb(138,122,94)&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#arrow)&quot;/>
+<text id=&quot;pdu-name&quot; class=&quot;th&quot; x=&quot;455&quot; y=&quot;232&quot; text-anchor=&quot;middle&quot; fill=&quot;rgb(30,36,48)&quot;>Daten</text>
 <g id=&quot;pdu-ethh&quot; class=&quot;c4 card&quot; opacity=&quot;0&quot;><rect x=&quot;250&quot; y=&quot;258&quot; width=&quot;56&quot; height=&quot;42&quot; rx=&quot;8&quot;/>
   <text class=&quot;tm&quot; x=&quot;278&quot; y=&quot;279&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>MAC</text></g>
 <g id=&quot;pdu-ip&quot; class=&quot;c3 card&quot; opacity=&quot;0&quot;><rect x=&quot;307&quot; y=&quot;258&quot; width=&quot;56&quot; height=&quot;42&quot; rx=&quot;8&quot;/>
@@ -111,12 +111,12 @@ svg{display:block;width:100%;height:auto}
   <text class=&quot;ts&quot; x=&quot;496&quot; y=&quot;279&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>Nutzdaten</text></g>
 <g id=&quot;pdu-etht&quot; class=&quot;c4 card&quot; opacity=&quot;0&quot;><rect x=&quot;572&quot; y=&quot;258&quot; width=&quot;50&quot; height=&quot;42&quot; rx=&quot;8&quot;/>
   <text class=&quot;tm&quot; x=&quot;597&quot; y=&quot;279&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>CRC</text></g>
-<line id=&quot;line-down&quot; x1=&quot;455&quot; y1=&quot;300&quot; x2=&quot;455&quot; y2=&quot;330&quot; stroke=&quot;#8a7a5e&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;5 4&quot; marker-end=&quot;url(#arrow)&quot; opacity=&quot;0&quot;/>
-<rect x=&quot;250&quot; y=&quot;334&quot; width=&quot;372&quot; height=&quot;34&quot; rx=&quot;9&quot; fill=&quot;#eee7d8&quot; stroke=&quot;#cfc5b4&quot;/>
-<text class=&quot;ts&quot; x=&quot;436&quot; y=&quot;351&quot; text-anchor=&quot;middle&quot; fill=&quot;#5f6b7a&quot;>Übertragungsmedium</text>
-<g id=&quot;pdu-bits&quot; opacity=&quot;0&quot;><text class=&quot;tm&quot; x=&quot;436&quot; y=&quot;351&quot; text-anchor=&quot;middle&quot; fill=&quot;#16937f&quot; font-family=&quot;monospace&quot;>0101 1100 1011 0100 1110 0011</text></g>
-<g id=&quot;arrow-tx&quot; opacity=&quot;0&quot;><line x1=&quot;270&quot; y1=&quot;386&quot; x2=&quot;600&quot; y2=&quot;386&quot; class=&quot;arr&quot; stroke=&quot;#16937f&quot; marker-end=&quot;url(#arrow)&quot;/>
-  <text class=&quot;ts&quot; x=&quot;435&quot; y=&quot;402&quot; text-anchor=&quot;middle&quot; fill=&quot;#16937f&quot;>Signal zum Empfänger</text></g>
+<line id=&quot;line-down&quot; x1=&quot;455&quot; y1=&quot;300&quot; x2=&quot;455&quot; y2=&quot;330&quot; stroke=&quot;rgb(138,122,94)&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;5 4&quot; marker-end=&quot;url(#arrow)&quot; opacity=&quot;0&quot;/>
+<rect x=&quot;250&quot; y=&quot;334&quot; width=&quot;372&quot; height=&quot;34&quot; rx=&quot;9&quot; fill=&quot;rgb(238,231,216)&quot; stroke=&quot;rgb(207,197,180)&quot;/>
+<text class=&quot;ts&quot; x=&quot;436&quot; y=&quot;351&quot; text-anchor=&quot;middle&quot; fill=&quot;rgb(95,107,122)&quot;>Übertragungsmedium</text>
+<g id=&quot;pdu-bits&quot; opacity=&quot;0&quot;><text class=&quot;tm&quot; x=&quot;436&quot; y=&quot;351&quot; text-anchor=&quot;middle&quot; fill=&quot;rgb(22,147,127)&quot; font-family=&quot;monospace&quot;>0101 1100 1011 0100 1110 0011</text></g>
+<g id=&quot;arrow-tx&quot; opacity=&quot;0&quot;><line x1=&quot;270&quot; y1=&quot;386&quot; x2=&quot;600&quot; y2=&quot;386&quot; class=&quot;arr&quot; stroke=&quot;rgb(22,147,127)&quot; marker-end=&quot;url(#arrow)&quot;/>
+  <text class=&quot;ts&quot; x=&quot;435&quot; y=&quot;402&quot; text-anchor=&quot;middle&quot; fill=&quot;rgb(22,147,127)&quot;>Signal zum Empfänger</text></g>
 </svg></div>
 <div class=&quot;step-description&quot; id=&quot;step-content&quot;></div>
 <div class=&quot;btn-row&quot;>

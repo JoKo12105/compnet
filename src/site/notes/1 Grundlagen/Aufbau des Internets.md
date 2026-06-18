@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Aufbau des Internets/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T15:21:04.525+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Internet","Autonome Systeme","AS","Tiers","Peering","Access","Backbone"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Aufbau des Internets/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:01:53.337+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Internet","Autonome Systeme","AS","Tiers","Peering","Access","Backbone"]}}
 ---
 
 
@@ -18,7 +18,6 @@ Mehr als 60.000 AS bilden die oberste Stufe. Ein AS hat **gleiche Verwaltung** u
 
 ## Access vs. Backbone
 Bei den kleineren Einheiten (Netzen) unterscheidet man zwei Formen, die sich vor allem auf **Ebene 1 und 2** unterscheiden — ab **Ebene 3** werden sie zu einem großen „Netz“ zusammengeschlossen:
-
 | | [[3 Access Networks/3.0 Access Networks (Übersicht)\|Access]] | [[4 Backbone Networks/4.0 Backbone Networks (Übersicht)\|Backbone]] |
 |---|---|---|
 | Zugänge | viele | wenige |

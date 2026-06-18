@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Was sind Netzwerke/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T15:04:04.142+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Netzwerk","Computernetzwerk","Einsatzfelder"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Was sind Netzwerke/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:01:53.228+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Netzwerk","Computernetzwerk","Einsatzfelder"]}}
 ---
 
 

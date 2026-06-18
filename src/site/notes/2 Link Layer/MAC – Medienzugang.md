@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2 Link Layer/MAC – Medienzugang/","tags":["computernetworks","linklayer"],"updated":"2026-06-18T15:04:04.362+02:00","dg-note-properties":{"tags":["computernetworks","linklayer"],"aliases":["MAC","Medienzugang","Multiplexing","Token","Random Access","Carrier Sense"]}}
+{"dg-publish":true,"permalink":"/2 Link Layer/MAC – Medienzugang/","tags":["computernetworks","linklayer"],"updated":"2026-06-18T18:01:53.564+02:00","dg-note-properties":{"tags":["computernetworks","linklayer"],"aliases":["MAC","Medienzugang","Multiplexing","Token","Random Access","Carrier Sense"]}}
 ---
 
 

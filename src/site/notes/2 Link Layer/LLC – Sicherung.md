@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/2 Link Layer/LLC – Sicherung/","tags":["computernetworks","linklayer"],"updated":"2026-06-18T15:22:20.477+02:00","dg-note-properties":{"tags":["computernetworks","linklayer"],"aliases":["LLC","ARQ","FEC","Fehlerbehandlung","Frame","Logical Link Control"]}}
+{"dg-publish":true,"permalink":"/2 Link Layer/LLC – Sicherung/","tags":["computernetworks","linklayer"],"updated":"2026-06-18T18:01:53.549+02:00","dg-note-properties":{"tags":["computernetworks","linklayer"],"aliases":["LLC","ARQ","FEC","Fehlerbehandlung","Frame","Logical Link Control"]}}
 ---
 
 
@@ -26,29 +26,29 @@ Ein Frame geht verloren, der Timer läuft ab, der Sender wiederholt:
 <meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>
 <title>ARQ – Stop-and-Wait mit Frame-Verlust</title><style>
 *{box-sizing:border-box}
-body{margin:0;padding:26px 14px;background:transparent;font-family:&quot;Segoe UI&quot;,&quot;Trebuchet MS&quot;,sans-serif;color:#1e2430}
+body{margin:0;padding:26px 14px;background:transparent;font-family:&quot;Segoe UI&quot;,&quot;Trebuchet MS&quot;,sans-serif;color:rgb(30,36,48)}
 .stepper,.widget{
-  --bg:#f4efe6; --panel:#fffdf8; --ink:#1e2430; --muted:#5f6b7a; --line:#cfc5b4;
-  --accent:#2549b8; --success:#22814b;
-  --c1:#d9ecff; --c1b:#1d5fa7; --c1t:#123a63;
-  --c2:#d8f5df; --c2b:#2f8f4e; --c2t:#1d5d32;
-  --c3:#ffe4b8; --c3b:#c67a00; --c3t:#6e4300;
-  --c4:#e8ddff; --c4b:#7452c7; --c4t:#442b7f;
-  --c5:#d9faf4; --c5b:#16937f; --c5t:#0d5a4d;
-  --c6:#ffd9d2; --c6b:#cc5a42; --c6t:#7a2e20;
+  --bg:rgb(244,239,230); --panel:rgb(255,253,248); --ink:rgb(30,36,48); --muted:rgb(95,107,122); --line:rgb(207,197,180);
+  --accent:rgb(37,73,184); --success:rgb(34,129,75);
+  --c1:rgb(217,236,255); --c1b:rgb(29,95,167); --c1t:rgb(18,58,99);
+  --c2:rgb(216,245,223); --c2b:rgb(47,143,78); --c2t:rgb(29,93,50);
+  --c3:rgb(255,228,184); --c3b:rgb(198,122,0); --c3t:rgb(110,67,0);
+  --c4:rgb(232,221,255); --c4b:rgb(116,82,199); --c4t:rgb(68,43,127);
+  --c5:rgb(217,250,244); --c5b:rgb(22,147,127); --c5t:rgb(13,90,77);
+  --c6:rgb(255,217,210); --c6b:rgb(204,90,66); --c6t:rgb(122,46,32);
   --shadow:0 10px 28px rgba(58,40,18,.10);
   max-width:920px;margin:0 auto;padding:24px 18px;border-radius:24px;
-  background:radial-gradient(circle at top left,rgba(255,255,255,.9),transparent 32%),linear-gradient(180deg,#f8f4ec 0%,var(--bg) 100%);
+  background:radial-gradient(circle at top left,rgba(255,255,255,.9),transparent 32%),linear-gradient(180deg,rgb(248,244,236) 0%,var(--bg) 100%);
   box-shadow:var(--shadow)}
 h1.viz-title{text-align:center;font-size:19px;margin:0 0 4px}
 .viz-sub{text-align:center;color:var(--muted);font-size:13.5px;margin:0 0 18px}
 .steps-nav{display:flex;gap:9px;justify-content:center;margin-bottom:16px;flex-wrap:wrap}
-.step-dot{width:32px;height:32px;border-radius:999px;border:2px solid #c9bda7;background:#fffaf1;color:#6a5f4d;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .18s,background .18s,color .18s,border-color .18s;box-shadow:0 2px 8px rgba(90,70,40,.08)}
+.step-dot{width:32px;height:32px;border-radius:999px;border:2px solid rgb(201,189,167);background:rgb(255,250,241);color:rgb(106,95,77);font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .18s,background .18s,color .18s,border-color .18s;box-shadow:0 2px 8px rgba(90,70,40,.08)}
 .step-dot:hover{transform:translateY(-1px)}
-.step-dot.active{background:var(--accent);border-color:#17358c;color:#fff;transform:scale(1.06)}
-.step-dot.done{background:var(--success);border-color:#176338;color:#fff}
+.step-dot.active{background:var(--accent);border-color:rgb(23,53,140);color:rgb(255,255,255);transform:scale(1.06)}
+.step-dot.done{background:var(--success);border-color:rgb(23,99,56);color:rgb(255,255,255)}
 .step-label{text-align:center;font-size:14px;color:var(--ink);margin-bottom:16px;min-height:20px;font-weight:700}
-.diagram-frame{max-width:780px;margin:0 auto;padding:16px;border-radius:22px;background:var(--panel);border:1px solid #e8dece;box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
+.diagram-frame{max-width:780px;margin:0 auto;padding:16px;border-radius:22px;background:var(--panel);border:1px solid rgb(232,222,206);box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
 svg{display:block;width:100%;height:auto}
 .th{font-size:15px;font-weight:800}
 .ts{font-size:12px;font-weight:600}
@@ -61,13 +61,13 @@ svg{display:block;width:100%;height:auto}
 .c4 rect,rect.c4{fill:var(--c4);stroke:var(--c4b)} .c4 text,text.c4{fill:var(--c4t)}
 .c5 rect,rect.c5{fill:var(--c5);stroke:var(--c5b)} .c5 text,text.c5{fill:var(--c5t)}
 .c6 rect,rect.c6{fill:var(--c6);stroke:var(--c6b)} .c6 text,text.c6{fill:var(--c6t)}
-.step-description{max-width:780px;margin:16px auto 0;padding:16px 20px;border-radius:18px;background:linear-gradient(180deg,#fff9ef 0%,#fff5e3 100%);border:1px solid #efd6a8;color:var(--ink);font-size:14.5px;line-height:1.6;box-shadow:0 8px 24px rgba(115,82,20,.08);animation:slide-in .28s ease}
-.step-description b{color:#7c4a00}
+.step-description{max-width:780px;margin:16px auto 0;padding:16px 20px;border-radius:18px;background:linear-gradient(180deg,rgb(255,249,239) 0%,rgb(255,245,227) 100%);border:1px solid rgb(239,214,168);color:var(--ink);font-size:14.5px;line-height:1.6;box-shadow:0 8px 24px rgba(115,82,20,.08);animation:slide-in .28s ease}
+.step-description b{color:rgb(124,74,0)}
 .btn-row{display:flex;justify-content:center;gap:12px;margin-top:16px}
-.btn{padding:10px 22px;border-radius:999px;border:1.5px solid #d2c3aa;background:#fff9ef;color:var(--ink);font-size:13px;font-weight:700;cursor:pointer;transition:transform .15s,background .15s,border-color .15s}
-.btn:hover:not(:disabled){background:#fff1d3;transform:translateY(-1px)}
-.btn.primary{background:var(--accent);color:#fff;border-color:#17358c}
-.btn.primary:hover:not(:disabled){background:#1f3e9d}
+.btn{padding:10px 22px;border-radius:999px;border:1.5px solid rgb(210,195,170);background:rgb(255,249,239);color:var(--ink);font-size:13px;font-weight:700;cursor:pointer;transition:transform .15s,background .15s,border-color .15s}
+.btn:hover:not(:disabled){background:rgb(255,241,211);transform:translateY(-1px)}
+.btn.primary{background:var(--accent);color:rgb(255,255,255);border-color:rgb(23,53,140)}
+.btn.primary:hover:not(:disabled){background:rgb(31,62,157)}
 .btn:disabled{opacity:.45;cursor:not-allowed}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.02)}}
 @keyframes slide-in{from{transform:translateY(8px);opacity:0}to{transform:translateY(0);opacity:1}}
@@ -89,22 +89,22 @@ svg{display:block;width:100%;height:auto}
   <text class=&quot;th&quot; x=&quot;130&quot; y=&quot;40&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>Sender</text></g>
 <g class=&quot;c2 card&quot;><rect x=&quot;500&quot; y=&quot;20&quot; width=&quot;140&quot; height=&quot;40&quot; rx=&quot;11&quot;/>
   <text class=&quot;th&quot; x=&quot;570&quot; y=&quot;40&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>Empfänger</text></g>
-<line x1=&quot;130&quot; y1=&quot;60&quot; x2=&quot;130&quot; y2=&quot;410&quot; stroke=&quot;#b9ad96&quot; stroke-width=&quot;2&quot;/>
-<line x1=&quot;570&quot; y1=&quot;60&quot; x2=&quot;570&quot; y2=&quot;410&quot; stroke=&quot;#b9ad96&quot; stroke-width=&quot;2&quot;/>
-<g id=&quot;f0&quot; opacity=&quot;0&quot;><line x1=&quot;135&quot; y1=&quot;80&quot; x2=&quot;565&quot; y2=&quot;118&quot; class=&quot;arr&quot; stroke=&quot;#1d5fa7&quot; marker-end=&quot;url(#arrow)&quot;/>
-  <text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot; fill=&quot;#1d5fa7&quot;>Frame 0</text></g>
-<g id=&quot;a0&quot; opacity=&quot;0&quot;><line x1=&quot;565&quot; y1=&quot;135&quot; x2=&quot;135&quot; y2=&quot;173&quot; class=&quot;arr&quot; stroke=&quot;#2f8f4e&quot; marker-end=&quot;url(#arrow)&quot;/>
-  <text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;148&quot; text-anchor=&quot;middle&quot; fill=&quot;#2f8f4e&quot;>ACK 0</text></g>
-<g id=&quot;f1&quot; opacity=&quot;0&quot;><line x1=&quot;135&quot; y1=&quot;195&quot; x2=&quot;360&quot; y2=&quot;215&quot; class=&quot;arr&quot; stroke=&quot;#1d5fa7&quot; marker-end=&quot;url(#arrow)&quot;/>
-  <text class=&quot;ts&quot; x=&quot;250&quot; y=&quot;200&quot; text-anchor=&quot;middle&quot; fill=&quot;#1d5fa7&quot;>Frame 1</text></g>
-<g id=&quot;f1x&quot; opacity=&quot;0&quot;><text x=&quot;392&quot; y=&quot;222&quot; font-size=&quot;26&quot; fill=&quot;#cc3b2a&quot; text-anchor=&quot;middle&quot;>✖</text>
-  <text class=&quot;ts&quot; x=&quot;430&quot; y=&quot;240&quot; text-anchor=&quot;middle&quot; fill=&quot;#cc3b2a&quot;>verloren</text></g>
+<line x1=&quot;130&quot; y1=&quot;60&quot; x2=&quot;130&quot; y2=&quot;410&quot; stroke=&quot;rgb(185,173,150)&quot; stroke-width=&quot;2&quot;/>
+<line x1=&quot;570&quot; y1=&quot;60&quot; x2=&quot;570&quot; y2=&quot;410&quot; stroke=&quot;rgb(185,173,150)&quot; stroke-width=&quot;2&quot;/>
+<g id=&quot;f0&quot; opacity=&quot;0&quot;><line x1=&quot;135&quot; y1=&quot;80&quot; x2=&quot;565&quot; y2=&quot;118&quot; class=&quot;arr&quot; stroke=&quot;rgb(29,95,167)&quot; marker-end=&quot;url(#arrow)&quot;/>
+  <text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot; fill=&quot;rgb(29,95,167)&quot;>Frame 0</text></g>
+<g id=&quot;a0&quot; opacity=&quot;0&quot;><line x1=&quot;565&quot; y1=&quot;135&quot; x2=&quot;135&quot; y2=&quot;173&quot; class=&quot;arr&quot; stroke=&quot;rgb(47,143,78)&quot; marker-end=&quot;url(#arrow)&quot;/>
+  <text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;148&quot; text-anchor=&quot;middle&quot; fill=&quot;rgb(47,143,78)&quot;>ACK 0</text></g>
+<g id=&quot;f1&quot; opacity=&quot;0&quot;><line x1=&quot;135&quot; y1=&quot;195&quot; x2=&quot;360&quot; y2=&quot;215&quot; class=&quot;arr&quot; stroke=&quot;rgb(29,95,167)&quot; marker-end=&quot;url(#arrow)&quot;/>
+  <text class=&quot;ts&quot; x=&quot;250&quot; y=&quot;200&quot; text-anchor=&quot;middle&quot; fill=&quot;rgb(29,95,167)&quot;>Frame 1</text></g>
+<g id=&quot;f1x&quot; opacity=&quot;0&quot;><text x=&quot;392&quot; y=&quot;222&quot; font-size=&quot;26&quot; fill=&quot;rgb(204,59,42)&quot; text-anchor=&quot;middle&quot;>✖</text>
+  <text class=&quot;ts&quot; x=&quot;430&quot; y=&quot;240&quot; text-anchor=&quot;middle&quot; fill=&quot;rgb(204,59,42)&quot;>verloren</text></g>
 <g id=&quot;tout&quot; opacity=&quot;0&quot; class=&quot;c3 card&quot;><rect x=&quot;60&quot; y=&quot;250&quot; width=&quot;150&quot; height=&quot;38&quot; rx=&quot;10&quot;/>
   <text class=&quot;ts&quot; x=&quot;135&quot; y=&quot;269&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>⏱ Timeout läuft ab</text></g>
-<g id=&quot;f1r&quot; opacity=&quot;0&quot;><line x1=&quot;135&quot; y1=&quot;305&quot; x2=&quot;565&quot; y2=&quot;343&quot; class=&quot;arr&quot; stroke=&quot;#c67a00&quot; marker-end=&quot;url(#arrow)&quot;/>
-  <text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;315&quot; text-anchor=&quot;middle&quot; fill=&quot;#c67a00&quot;>Frame 1 (Retransmit)</text></g>
-<g id=&quot;a1&quot; opacity=&quot;0&quot;><line x1=&quot;565&quot; y1=&quot;360&quot; x2=&quot;135&quot; y2=&quot;398&quot; class=&quot;arr&quot; stroke=&quot;#2f8f4e&quot; marker-end=&quot;url(#arrow)&quot;/>
-  <text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;373&quot; text-anchor=&quot;middle&quot; fill=&quot;#2f8f4e&quot;>ACK 1</text></g>
+<g id=&quot;f1r&quot; opacity=&quot;0&quot;><line x1=&quot;135&quot; y1=&quot;305&quot; x2=&quot;565&quot; y2=&quot;343&quot; class=&quot;arr&quot; stroke=&quot;rgb(198,122,0)&quot; marker-end=&quot;url(#arrow)&quot;/>
+  <text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;315&quot; text-anchor=&quot;middle&quot; fill=&quot;rgb(198,122,0)&quot;>Frame 1 (Retransmit)</text></g>
+<g id=&quot;a1&quot; opacity=&quot;0&quot;><line x1=&quot;565&quot; y1=&quot;360&quot; x2=&quot;135&quot; y2=&quot;398&quot; class=&quot;arr&quot; stroke=&quot;rgb(47,143,78)&quot; marker-end=&quot;url(#arrow)&quot;/>
+  <text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;373&quot; text-anchor=&quot;middle&quot; fill=&quot;rgb(47,143,78)&quot;>ACK 1</text></g>
 </svg></div>
 <div class=&quot;step-description&quot; id=&quot;step-content&quot;></div>
 <div class=&quot;btn-row&quot;>

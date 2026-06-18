@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/6 Transportschicht/Transportschicht Grundlagen/","tags":["computernetworks","transport"],"updated":"2026-06-18T15:04:05.664+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["Transportschicht","QoS","Ende-zu-Ende"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/Transportschicht Grundlagen/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:01:55.546+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["Transportschicht","QoS","Ende-zu-Ende"]}}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Netzwerk-Geräte/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T15:04:04.198+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Geräte","Hub","Switch","Router","Gateway","Middlebox"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Netzwerk-Geräte/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:01:53.322+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Geräte","Hub","Switch","Router","Gateway","Middlebox"]}}
 ---
 
 

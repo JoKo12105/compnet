@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/6 Transportschicht/UDP/","tags":["computernetworks","transport"],"updated":"2026-06-18T15:04:05.774+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["UDP","User Datagram Protocol"]}}
+{"dg-publish":true,"permalink":"/6 Transportschicht/UDP/","tags":["computernetworks","transport"],"updated":"2026-06-18T18:01:55.662+02:00","dg-note-properties":{"tags":["computernetworks","transport"],"aliases":["UDP","User Datagram Protocol"]}}
 ---
 
 

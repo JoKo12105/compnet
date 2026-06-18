@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/ICMP/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T15:04:05.319+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["ICMP","Internet Control Message Protocol","ping","traceroute"]}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/ICMP/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T18:01:55.209+02:00","dg-note-properties":{"tags":["computernetworks","vermittlung"],"aliases":["ICMP","Internet Control Message Protocol","ping","traceroute"]}}
 ---
 
 

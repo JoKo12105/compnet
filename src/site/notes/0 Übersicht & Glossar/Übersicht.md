@@ -1,12 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T15:40:11.420+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
+{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T15:43:41.328+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
 ---
 
 
 # 🌐 Computer Networks — Kurs & Nachschlagewerk
 
-Test
-Dieser Vault ist **Kurs** und **Nachschlagewerk** zugleich. Jedes Konzept hat seine eigene Note, Querverweise sind als `[[Links]]` eingebunden, und zentrale Abläufe werden über **interaktive Visualisierungen** Schritt für Schritt erklärbar gemacht.
+Diese Website ist **Kurs** und **Nachschlagewerk** zugleich. Jedes Konzept hat seinen eigenen Artikel, Querverweise sind als [[0 Übersicht & Glossar/Übersicht\|Links]] eingebunden, und zentrale Abläufe werden über **interaktive Visualisierungen** Schritt für Schritt erklär- und erfahrbar gemacht.
 
 > [!tip] Bedienung
 > Klicke in der Roadmap eine Karte an, um die Unterthemen zu sehen. In den interaktiven Elementen führen **„Weiter / Zurück"** durch die Schritte.
@@ -118,15 +117,15 @@ topics.forEach(o=>{const div=document.createElement(&quot;div&quot;);div.classNa
 
 ## 🔑 Schnellzugriff: zentrale Konzepte
 
-Grundlagen: [[1 Grundlagen/Schichtenmodell\|Schichtenmodell]] · [[1 Grundlagen/Protokolle\|Protokolle]] · [[1 Grundlagen/Netzwerk-Geräte\|Netzwerk-Geräte]] · [[1 Grundlagen/Aufbau des Internets\|Aufbau des Internets]]
-Zugang: [[3 Access Networks/Ethernet\|Ethernet]] · [[3 Access Networks/WLAN\|WLAN]] · [[3 Access Networks/Mobilfunk\|Mobilfunk]]
-Internet (L3): [[5 Vermittlungsschicht/IP-Adressen & CIDR\|IP-Adressen & CIDR]] · [[5 Vermittlungsschicht/Routing & Forwarding\|Routing & Forwarding]] · [[5 Vermittlungsschicht/Longest Prefix Match\|Longest Prefix Match]] · [[5 Vermittlungsschicht/ARP\|ARP]] · [[5 Vermittlungsschicht/DHCP\|DHCP]] · [[5 Vermittlungsschicht/IPv6\|IPv6]]
-Transport (L4): [[6 Transportschicht/TCP\|TCP]] · [[6 Transportschicht/TCP-Verbindung\|TCP-Verbindung]] · [[6 Transportschicht/Flusskontrolle bei TCP\|Flusskontrolle bei TCP]] · [[6 Transportschicht/UDP\|UDP]]
++ Grundlagen: [[1 Grundlagen/Schichtenmodell\|Schichtenmodell]] · [[1 Grundlagen/Protokolle\|Protokolle]] · [[1 Grundlagen/Netzwerk-Geräte\|Netzwerk-Geräte]] · [[1 Grundlagen/Aufbau des Internets\|Aufbau des Internets]]
++ Zugang: [[3 Access Networks/Ethernet\|Ethernet]] · [[3 Access Networks/WLAN\|WLAN]] · [[3 Access Networks/Mobilfunk\|Mobilfunk]]
++ Internet (L3): [[5 Vermittlungsschicht/IP-Adressen & CIDR\|IP-Adressen & CIDR]] · [[5 Vermittlungsschicht/Routing & Forwarding\|Routing & Forwarding]] · [[5 Vermittlungsschicht/Longest Prefix Match\|Longest Prefix Match]] · [[5 Vermittlungsschicht/ARP\|ARP]] · [[5 Vermittlungsschicht/DHCP\|DHCP]] · [[5 Vermittlungsschicht/IPv6\|IPv6]]
++ Transport (L4): [[6 Transportschicht/TCP\|TCP]] · [[6 Transportschicht/TCP-Verbindung\|TCP-Verbindung]] · [[6 Transportschicht/Flusskontrolle bei TCP\|Flusskontrolle bei TCP]] · [[6 Transportschicht/UDP\|UDP]]
 
-## 📖 Wie lese ich diesen Vault?
+## 📖 Wie lese ich diese Website?
 
 Für die **Klausurvorbereitung** empfiehlt sich der Weg von oben nach unten (Kapitel 1 → 6) entlang des **Schichtenmodells** — von unten (Bits & Medien) nach oben (Anwendungen). Als **Nachschlagewerk** kannst du über den Schnellzugriff oder das [[0 Übersicht & Glossar/Glossar\|Glossar]] direkt zu einem Begriff springen.
-Jede Note beginnt mit einer Kurzdefinition („Auf einen Blick"), gefolgt von Details und — wo sinnvoll — einer interaktiven Visualisierung.
+Jeder Artikel beginnt mit einer Kurzdefinition („Auf einen Blick"), gefolgt von Details und — wo sinnvoll — einer interaktiven Visualisierung.
 
 ---
 <!-- coffee-button -->

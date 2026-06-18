@@ -5,7 +5,7 @@
 
 # 🌐 Computer Networks — Kurs & Nachschlagewerk
 
-Dieser Vault ist **Kurs** und **Nachschlagewerk** zugleich. Jedes Konzept hat seine eigene Note, Querverweise sind als `[[Links]]` eingebunden, und zentrale Abläufe werden über **interaktive Visualisierungen** Schritt für Schritt erklärbar gemacht.
+Diese Website ist **Kurs** und **Nachschlagewerk** zugleich. Jedes Konzept hat seinen eigenen Artikel, Querverweise sind als [[0 Übersicht & Glossar/Übersicht\|Links]] eingebunden, und zentrale Abläufe werden über **interaktive Visualisierungen** Schritt für Schritt erklär- und erfahrbar gemacht.
 
 > [!tip] Bedienung
 > Klicke in der Roadmap eine Karte an, um die Unterthemen zu sehen. In den interaktiven Elementen führen **„Weiter / Zurück"** durch die Schritte.
@@ -123,10 +123,11 @@ Zugang: [[3 Access Networks/Ethernet\|Ethernet]] · [[3 Access Networks/WLAN\|WL
 Internet (L3): [[5 Vermittlungsschicht/IP-Adressen & CIDR\|IP-Adressen & CIDR]] · [[5 Vermittlungsschicht/Routing & Forwarding\|Routing & Forwarding]] · [[5 Vermittlungsschicht/Longest Prefix Match\|Longest Prefix Match]] · [[5 Vermittlungsschicht/ARP\|ARP]] · [[5 Vermittlungsschicht/DHCP\|DHCP]] · [[5 Vermittlungsschicht/IPv6\|IPv6]]
 Transport (L4): [[6 Transportschicht/TCP\|TCP]] · [[6 Transportschicht/TCP-Verbindung\|TCP-Verbindung]] · [[6 Transportschicht/Flusskontrolle bei TCP\|Flusskontrolle bei TCP]] · [[6 Transportschicht/UDP\|UDP]]
 
-## 📖 Wie lese ich diesen Vault?
+## 📖 Wie lese ich diese Website?
 
 Für die **Klausurvorbereitung** empfiehlt sich der Weg von oben nach unten (Kapitel 1 → 6) entlang des **Schichtenmodells** — von unten (Bits & Medien) nach oben (Anwendungen). Als **Nachschlagewerk** kannst du über den Schnellzugriff oder das [[0 Übersicht & Glossar/Glossar\|Glossar]] direkt zu einem Begriff springen.
 Jede Note beginnt mit einer Kurzdefinition („Auf einen Blick"), gefolgt von Details und — wo sinnvoll — einer interaktiven Visualisierung.
+
 ---
 <!-- coffee-button -->
 <a href="https://paypal.me/joelkowylin" target="_blank" rel="noopener" style="display:block;max-width:340px;margin:10px auto;padding:12px 18px;border-radius:14px;border:2px solid #c67a00;background:linear-gradient(180deg,#ffe08a,#ffce47);color:#5a3d00;text-decoration:none;text-align:center;box-shadow:0 4px 14px rgba(180,130,20,.25)"><span style="display:block;font-size:1.15em;font-weight:800">BUY ME A COFFEE ☕</span><span style="display:block;font-size:0.72em;margin-top:3px;opacity:.85">Diese Websites zu hosten hat mich 10€ gekostet 😭</span></a>

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Schichtenmodell/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T18:58:21.204+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Schichten","OSI","Referenzmodell","Encapsulation","Tunneling","Dienst","Interface"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Schichtenmodell/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T19:02:36.893+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Schichten","OSI","Referenzmodell","Encapsulation","Tunneling","Dienst","Interface"]}}
 ---
 
 
@@ -143,7 +143,7 @@ function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));re
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="1160" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
+</script></body></html>" class="cn-schichtenmodell-viz" width="100%" height="1160" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:schichtenmodell -->
 
 > [!example] PDU-Namen je Schicht

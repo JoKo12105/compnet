@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Schichtenmodell/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T19:10:54.246+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Schichten","OSI","Referenzmodell","Encapsulation","Tunneling","Dienst","Interface"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Schichtenmodell/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T19:20:38.506+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Schichten","OSI","Referenzmodell","Encapsulation","Tunneling","Dienst","Interface"]}}
 ---
 
 
@@ -20,6 +20,7 @@ Logisch kommuniziert jede Schicht **nur mit der gleichen Schicht** der Gegenseit
 
 ## Encapsulation
 Beim Senden wird eine Dateneinheit der Ebene *n* in eine der Ebene *n−1* **verpackt** (Encapsulation), beim Empfangen wieder **entpackt**. Werden Dateneinheiten stattdessen in eine **gleich hohe oder höhere** Schicht verpackt, spricht man von **Tunneling** (häufig im Security-Umfeld). Genau dieser Vorgang Schritt für Schritt:
+
 
 <!-- viz:schichtenmodell -->
 <iframe srcdoc="<!DOCTYPE html>
@@ -107,7 +108,7 @@ svg{display:block;width:100%;height:auto}
   <text class=&quot;tm&quot; x=&quot;335&quot; y=&quot;279&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>IP</text></g>
 <g id=&quot;pdu-tcp&quot; class=&quot;c2 card&quot; opacity=&quot;0&quot;><rect x=&quot;364&quot; y=&quot;258&quot; width=&quot;56&quot; height=&quot;42&quot; rx=&quot;8&quot;/>
   <text class=&quot;tm&quot; x=&quot;392&quot; y=&quot;279&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>TCP</text></g>
-<g id=&quot;pdu-data&quot; class=&quot;c1 card&quot; opacity=&quot;0&quot;><rect x=&quot;421&quot; y=&quot;258&quot; width=&quot;150&quot; height=&quot;42&quot; rx=&quot;8&quot;/>
+<g id=&quot;pdu-data&quot; class=&quot;c1 card&quot; opacity=&quot;1&quot;><rect x=&quot;421&quot; y=&quot;258&quot; width=&quot;150&quot; height=&quot;42&quot; rx=&quot;8&quot;/>
   <text class=&quot;ts&quot; x=&quot;496&quot; y=&quot;279&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>Nutzdaten</text></g>
 <g id=&quot;pdu-etht&quot; class=&quot;c4 card&quot; opacity=&quot;0&quot;><rect x=&quot;572&quot; y=&quot;258&quot; width=&quot;50&quot; height=&quot;42&quot; rx=&quot;8&quot;/>
   <text class=&quot;tm&quot; x=&quot;597&quot; y=&quot;279&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>CRC</text></g>
@@ -145,6 +146,7 @@ steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.classNam
 render(0);
 </script></body></html>" width="100%" height="1009" loading="lazy" sandbox="allow-scripts allow-popups" style="display:block;border:none;width:100%;max-width:100%;min-width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:schichtenmodell -->
+
 
 > [!example] PDU-Namen je Schicht
 > Transport → **Segment**, Vermittlung → **Paket/Datagram**, Sicherung → **Frame**, Bitübertragung → **Bitstrom/Signal**.

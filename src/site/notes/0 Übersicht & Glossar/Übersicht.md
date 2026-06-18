@@ -62,7 +62,6 @@ svg{display:block;width:100%;height:auto}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.02)}}
 @keyframes slide-in{from{transform:translateY(8px);opacity:0}to{transform:translateY(0);opacity:1}}
 .blinking{animation:pulse 1.15s ease-in-out infinite;transform-origin:center}
-
 .rm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
 .rm-card{border-radius:18px;padding:16px 18px;border:2px solid;cursor:pointer;transition:transform .18s,box-shadow .18s;box-shadow:0 6px 18px rgba(60,45,20,.08)}
 .rm-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(60,45,20,.16)}

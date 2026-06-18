@@ -73,7 +73,6 @@ svg{display:block;width:100%;height:auto}
 <div class=&quot;step-label&quot; id=&quot;step-label&quot;></div>
 <div class=&quot;diagram-frame&quot;>
 <svg viewBox=&quot;0 0 710 400&quot; id=&quot;stage-svg&quot; role=&quot;img&quot;><title>Circuit vs. Packet Switching</title>
-
 <defs>
   <marker id=&quot;arrow&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;8&quot; refY=&quot;5&quot; markerWidth=&quot;6&quot; markerHeight=&quot;6&quot; orient=&quot;auto-start-reverse&quot;>
     <path d=&quot;M2 1L8 5L2 9&quot; fill=&quot;none&quot; stroke=&quot;context-stroke&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/>
@@ -107,7 +106,6 @@ svg{display:block;width:100%;height:auto}
 <g id=&quot;pkt1&quot; opacity=&quot;0&quot;><circle cx=&quot;280&quot; cy=&quot;165&quot; r=&quot;11&quot; fill=&quot;#1d5fa7&quot;/><text x=&quot;280&quot; y=&quot;165&quot; font-size=&quot;10&quot; fill=&quot;#fff&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>1</text></g>
 <g id=&quot;pkt2&quot; opacity=&quot;0&quot;><circle cx=&quot;280&quot; cy=&quot;255&quot; r=&quot;11&quot; fill=&quot;#2f8f4e&quot;/><text x=&quot;280&quot; y=&quot;255&quot; font-size=&quot;10&quot; fill=&quot;#fff&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>2</text></g>
 <text id=&quot;mode&quot; class=&quot;th&quot; x=&quot;355&quot; y=&quot;380&quot; text-anchor=&quot;middle&quot; fill=&quot;#1e2430&quot;></text>
-
 </svg></div>
 <div class=&quot;step-description&quot; id=&quot;step-content&quot;></div>
 <div class=&quot;btn-row&quot;>

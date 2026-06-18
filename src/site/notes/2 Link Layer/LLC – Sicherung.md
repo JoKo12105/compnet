@@ -80,7 +80,6 @@ svg{display:block;width:100%;height:auto}
 <div class=&quot;step-label&quot; id=&quot;step-label&quot;></div>
 <div class=&quot;diagram-frame&quot;>
 <svg viewBox=&quot;0 0 700 420&quot; id=&quot;stage-svg&quot; role=&quot;img&quot;><title>ARQ – Stop-and-Wait mit Frame-Verlust</title>
-
 <defs>
   <marker id=&quot;arrow&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;8&quot; refY=&quot;5&quot; markerWidth=&quot;7&quot; markerHeight=&quot;7&quot; orient=&quot;auto-start-reverse&quot;>
     <path d=&quot;M2 1L8 5L2 9&quot; fill=&quot;none&quot; stroke=&quot;context-stroke&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/>
@@ -92,25 +91,20 @@ svg{display:block;width:100%;height:auto}
   <text class=&quot;th&quot; x=&quot;570&quot; y=&quot;40&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>Empfänger</text></g>
 <line x1=&quot;130&quot; y1=&quot;60&quot; x2=&quot;130&quot; y2=&quot;410&quot; stroke=&quot;#b9ad96&quot; stroke-width=&quot;2&quot;/>
 <line x1=&quot;570&quot; y1=&quot;60&quot; x2=&quot;570&quot; y2=&quot;410&quot; stroke=&quot;#b9ad96&quot; stroke-width=&quot;2&quot;/>
-
 <g id=&quot;f0&quot; opacity=&quot;0&quot;><line x1=&quot;135&quot; y1=&quot;80&quot; x2=&quot;565&quot; y2=&quot;118&quot; class=&quot;arr&quot; stroke=&quot;#1d5fa7&quot; marker-end=&quot;url(#arrow)&quot;/>
   <text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;90&quot; text-anchor=&quot;middle&quot; fill=&quot;#1d5fa7&quot;>Frame 0</text></g>
 <g id=&quot;a0&quot; opacity=&quot;0&quot;><line x1=&quot;565&quot; y1=&quot;135&quot; x2=&quot;135&quot; y2=&quot;173&quot; class=&quot;arr&quot; stroke=&quot;#2f8f4e&quot; marker-end=&quot;url(#arrow)&quot;/>
   <text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;148&quot; text-anchor=&quot;middle&quot; fill=&quot;#2f8f4e&quot;>ACK 0</text></g>
-
 <g id=&quot;f1&quot; opacity=&quot;0&quot;><line x1=&quot;135&quot; y1=&quot;195&quot; x2=&quot;360&quot; y2=&quot;215&quot; class=&quot;arr&quot; stroke=&quot;#1d5fa7&quot; marker-end=&quot;url(#arrow)&quot;/>
   <text class=&quot;ts&quot; x=&quot;250&quot; y=&quot;200&quot; text-anchor=&quot;middle&quot; fill=&quot;#1d5fa7&quot;>Frame 1</text></g>
 <g id=&quot;f1x&quot; opacity=&quot;0&quot;><text x=&quot;392&quot; y=&quot;222&quot; font-size=&quot;26&quot; fill=&quot;#cc3b2a&quot; text-anchor=&quot;middle&quot;>✖</text>
   <text class=&quot;ts&quot; x=&quot;430&quot; y=&quot;240&quot; text-anchor=&quot;middle&quot; fill=&quot;#cc3b2a&quot;>verloren</text></g>
-
 <g id=&quot;tout&quot; opacity=&quot;0&quot; class=&quot;c3 card&quot;><rect x=&quot;60&quot; y=&quot;250&quot; width=&quot;150&quot; height=&quot;38&quot; rx=&quot;10&quot;/>
   <text class=&quot;ts&quot; x=&quot;135&quot; y=&quot;269&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>⏱ Timeout läuft ab</text></g>
-
 <g id=&quot;f1r&quot; opacity=&quot;0&quot;><line x1=&quot;135&quot; y1=&quot;305&quot; x2=&quot;565&quot; y2=&quot;343&quot; class=&quot;arr&quot; stroke=&quot;#c67a00&quot; marker-end=&quot;url(#arrow)&quot;/>
   <text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;315&quot; text-anchor=&quot;middle&quot; fill=&quot;#c67a00&quot;>Frame 1 (Retransmit)</text></g>
 <g id=&quot;a1&quot; opacity=&quot;0&quot;><line x1=&quot;565&quot; y1=&quot;360&quot; x2=&quot;135&quot; y2=&quot;398&quot; class=&quot;arr&quot; stroke=&quot;#2f8f4e&quot; marker-end=&quot;url(#arrow)&quot;/>
   <text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;373&quot; text-anchor=&quot;middle&quot; fill=&quot;#2f8f4e&quot;>ACK 1</text></g>
-
 </svg></div>
 <div class=&quot;step-description&quot; id=&quot;step-content&quot;></div>
 <div class=&quot;btn-row&quot;>

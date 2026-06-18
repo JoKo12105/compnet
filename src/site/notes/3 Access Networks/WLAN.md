@@ -79,7 +79,6 @@ svg{display:block;width:100%;height:auto}
 <g class=&quot;c3 card&quot;><rect x=&quot;540&quot; y=&quot;20&quot; width=&quot;120&quot; height=&quot;38&quot; rx=&quot;10&quot;/><text class=&quot;th&quot; x=&quot;600&quot; y=&quot;39&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>Access Point</text></g>
 <line x1=&quot;100&quot; y1=&quot;58&quot; x2=&quot;100&quot; y2=&quot;410&quot; stroke=&quot;#b9ad96&quot; stroke-width=&quot;2&quot;/>
 <line x1=&quot;600&quot; y1=&quot;58&quot; x2=&quot;600&quot; y2=&quot;410&quot; stroke=&quot;#b9ad96&quot; stroke-width=&quot;2&quot;/>
-
 <g id=&quot;busy&quot; opacity=&quot;0&quot; class=&quot;c6 card&quot;><rect x=&quot;40&quot; y=&quot;72&quot; width=&quot;200&quot; height=&quot;32&quot; rx=&quot;9&quot;/><text class=&quot;ts&quot; x=&quot;140&quot; y=&quot;88&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>Kanal belegt → warten</text></g>
 <g id=&quot;backoff&quot; opacity=&quot;0&quot; class=&quot;c3 card&quot;><rect x=&quot;40&quot; y=&quot;116&quot; width=&quot;200&quot; height=&quot;32&quot; rx=&quot;9&quot;/><text class=&quot;ts&quot; x=&quot;140&quot; y=&quot;132&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>Kanal frei → Backoff-Timer</text></g>
 <g id=&quot;rts&quot; opacity=&quot;0&quot;><line x1=&quot;105&quot; y1=&quot;170&quot; x2=&quot;595&quot; y2=&quot;200&quot; class=&quot;arr&quot; stroke=&quot;#1d5fa7&quot; marker-end=&quot;url(#arrow)&quot;/><text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;178&quot; text-anchor=&quot;middle&quot; fill=&quot;#1d5fa7&quot;>RTS (Request To Send)</text></g>
@@ -87,7 +86,6 @@ svg{display:block;width:100%;height:auto}
 <g id=&quot;nav&quot; opacity=&quot;0&quot;><text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;270&quot; text-anchor=&quot;middle&quot; fill=&quot;#7452c7&quot;>Nachbarn hören CTS → sie warten (NAV)</text></g>
 <g id=&quot;data&quot; opacity=&quot;0&quot;><line x1=&quot;105&quot; y1=&quot;295&quot; x2=&quot;595&quot; y2=&quot;325&quot; class=&quot;arr&quot; stroke=&quot;#1d5fa7&quot; marker-end=&quot;url(#arrow)&quot;/><text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;303&quot; text-anchor=&quot;middle&quot; fill=&quot;#1d5fa7&quot;>DATA-Frame</text></g>
 <g id=&quot;ack&quot; opacity=&quot;0&quot;><line x1=&quot;595&quot; y1=&quot;343&quot; x2=&quot;105&quot; y2=&quot;373&quot; class=&quot;arr&quot; stroke=&quot;#2f8f4e&quot; marker-end=&quot;url(#arrow)&quot;/><text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;351&quot; text-anchor=&quot;middle&quot; fill=&quot;#2f8f4e&quot;>ACK (nach SIFS)</text></g>
-
 </svg></div>
 <div class=&quot;step-description&quot; id=&quot;step-content&quot;></div>
 <div class=&quot;btn-row&quot;>

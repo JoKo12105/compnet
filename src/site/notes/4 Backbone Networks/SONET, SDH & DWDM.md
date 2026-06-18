@@ -84,7 +84,6 @@ svg{display:block;width:100%;height:auto}
   <text class=&quot;tm&quot; x=&quot;365&quot; y=&quot;190&quot; text-anchor=&quot;middle&quot; fill=&quot;#cc5a42&quot;>opt. Verstärker (~80 km)</text></g>
 <g id=&quot;demux&quot; opacity=&quot;0&quot;><polygon points=&quot;472,78 522,128 522,192 472,242&quot; fill=&quot;#efe7d8&quot; stroke=&quot;#8a7a5e&quot; stroke-width=&quot;2&quot; transform=&quot;translate(0,0)&quot;/>
   <text class=&quot;tm&quot; x=&quot;497&quot; y=&quot;160&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>DEMUX</text></g>
-
 </svg></div>
 <div class=&quot;step-description&quot; id=&quot;step-content&quot;></div>
 <div class=&quot;btn-row&quot;>

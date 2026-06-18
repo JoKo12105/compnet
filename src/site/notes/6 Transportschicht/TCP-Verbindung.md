@@ -82,7 +82,6 @@ svg{display:block;width:100%;height:auto}
 <g id=&quot;ack1&quot; opacity=&quot;0&quot;><line x1=&quot;590&quot; y1=&quot;301&quot; x2=&quot;110&quot; y2=&quot;331&quot; class=&quot;arr&quot; stroke=&quot;#2f8f4e&quot; marker-end=&quot;url(#arrow)&quot;/><text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;309&quot; text-anchor=&quot;middle&quot; fill=&quot;#2f8f4e&quot;>ACK</text></g>
 <g id=&quot;fin2&quot; opacity=&quot;0&quot;><line x1=&quot;590&quot; y1=&quot;333&quot; x2=&quot;110&quot; y2=&quot;360&quot; class=&quot;arr&quot; stroke=&quot;#cc5a42&quot; marker-end=&quot;url(#arrow)&quot;/><text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;346&quot; text-anchor=&quot;middle&quot; fill=&quot;#cc5a42&quot;>FIN</text></g>
 <g id=&quot;ack2&quot; opacity=&quot;0&quot;><line x1=&quot;110&quot; y1=&quot;364&quot; x2=&quot;590&quot; y2=&quot;391&quot; class=&quot;arr&quot; stroke=&quot;#2f8f4e&quot; marker-end=&quot;url(#arrow)&quot;/><text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;382&quot; text-anchor=&quot;middle&quot; fill=&quot;#2f8f4e&quot;>ACK → TIME_WAIT</text></g>
-
 </svg></div>
 <div class=&quot;step-description&quot; id=&quot;step-content&quot;></div>
 <div class=&quot;btn-row&quot;>

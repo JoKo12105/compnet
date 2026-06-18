@@ -18,6 +18,7 @@ Mehr als 60.000 AS bilden die oberste Stufe. Ein AS hat **gleiche Verwaltung** u
 
 ## Access vs. Backbone
 Bei den kleineren Einheiten (Netzen) unterscheidet man zwei Formen, die sich vor allem auf **Ebene 1 und 2** unterscheiden — ab **Ebene 3** werden sie zu einem großen „Netz“ zusammengeschlossen:
+
 | | [[3 Access Networks/3.0 Access Networks (Übersicht)\|Access]] | [[4 Backbone Networks/4.0 Backbone Networks (Übersicht)\|Backbone]] |
 |---|---|---|
 | Zugänge | viele | wenige |

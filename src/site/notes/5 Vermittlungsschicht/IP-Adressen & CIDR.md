@@ -70,7 +70,6 @@ svg{display:block;width:100%;height:auto}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.02)}}
 @keyframes slide-in{from{transform:translateY(8px);opacity:0}to{transform:translateY(0);opacity:1}}
 .blinking{animation:pulse 1.15s ease-in-out infinite;transform-origin:center}
-
 .sub-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;margin-bottom:14px}
 .sub-ip{font-size:17px;font-weight:700;padding:8px 12px;border-radius:10px;border:1.5px solid #cfc5b4;background:#fffdf8;width:200px;text-align:center;font-family:monospace}
 .sub-pl{font-weight:800;color:#2549b8;font-size:17px;min-width:46px;text-align:center}
@@ -87,7 +86,6 @@ svg{display:block;width:100%;height:auto}
 <body><div class=&quot;widget&quot;>
 <h1 class=&quot;viz-title&quot;>Subnetz-Rechner (CIDR)</h1>
 <p class=&quot;viz-sub&quot;>IP eingeben, Präfix schieben — Netz, Broadcast &amp; Host-Bereich live</p>
-
 <div class=&quot;sub-row&quot;>
   <input id=&quot;ip&quot; class=&quot;sub-ip&quot; value=&quot;192.168.10.130&quot; />
   <span style=&quot;font-size:17px;font-weight:800&quot;>/</span>
@@ -95,7 +93,6 @@ svg{display:block;width:100%;height:auto}
   <span id=&quot;pllbl&quot; class=&quot;sub-pl&quot;>/26</span>
 </div>
 <div class=&quot;sub-out&quot;><table id=&quot;tbl&quot;></table><div id=&quot;bits&quot; class=&quot;sub-bits&quot;></div></div>
-
 </div>
 <script>
 function ipToInt(s){const p=s.trim().split('.');if(p.length!==4)return null;let n=0;for(const x of p){const v=+x;if(!(v>=0&amp;&amp;v<=255)||x==='')return null;n=(n*256)+v;}return n>>>0;}

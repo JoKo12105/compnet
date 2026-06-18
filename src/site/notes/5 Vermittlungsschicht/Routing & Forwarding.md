@@ -87,7 +87,6 @@ svg{display:block;width:100%;height:auto}
 <g id=&quot;ain&quot; opacity=&quot;0&quot;><line x1=&quot;130&quot; y1=&quot;190&quot; x2=&quot;248&quot; y2=&quot;190&quot; class=&quot;arr&quot; stroke=&quot;#2549b8&quot; marker-end=&quot;url(#arrow)&quot;/></g>
 <g id=&quot;aout&quot; opacity=&quot;0&quot;><line x1=&quot;452&quot; y1=&quot;190&quot; x2=&quot;568&quot; y2=&quot;190&quot; class=&quot;arr&quot; stroke=&quot;#2f8f4e&quot; marker-end=&quot;url(#arrow)&quot;/></g>
 <g id=&quot;lookup&quot; opacity=&quot;0&quot;><rect x=&quot;280&quot; y=&quot;186&quot; width=&quot;140&quot; height=&quot;20&quot; rx=&quot;4&quot; fill=&quot;none&quot; stroke=&quot;#cc5a42&quot; stroke-width=&quot;2.5&quot;/></g>
-
 </svg></div>
 <div class=&quot;step-description&quot; id=&quot;step-content&quot;></div>
 <div class=&quot;btn-row&quot;>

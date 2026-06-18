@@ -83,7 +83,6 @@ svg{display:block;width:100%;height:auto}
 <g id=&quot;reply&quot; opacity=&quot;0&quot;><line x1=&quot;440&quot; y1=&quot;108&quot; x2=&quot;120&quot; y2=&quot;150&quot; class=&quot;arr&quot; stroke=&quot;#2f8f4e&quot; marker-end=&quot;url(#arrow)&quot;/>
   <text class=&quot;ts&quot; x=&quot;300&quot; y=&quot;138&quot; text-anchor=&quot;middle&quot; fill=&quot;#2f8f4e&quot;>Unicast: „10.0.0.5 = MAC cc:..“</text></g>
 <g id=&quot;cache&quot; opacity=&quot;0&quot; class=&quot;c3 card&quot;><rect x=&quot;40&quot; y=&quot;220&quot; width=&quot;280&quot; height=&quot;34&quot; rx=&quot;9&quot;/><text class=&quot;ts&quot; x=&quot;180&quot; y=&quot;237&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>ARP-Cache: 10.0.0.5 → cc:dd:ee:..</text></g>
-
 </svg></div>
 <div class=&quot;step-description&quot; id=&quot;step-content&quot;></div>
 <div class=&quot;btn-row&quot;>

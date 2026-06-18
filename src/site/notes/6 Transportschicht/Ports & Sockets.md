@@ -80,7 +80,6 @@ svg{display:block;width:100%;height:auto}
 <g id=&quot;a80&quot; opacity=&quot;0&quot;><line x1=&quot;152&quot; y1=&quot;163&quot; x2=&quot;288&quot; y2=&quot;178&quot; class=&quot;arr&quot; stroke=&quot;#1d5fa7&quot; marker-end=&quot;url(#arrow)&quot;/></g>
 <g id=&quot;a443&quot; opacity=&quot;0&quot;><line x1=&quot;152&quot; y1=&quot;223&quot; x2=&quot;288&quot; y2=&quot;228&quot; class=&quot;arr&quot; stroke=&quot;#c67a00&quot; marker-end=&quot;url(#arrow)&quot;/></g>
 <g id=&quot;tuple&quot; opacity=&quot;0&quot;><text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;305&quot; text-anchor=&quot;middle&quot; fill=&quot;#442b7f&quot;>(Quell-IP, Quell-Port, Ziel-IP, Ziel-Port) = eine Verbindung</text></g>
-
 </svg></div>
 <div class=&quot;step-description&quot; id=&quot;step-content&quot;></div>
 <div class=&quot;btn-row&quot;>

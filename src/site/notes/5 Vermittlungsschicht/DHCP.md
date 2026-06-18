@@ -82,7 +82,6 @@ svg{display:block;width:100%;height:auto}
  <text class=&quot;ts&quot; x=&quot;180&quot; y=&quot;310&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>Client erhält:</text>
  <text class=&quot;tm&quot; x=&quot;180&quot; y=&quot;330&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>IP-Adresse + Netzmaske</text>
  <text class=&quot;tm&quot; x=&quot;180&quot; y=&quot;348&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>Default-Router + DNS-Server</text></g>
-
 </svg></div>
 <div class=&quot;step-description&quot; id=&quot;step-content&quot;></div>
 <div class=&quot;btn-row&quot;>

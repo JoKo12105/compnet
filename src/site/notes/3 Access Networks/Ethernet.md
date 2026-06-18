@@ -174,7 +174,6 @@ svg{display:block;width:100%;height:auto}
 <line x1=&quot;600&quot; y1=&quot;70&quot; x2=&quot;600&quot; y2=&quot;150&quot; stroke=&quot;#b9ad96&quot; stroke-width=&quot;2&quot;/>
 <rect x=&quot;60&quot; y=&quot;150&quot; width=&quot;580&quot; height=&quot;34&quot; rx=&quot;8&quot; fill=&quot;#eee7d8&quot; stroke=&quot;#cfc5b4&quot;/>
 <text class=&quot;ts&quot; x=&quot;350&quot; y=&quot;167&quot; text-anchor=&quot;middle&quot; fill=&quot;#5f6b7a&quot;>gemeinsames Medium (Bus / Shared Medium)</text>
-
 <rect id=&quot;sigA&quot; x=&quot;100&quot; y=&quot;156&quot; width=&quot;250&quot; height=&quot;22&quot; rx=&quot;4&quot; fill=&quot;#1d5fa7&quot; opacity=&quot;0&quot;/>
 <rect id=&quot;sigB&quot; x=&quot;350&quot; y=&quot;156&quot; width=&quot;250&quot; height=&quot;22&quot; rx=&quot;4&quot; fill=&quot;#2f8f4e&quot; opacity=&quot;0&quot;/>
 <g id=&quot;coll&quot; opacity=&quot;0&quot;><text x=&quot;350&quot; y=&quot;172&quot; font-size=&quot;26&quot; fill=&quot;#cc3b2a&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>💥</text>
@@ -184,7 +183,6 @@ svg{display:block;width:100%;height:auto}
 <g id=&quot;boB&quot; opacity=&quot;0&quot; class=&quot;c3 card&quot;><rect x=&quot;510&quot; y=&quot;250&quot; width=&quot;150&quot; height=&quot;34&quot; rx=&quot;9&quot;/><text class=&quot;ts&quot; x=&quot;585&quot; y=&quot;267&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>B: Backoff lang ⏱⏱</text></g>
 <rect id=&quot;sigA2&quot; x=&quot;100&quot; y=&quot;156&quot; width=&quot;500&quot; height=&quot;22&quot; rx=&quot;4&quot; fill=&quot;#1d5fa7&quot; opacity=&quot;0&quot;/>
 <text id=&quot;okmsg&quot; class=&quot;ts&quot; x=&quot;350&quot; y=&quot;300&quot; text-anchor=&quot;middle&quot; fill=&quot;#22814b&quot; opacity=&quot;0&quot;>A sendet erfolgreich — Medium war frei</text>
-
 </svg></div>
 <div class=&quot;step-description&quot; id=&quot;step-content&quot;></div>
 <div class=&quot;btn-row&quot;>

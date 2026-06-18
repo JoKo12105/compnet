@@ -71,11 +71,9 @@ svg{display:block;width:100%;height:auto}
 <div class=&quot;step-label&quot; id=&quot;step-label&quot;></div>
 <div class=&quot;diagram-frame&quot;>
 <svg viewBox=&quot;0 0 700 250&quot; id=&quot;stage-svg&quot; role=&quot;img&quot;><title>IPv6-Adressen komprimieren</title>
-
 <rect x=&quot;40&quot; y=&quot;120&quot; width=&quot;620&quot; height=&quot;60&quot; rx=&quot;12&quot; fill=&quot;#fffdf8&quot; stroke=&quot;#e8dece&quot;/>
 <text id=&quot;addr&quot; x=&quot;350&quot; y=&quot;150&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot; font-family=&quot;monospace&quot; font-size=&quot;19&quot; font-weight=&quot;700&quot; fill=&quot;#1e2430&quot;>FE80:0000:0000:0000:0000:0800:5A12:3456</text>
 <text id=&quot;note&quot; x=&quot;350&quot; y=&quot;220&quot; text-anchor=&quot;middle&quot; font-size=&quot;13&quot; fill=&quot;#5f6b7a&quot;></text>
-
 </svg></div>
 <div class=&quot;step-description&quot; id=&quot;step-content&quot;></div>
 <div class=&quot;btn-row&quot;>

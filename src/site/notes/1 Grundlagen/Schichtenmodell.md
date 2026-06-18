@@ -81,13 +81,11 @@ svg{display:block;width:100%;height:auto}
 <div class=&quot;step-label&quot; id=&quot;step-label&quot;></div>
 <div class=&quot;diagram-frame&quot;>
 <svg viewBox=&quot;0 0 700 418&quot; id=&quot;stage-svg&quot; role=&quot;img&quot;><title>Encapsulation im Schichtenmodell</title>
-
 <defs>
   <marker id=&quot;arrow&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;8&quot; refY=&quot;5&quot; markerWidth=&quot;6&quot; markerHeight=&quot;6&quot; orient=&quot;auto-start-reverse&quot;>
     <path d=&quot;M2 1L8 5L2 9&quot; fill=&quot;none&quot; stroke=&quot;context-stroke&quot; stroke-width=&quot;1.6&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/>
   </marker>
 </defs>
-
 <g id=&quot;lyr5&quot; class=&quot;c1 card&quot;><rect x=&quot;24&quot; y=&quot;20&quot; width=&quot;186&quot; height=&quot;44&quot; rx=&quot;11&quot;/>
   <text class=&quot;th&quot; x=&quot;117&quot; y=&quot;42&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>5 · Anwendung</text></g>
 <g id=&quot;lyr4&quot; class=&quot;c2 card&quot;><rect x=&quot;24&quot; y=&quot;74&quot; width=&quot;186&quot; height=&quot;44&quot; rx=&quot;11&quot;/>
@@ -98,14 +96,11 @@ svg{display:block;width:100%;height:auto}
   <text class=&quot;th&quot; x=&quot;117&quot; y=&quot;204&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>2 · Sicherung</text></g>
 <g id=&quot;lyr1&quot; class=&quot;c5 card&quot;><rect x=&quot;24&quot; y=&quot;236&quot; width=&quot;186&quot; height=&quot;44&quot; rx=&quot;11&quot;/>
   <text class=&quot;th&quot; x=&quot;117&quot; y=&quot;258&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>1 · Bitübertragung</text></g>
-
 <line x1=&quot;117&quot; y1=&quot;64&quot; x2=&quot;117&quot; y2=&quot;74&quot; stroke=&quot;#8a7a5e&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#arrow)&quot;/>
 <line x1=&quot;117&quot; y1=&quot;118&quot; x2=&quot;117&quot; y2=&quot;128&quot; stroke=&quot;#8a7a5e&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#arrow)&quot;/>
 <line x1=&quot;117&quot; y1=&quot;172&quot; x2=&quot;117&quot; y2=&quot;182&quot; stroke=&quot;#8a7a5e&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#arrow)&quot;/>
 <line x1=&quot;117&quot; y1=&quot;226&quot; x2=&quot;117&quot; y2=&quot;236&quot; stroke=&quot;#8a7a5e&quot; stroke-width=&quot;2&quot; marker-end=&quot;url(#arrow)&quot;/>
-
 <text id=&quot;pdu-name&quot; class=&quot;th&quot; x=&quot;455&quot; y=&quot;232&quot; text-anchor=&quot;middle&quot; fill=&quot;#1e2430&quot;>Daten</text>
-
 <g id=&quot;pdu-ethh&quot; class=&quot;c4 card&quot; opacity=&quot;0&quot;><rect x=&quot;250&quot; y=&quot;258&quot; width=&quot;56&quot; height=&quot;42&quot; rx=&quot;8&quot;/>
   <text class=&quot;tm&quot; x=&quot;278&quot; y=&quot;279&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>MAC</text></g>
 <g id=&quot;pdu-ip&quot; class=&quot;c3 card&quot; opacity=&quot;0&quot;><rect x=&quot;307&quot; y=&quot;258&quot; width=&quot;56&quot; height=&quot;42&quot; rx=&quot;8&quot;/>
@@ -116,14 +111,12 @@ svg{display:block;width:100%;height:auto}
   <text class=&quot;ts&quot; x=&quot;496&quot; y=&quot;279&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>Nutzdaten</text></g>
 <g id=&quot;pdu-etht&quot; class=&quot;c4 card&quot; opacity=&quot;0&quot;><rect x=&quot;572&quot; y=&quot;258&quot; width=&quot;50&quot; height=&quot;42&quot; rx=&quot;8&quot;/>
   <text class=&quot;tm&quot; x=&quot;597&quot; y=&quot;279&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;central&quot;>CRC</text></g>
-
 <line id=&quot;line-down&quot; x1=&quot;455&quot; y1=&quot;300&quot; x2=&quot;455&quot; y2=&quot;330&quot; stroke=&quot;#8a7a5e&quot; stroke-width=&quot;2&quot; stroke-dasharray=&quot;5 4&quot; marker-end=&quot;url(#arrow)&quot; opacity=&quot;0&quot;/>
 <rect x=&quot;250&quot; y=&quot;334&quot; width=&quot;372&quot; height=&quot;34&quot; rx=&quot;9&quot; fill=&quot;#eee7d8&quot; stroke=&quot;#cfc5b4&quot;/>
 <text class=&quot;ts&quot; x=&quot;436&quot; y=&quot;351&quot; text-anchor=&quot;middle&quot; fill=&quot;#5f6b7a&quot;>Übertragungsmedium</text>
 <g id=&quot;pdu-bits&quot; opacity=&quot;0&quot;><text class=&quot;tm&quot; x=&quot;436&quot; y=&quot;351&quot; text-anchor=&quot;middle&quot; fill=&quot;#16937f&quot; font-family=&quot;monospace&quot;>0101 1100 1011 0100 1110 0011</text></g>
 <g id=&quot;arrow-tx&quot; opacity=&quot;0&quot;><line x1=&quot;270&quot; y1=&quot;386&quot; x2=&quot;600&quot; y2=&quot;386&quot; class=&quot;arr&quot; stroke=&quot;#16937f&quot; marker-end=&quot;url(#arrow)&quot;/>
   <text class=&quot;ts&quot; x=&quot;435&quot; y=&quot;402&quot; text-anchor=&quot;middle&quot; fill=&quot;#16937f&quot;>Signal zum Empfänger</text></g>
-
 </svg></div>
 <div class=&quot;step-description&quot; id=&quot;step-content&quot;></div>
 <div class=&quot;btn-row&quot;>

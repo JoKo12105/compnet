@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T21:25:54.069+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
+{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T21:34:12.254+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
 ---
 
 > [!warning] WIP
@@ -145,6 +145,7 @@ Jeder Artikel beginnt mit einer Kurzdefinition („Auf einen Blick"), gefolgt vo
 	  > "Großartige Videos imo zum Fünf Layer Model"
 + [YouTube / screw it... let's rebuild the ENTIRE Internet](https://youtu.be/HRa31C7zfzk?si=2R2cmH1cTccsnOk8) 
 	+ **⚠️Content Warning⚠️:** französisch 😡
+
 
 + [Betriebssysteme-Website](https://betriebssysteme.vercel.app)
 	+ Meine vorige Website zum Thema *Betriebssysteme*, falls sich jemand nochmal darüber informieren möchte

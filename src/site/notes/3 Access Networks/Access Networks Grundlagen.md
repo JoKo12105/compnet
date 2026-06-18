@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/3 Access Networks/Access Networks Grundlagen/","tags":["computernetworks","access"],"updated":"2026-06-18T22:32:42.817+02:00","dg-note-properties":{"permalink":"/3 Access Networks/Access Networks Grundlagen/","tags":["computernetworks","access"],"updated":"2026-06-18T22:20:28.483+02:00"}}
+{"dg-publish":true,"permalink":"/3 Access Networks/Access Networks Grundlagen/","tags":["computernetworks","access"],"updated":"2026-06-18T23:36:56.447+02:00","dg-note-properties":{"permalink":"/3 Access Networks/Access Networks Grundlagen/","tags":["computernetworks","access"],"updated":"2026-06-18T22:20:28.483+02:00"}}
 ---
 
 
@@ -10,9 +10,9 @@
 > Ein **Access Network** stellt den **Zugriff vieler Teilnehmer** auf gemeinsame Medien und Dienste sicher, ggf. mit **Authentifizierung**. Es besteht aus einem **Distribution Network** (zum/vom Endnutzer) und einem **Feeder Network** (Bündelung Richtung [[4 Backbone Networks/4.0 Backbone Networks (Übersicht)\|Backbone]]).
 
 ## Aufgaben
-1. Zugriff auf gemeinsame Medien für viele Teilnehmer sicherstellen,
-2. Zugriff auf Dienste ermöglichen,
-3. ggf. **Authentifizierung** erfordern.
+1. Zugriff auf gemeinsame Medien für viele Teilnehmer sicherstellen
+2. Zugriff auf Dienste ermöglichen
+3. ggf. **Authentifizierung** erfordern
 
 ## Die zwei Ebenen
 - **Ebene 1** — Umwandlung **Daten ↔ Signal**.

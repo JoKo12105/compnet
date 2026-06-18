@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IPv6/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T23:24:42.787+02:00","dg-note-properties":{"permalink":"/5 Vermittlungsschicht/IPv6/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:20:29.968+02:00"}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/IPv6/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T23:33:42.169+02:00","dg-note-properties":{"permalink":"/5 Vermittlungsschicht/IPv6/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:20:29.968+02:00"}}
 ---
 
 
@@ -110,4 +110,17 @@ setTimeout(fit,60);
 </script></body></html>" width="100%" height="785" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:ipv6-kompression -->
 
-Adressen sind **unicast/multicast/anycast** und gliedern sich in `<Global Routing Prefix><Subnet><Interface>`. Ü
+Adressen sind **unicast/multicast/anycast** und gliedern sich in `<Global Routing Prefix><Subnet><Interface>`. Über das Präfix wird (provider-/geografisch) geroutet, was die Routing-Tabellen klein hält.
+
+## Begleit-Protokolle & Migration
+- **Neighbor Discovery (ND)** statt [[5 Vermittlungsschicht/ARP\|ARP]], **ICMPv6**, **DHCPv6**.
+- Migration nur **inkrementell**: **Dual-Stack** (IPv4 + IPv6 parallel), **Tunnel** (z. B. 6to4), **Übersetzung**. Beispiel: IPv4-mapped `::FFFF:120.124.67.23`.
+
+## Verwandte Themen
+[[5 Vermittlungsschicht/IP-Adressen & CIDR\|IP-Adressen & CIDR]] · [[5 Vermittlungsschicht/IPv4-Paket\|IPv4-Paket]] · [[5 Vermittlungsschicht/ARP\|ARP]] · [[5 Vermittlungsschicht/Routing-Protokolle\|Routing-Protokolle]] · [[5 Vermittlungsschicht/ICMP\|ICMP]]
+
+[[5 Vermittlungsschicht/5.0 Vermittlungsschicht (Übersicht)\|← Kapitelübersicht]]
+
+---
+<!-- kapitel-nav -->
+[[5 Vermittlungsschicht/ICMP\|⬅️ ICMP]]  ·  [[6 Transportschicht/6.0 Transportschicht (Übersicht)\|Kapitel 6: Transportschicht ➡️]]

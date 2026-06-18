@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/Longest Prefix Match/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T23:24:42.462+02:00","dg-note-properties":{"permalink":"/5 Vermittlungsschicht/Longest Prefix Match/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:20:29.829+02:00"}}
+{"dg-publish":true,"permalink":"/5 Vermittlungsschicht/Longest Prefix Match/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T23:33:42.149+02:00","dg-note-properties":{"permalink":"/5 Vermittlungsschicht/Longest Prefix Match/","tags":["computernetworks","vermittlung"],"updated":"2026-06-18T22:20:29.829+02:00"}}
 ---
 
 
@@ -115,4 +115,14 @@ setTimeout(fit,60);
 </script></body></html>" width="100%" height="816" loading="lazy" sandbox="allow-scripts allow-same-origin allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:lpm -->
 
-> [!example] 
+> [!example] Sender-Seite
+> Bei `z-netz = ziel-IP & netmask` wird verglichen: gleich dem eigenen Netz → **direct routing** (lokal); sonst an den passenden Router (**indirect**) oder an den **Default-Router**.
+
+## Verwandte Themen
+[[5 Vermittlungsschicht/Routing & Forwarding\|Routing & Forwarding]] · [[5 Vermittlungsschicht/IP-Adressen & CIDR\|IP-Adressen & CIDR]] · [[5 Vermittlungsschicht/Routing-Protokolle\|Routing-Protokolle]] · [[5 Vermittlungsschicht/IPv4-Paket\|IPv4-Paket]]
+
+[[5 Vermittlungsschicht/5.0 Vermittlungsschicht (Übersicht)\|← Kapitelübersicht]]
+
+---
+<!-- kapitel-nav -->
+[[5 Vermittlungsschicht/IPv4-Paket\|⬅️ IPv4-Paket]]  ·  [[5 Vermittlungsschicht/ARP\|ARP ➡️]]

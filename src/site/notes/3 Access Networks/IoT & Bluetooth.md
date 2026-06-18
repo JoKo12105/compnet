@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/3 Access Networks/IoT & Bluetooth/","tags":["computernetworks","access"],"updated":"2026-06-18T22:32:42.830+02:00","dg-note-properties":{"permalink":"/3 Access Networks/IoT & Bluetooth/","tags":["computernetworks","access"],"updated":"2026-06-18T22:20:28.669+02:00"}}
+{"dg-publish":true,"permalink":"/3 Access Networks/IoT & Bluetooth/","tags":["computernetworks","access"],"updated":"2026-06-18T23:37:19.464+02:00","dg-note-properties":{"permalink":"/3 Access Networks/IoT & Bluetooth/","tags":["computernetworks","access"],"updated":"2026-06-18T22:20:28.669+02:00"}}
 ---
 
 
@@ -18,11 +18,11 @@
 
 ## Spezialfall Bluetooth
 Funk-Protokoll für kurze Reichweiten (< 40 m) im lizenzfreien 2,4-GHz-Band:
-- Punkt-zu-Punkt und vermaschte Ad-hoc-Netze,
-- feste 48-Bit-Geräte-ID (MAC-Adresse),
-- dynamisches **Master-Slave**: 1 Master, max. 7 Slaves; der Master vergibt Zeitschlitze (TDM),
-- verbindungslos (**BLE**) oder verbindungsorientiert,
-- Störungsbehandlung durch schnellen **Frequenzwechsel**.
+- Punkt-zu-Punkt und vermaschte Ad-hoc-Netze
+- feste 48-Bit-Geräte-ID (MAC-Adresse)
+- dynamisches **Master-Slave**: 1 Master, max. 7 Slaves; der Master vergibt Zeitschlitze (TDM)
+- verbindungslos (**BLE**) oder verbindungsorientiert
+- Störungsbehandlung durch schnellen **Frequenzwechsel**
 
 ## Verwandte Themen
 [[3 Access Networks/Mobilfunk\|Mobilfunk]] · [[3 Access Networks/WLAN\|WLAN]] · [[2 Link Layer/MAC – Medienzugang\|MAC – Medienzugang]]

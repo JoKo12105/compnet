@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T18:44:50.147+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
+{"dg-publish":true,"permalink":"/0 Übersicht & Glossar/Übersicht/","tags":["computernetworks","moc","start","gardenEntry"],"updated":"2026-06-18T20:47:31.714+02:00","dg-note-properties":{"tags":["computernetworks","moc","start","gardenEntry"]}}
 ---
 
 
@@ -128,6 +128,8 @@ Für die **Klausurvorbereitung** empfiehlt sich der Weg von oben nach unten (Kap
 Jeder Artikel beginnt mit einer Kurzdefinition („Auf einen Blick"), gefolgt von Details und — wo sinnvoll — einer interaktiven Visualisierung.
 
 ---
+**🔗 Hier geht's zur Website zum Thema** [*Betriebssysteme*](https://betriebssysteme.vercel.app)
+
 <!-- coffee-button -->
 <a href="https://paypal.me/joelkowylin" target="_blank" rel="noopener" style="display:block;max-width:340px;margin:10px auto;padding:12px 18px;border-radius:14px;border:2px solid rgb(198,122,0);background:linear-gradient(180deg,rgb(255,224,138),rgb(255,206,71));color:rgb(90,61,0);text-decoration:none;text-align:center;box-shadow:0 4px 14px rgba(180,130,20,.25)"><span style="display:block;font-size:1.15em;font-weight:800">BUY ME A COFFEE ☕</span><span style="display:block;font-size:0.72em;margin-top:3px;opacity:.85">Diese Websites zu hosten hat mich 10€ gekostet 😭</span></a>
 <!-- /coffee-button -->

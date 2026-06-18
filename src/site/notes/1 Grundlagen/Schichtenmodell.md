@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/1 Grundlagen/Schichtenmodell/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T19:32:09.332+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Schichten","OSI","Referenzmodell","Encapsulation","Tunneling","Dienst","Interface"]}}
+{"dg-publish":true,"permalink":"/1 Grundlagen/Schichtenmodell/","tags":["computernetworks","grundlagen"],"updated":"2026-06-18T19:43:13.040+02:00","dg-note-properties":{"tags":["computernetworks","grundlagen"],"aliases":["Schichten","OSI","Referenzmodell","Encapsulation","Tunneling","Dienst","Interface"]}}
 ---
 
 
@@ -28,7 +28,7 @@ Beim Senden wird eine Dateneinheit der Ebene *n* in eine der Ebene *n−1* **ver
 <meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>
 <title>Encapsulation im Schichtenmodell</title><style>
 *{box-sizing:border-box}
-body{margin:0;padding:26px 14px;background:transparent;font-family:&quot;Segoe UI&quot;,&quot;Trebuchet MS&quot;,sans-serif;color:rgb(30,36,48)}
+body{margin:0;padding:8px 0;background:transparent;font-family:&quot;Segoe UI&quot;,&quot;Trebuchet MS&quot;,sans-serif;color:rgb(30,36,48)}
 .stepper,.widget{
   --bg:rgb(244,239,230); --panel:rgb(255,253,248); --ink:rgb(30,36,48); --muted:rgb(95,107,122); --line:rgb(207,197,180);
   --accent:rgb(37,73,184); --success:rgb(34,129,75);
@@ -39,7 +39,7 @@ body{margin:0;padding:26px 14px;background:transparent;font-family:&quot;Segoe U
   --c5:rgb(217,250,244); --c5b:rgb(22,147,127); --c5t:rgb(13,90,77);
   --c6:rgb(255,217,210); --c6b:rgb(204,90,66); --c6t:rgb(122,46,32);
   --shadow:0 10px 28px rgba(58,40,18,.10);
-  max-width:920px;margin:0 auto;padding:24px 18px;border-radius:24px;
+  max-width:none;margin:0 auto;padding:12px 0;border-radius:24px;
   background:transparent;
   box-shadow:none}
 h1.viz-title{text-align:center;font-size:19px;margin:0 0 4px;color:rgb(238,242,248)}
@@ -50,7 +50,7 @@ h1.viz-title{text-align:center;font-size:19px;margin:0 0 4px;color:rgb(238,242,2
 .step-dot.active{background:var(--accent);border-color:rgb(23,53,140);color:rgb(255,255,255);transform:scale(1.06)}
 .step-dot.done{background:var(--success);border-color:rgb(23,99,56);color:rgb(255,255,255)}
 .step-label{text-align:center;font-size:14px;color:rgb(227,233,242);margin-bottom:16px;min-height:20px;font-weight:700}
-.diagram-frame{max-width:780px;margin:0 auto;padding:16px;border-radius:22px;background:var(--panel);border:1px solid rgb(232,222,206);box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
+.diagram-frame{max-width:none;margin:0 auto;padding:10px;border-radius:22px;background:var(--panel);border:1px solid rgb(232,222,206);box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
 svg{display:block;width:100%;height:auto}
 .th{font-size:15px;font-weight:800}
 .ts{font-size:12px;font-weight:600}
@@ -63,7 +63,7 @@ svg{display:block;width:100%;height:auto}
 .c4 rect,rect.c4{fill:var(--c4);stroke:var(--c4b)} .c4 text,text.c4{fill:var(--c4t)}
 .c5 rect,rect.c5{fill:var(--c5);stroke:var(--c5b)} .c5 text,text.c5{fill:var(--c5t)}
 .c6 rect,rect.c6{fill:var(--c6);stroke:var(--c6b)} .c6 text,text.c6{fill:var(--c6t)}
-.step-description{max-width:780px;margin:16px auto 0;padding:16px 20px;border-radius:18px;background:linear-gradient(180deg,rgb(255,249,239) 0%,rgb(255,245,227) 100%);border:1px solid rgb(239,214,168);color:var(--ink);font-size:14.5px;line-height:1.6;box-shadow:0 8px 24px rgba(115,82,20,.08);animation:slide-in .28s ease}
+.step-description{max-width:none;margin:16px auto 0;padding:16px 20px;border-radius:18px;background:linear-gradient(180deg,rgb(255,249,239) 0%,rgb(255,245,227) 100%);border:1px solid rgb(239,214,168);color:var(--ink);font-size:14.5px;line-height:1.6;box-shadow:0 8px 24px rgba(115,82,20,.08);animation:slide-in .28s ease}
 .step-description b{color:rgb(124,74,0)}
 .btn-row{display:flex;justify-content:center;gap:12px;margin-top:16px}
 .btn{padding:10px 22px;border-radius:999px;border:1.5px solid rgb(210,195,170);background:rgb(255,249,239);color:var(--ink);font-size:13px;font-weight:700;cursor:pointer;transition:transform .15s,background .15s,border-color .15s}
@@ -144,7 +144,7 @@ function changeStep(d){current=Math.max(0,Math.min(steps.length-1,current+d));re
 const dotsEl=document.getElementById(&quot;dots&quot;);
 steps.forEach((_,i)=>{const d=document.createElement(&quot;div&quot;);d.className=&quot;step-dot&quot;;d.textContent=i+1;d.onclick=()=>{current=i;render(i);};dotsEl.appendChild(d);});
 render(0);
-</script></body></html>" width="100%" height="1009" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;display:block;width:var(--file-line-width);max-width:100%;background:transparent" scrolling="no"></iframe>
+</script></body></html>" width="100%" height="1009" loading="lazy" sandbox="allow-scripts allow-popups" style="border:none;width:100%;background:transparent" scrolling="no"></iframe>
 <!-- /viz:schichtenmodell -->
 
 
